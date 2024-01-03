@@ -1,6 +1,6 @@
 import { CircularProgress } from "@mui/material";
 
-import { StyledAppLoaderWrapper } from "../../style";
+import { StyledAppLoaderWrapper } from "../../styles/style";
 
 const AppLoader = () => {
   return (
