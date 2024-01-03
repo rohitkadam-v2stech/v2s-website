@@ -1,7 +1,14 @@
 import React from "react";
 
-const ApplicationLayout = () => {
-  return <div>ApplicationLayout</div>;
+import NavBar from "../NavBar";
+
+const ApplicationLayout = (props: React.PropsWithChildren) => {
+  return (
+    <>
+      <NavBar />
+      {props.children}
+    </>
+  );
 };
 
 export default ApplicationLayout;
