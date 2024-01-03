@@ -8,7 +8,7 @@ const RoutingProvider = () => (
   <AsyncRenderer fallback={<AppLoader />}>
     <Routes>
       {ROUTES_CONFIG.map(({ element, path }) => (
-        <Route path={path} element={element} />
+        <Route key={path} path={path} element={element} />
       ))}
     </Routes>
   </AsyncRenderer>
