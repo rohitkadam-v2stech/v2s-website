@@ -8,4 +8,7 @@ export const StyledToolbar = styled(Toolbar)(() => ({
 export const StyledNavBarText = styled(Typography)(() => ({
   fontSize: "15px",
   fontWeight: 700,
+  "&:hover": {
+    cursor: "pointer",
+  },
 }));
