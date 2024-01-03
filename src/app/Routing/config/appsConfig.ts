@@ -11,7 +11,7 @@ type TApplications = (typeof APPLICATIONS)[keyof typeof APPLICATIONS];
 const APPLICATION_URLS: Partial<Record<TApplications, string>> = {
   [APPLICATIONS.HOME]: `/`,
   [APPLICATIONS.ABOUT_US]: `/about-us`,
-  [APPLICATIONS.CASE_STUDIES]: `/casestudies-landing-page`,
+  [APPLICATIONS.CASE_STUDIES]: `/case-studies`,
   [APPLICATIONS.CAREER]: "/career",
   [APPLICATIONS.CONTACT_US]: "/contact-us",
 };

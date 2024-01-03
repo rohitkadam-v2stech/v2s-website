@@ -1,14 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../modules/Home";
-import AboutUs from "../modules/AboutUs";
 
-const RoutingProvider = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about-us" element={<AboutUs />} />
-    </Routes>
-  );
-};
+import { ROUTES_CONFIG } from "./config/routesConfig";
+
+const RoutingProvider = () => (
+  <Routes>
+    {ROUTES_CONFIG.map(({ element, path }) => (
+      <Route path={path} element={element} />
+    ))}
+  </Routes>
+);
 
 export default RoutingProvider;
