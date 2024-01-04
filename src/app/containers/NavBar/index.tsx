@@ -70,7 +70,6 @@ const NavBar: React.FC = () => {
         variant="temporary"
         open={isMobileDrawerOpen}
         onClose={toggleMobileDrawer}
-        transitionDuration={800}
         ModalProps={{
           keepMounted: true,
         }}

@@ -6,15 +6,13 @@ import Footer from "../../components/Footer";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { StyledProtectedLayoutWrapper } from "./style";
 
-const ApplicationLayout = (props: React.PropsWithChildren) => {
+const ApplicationLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <>
       <CssBaseline />
       <ContactNavbar />
       <NavBar />
-      <StyledProtectedLayoutWrapper>
-        {props.children}
-      </StyledProtectedLayoutWrapper>
+      <StyledProtectedLayoutWrapper>{children}</StyledProtectedLayoutWrapper>
       <ScrollToTopButton />
       <Footer />
     </>
