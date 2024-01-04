@@ -1,5 +1,5 @@
 const CaseStudies = () => {
-  return <div>CaseStudies</div>;
+  return <div>Case Studies</div>;
 };
 
 export default CaseStudies;

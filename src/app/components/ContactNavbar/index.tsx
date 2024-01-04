@@ -13,6 +13,9 @@ const ContactNavbar = () => {
       bgcolor="black"
       justifyContent="space-between"
       px={11}
+      sx={{
+        display: { md: "none", lg: "flex" },
+      }}
     >
       <Stack
         direction="row"
