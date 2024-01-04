@@ -7,6 +7,7 @@ const AboutUs = lazy(() => import("../../modules/AboutUs"));
 const CaseStudies = lazy(() => import("../../modules/CaseStudies"));
 const ContactUs = lazy(() => import("../../modules/ContactUs"));
 const Career = lazy(() => import("../../modules/Career"));
+const PageNotFound = lazy(() => import("../../modules/PageNotFound"));
 
 const ROUTES_CONFIG: RouteProps[] = [
   {
@@ -28,6 +29,10 @@ const ROUTES_CONFIG: RouteProps[] = [
   {
     path: APPLICATION_URLS.CAREER,
     element: <Career />,
+  },
+  {
+    path: APPLICATION_URLS.PAGE_NOT_FOUND,
+    element: <PageNotFound />,
   },
 ];
 

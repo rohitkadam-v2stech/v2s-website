@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 const EntryPoint = ({ children }: PropsWithChildren) => {
