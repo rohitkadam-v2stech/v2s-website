@@ -54,6 +54,7 @@ const CaseStudiesListing: React.FC = () => {
                 mb={1}
                 textAlign="justify"
                 color={COLORS.DARK_BLUE}
+                lineHeight={1.2}
               >
                 {item.title}
               </StyledLargeBoldText>
@@ -65,7 +66,7 @@ const CaseStudiesListing: React.FC = () => {
 
             <Stack spacing={1}>
               <Stack direction="row" spacing={0.5} alignContent="center">
-                <Typography color={COLORS.DARK_BLUE}>
+                <Typography color={COLORS.DARK_BLUE} sx={{ cursor: "pointer" }}>
                   {messages.readMore}
                 </Typography>
 
@@ -104,7 +105,11 @@ const CaseStudiesListing: React.FC = () => {
                 </Stack>
 
                 {!isOnMobile && (
-                  <Stack direction="row" spacing={0.5}>
+                  <Stack
+                    direction="row"
+                    spacing={0.5}
+                    sx={{ cursor: "pointer" }}
+                  >
                     <StyledSmallText color={COLORS.PRIMARY_BLUE}>
                       {messages.download}
                     </StyledSmallText>

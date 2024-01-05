@@ -35,14 +35,17 @@ const NavBar: React.FC = () => {
             {NAVBAR_ROUTES.map((route, index) => (
               <StyledNavBarText
                 key={route.path}
-                color={
-                  currentPath === route.path
-                    ? COLORS.PRIMARY_BLUE
-                    : COLORS.BLACK
-                }
                 sx={{
                   display: { xs: "none", md: "block" },
+                  color:
+                    currentPath === route.path
+                      ? COLORS.PRIMARY_BLUE
+                      : COLORS.BLACK,
                   marginRight: index < NAVBAR_ROUTES.length - 1 ? 4 : 0,
+                  ":hover": {
+                    color: COLORS.PRIMARY_BLUE,
+                    transition: "color 0.5s",
+                  },
                 }}
                 onClick={() =>
                   startTransition(() => {
