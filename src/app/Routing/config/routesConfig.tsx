@@ -9,7 +9,7 @@ const ContactUs = lazy(() => import("../../modules/ContactUs"));
 const Career = lazy(() => import("../../modules/Career"));
 const PageNotFound = lazy(() => import("../../modules/PageNotFound"));
 
-const ROUTES_CONFIG: RouteProps[] = [
+const ROUTES_CONFIG: any[] = [
   {
     path: APPLICATION_URLS.HOME,
     element: <Home />,

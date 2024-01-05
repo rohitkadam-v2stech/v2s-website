@@ -12,9 +12,21 @@ import {
   StyledSmallText,
 } from "../../style";
 import { DashedDivider } from "../../../../styles/style";
+import { useNavigate } from "react-router-dom";
+import { APPLICATION_URLS } from "../../../../Routing/config/appsConfig";
+import { removeAsterisk } from "../../../../utils/helpers";
 
 const CaseStudiesListing: React.FC = () => {
+  const navigate = useNavigate();
   const { isOnMobile, isOnTablet } = useDeviceSize();
+
+  const handleReadMore = (item: any, index: number) => {
+    console.log("item", item);
+
+    navigate(`${removeAsterisk(APPLICATION_URLS.CASE_STUDIES)}${index}`, {
+      state: item,
+    });
+  };
 
   return (
     <>
@@ -65,7 +77,12 @@ const CaseStudiesListing: React.FC = () => {
             </Stack>
 
             <Stack spacing={1}>
-              <Stack direction="row" spacing={0.5} alignContent="center">
+              <Stack
+                direction="row"
+                spacing={0.5}
+                alignContent="center"
+                onClick={() => handleReadMore(item, index)}
+              >
                 <Typography color={COLORS.DARK_BLUE} sx={{ cursor: "pointer" }}>
                   {messages.readMore}
                 </Typography>

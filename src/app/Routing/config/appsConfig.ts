@@ -12,7 +12,7 @@ type TApplications = (typeof APPLICATIONS)[keyof typeof APPLICATIONS];
 const APPLICATION_URLS: Record<TApplications, string> = {
   [APPLICATIONS.HOME]: `/`,
   [APPLICATIONS.ABOUT_US]: `/about-us`,
-  [APPLICATIONS.CASE_STUDIES]: `/case-studies`,
+  [APPLICATIONS.CASE_STUDIES]: `/case-studies/*`,
   [APPLICATIONS.CAREER]: "/career",
   [APPLICATIONS.CONTACT_US]: "/contact-us",
   [APPLICATIONS.PAGE_NOT_FOUND]: "*",
