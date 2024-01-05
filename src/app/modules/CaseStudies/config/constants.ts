@@ -30,6 +30,44 @@ export const CASE_STUDIES_LIST = [
     isProjectOngoing: true,
     minTeamSize: 10,
     maxTeamSize: 20,
+    valueProposition: [
+      {
+        title: "Time Impact",
+        details: [
+          "Rapid MVP Launch - in 3 months",
+          "Rapid feature implementations for marketing / care shows",
+        ],
+      },
+      {
+        title: "Opportunity Impact",
+        details: [
+          "NHS Certifified and already in UK Top 5 care software providers.",
+          "Open global distribution possibilities",
+        ],
+      },
+      {
+        title: "Productivity Impact",
+        details: [
+          "1 week turnaround for new features - more show & tell for prospects.",
+          "400 care homes onboarded with no team additions.",
+          "client onboarding - Less than a week.",
+        ],
+      },
+      {
+        title: "Financial Impact",
+        details: [
+          "Accelerated new funding for the venture.",
+          "Savings - 20%-30% infra cost reduction.",
+        ],
+      },
+      {
+        title: "Oppurtunity Impact",
+        details: [
+          "10 X revenue growth within 12 months?",
+          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+        ],
+      },
+    ],
   },
   {
     id: 2,
@@ -45,6 +83,44 @@ export const CASE_STUDIES_LIST = [
     isProjectOngoing: false,
     minTeamSize: 10,
     maxTeamSize: 20,
+    valueProposition: [
+      {
+        title: "Time Impact",
+        details: [
+          "Rapid MVP Launch - in 3 months",
+          "Rapid feature implementations for marketing / care shows",
+        ],
+      },
+      {
+        title: "Opportunity Impact",
+        details: [
+          "NHS Certifified and already in UK Top 5 care software providers.",
+          "Open global distribution possibilities",
+        ],
+      },
+      {
+        title: "Productivity Impact",
+        details: [
+          "1 week turnaround for new features - more show & tell for prospects.",
+          "400 care homes onboarded with no team additions.",
+          "client onboarding - Less than a week.",
+        ],
+      },
+      {
+        title: "Financial Impact",
+        details: [
+          "Accelerated new funding for the venture.",
+          "Savings - 20%-30% infra cost reduction.",
+        ],
+      },
+      {
+        title: "Oppurtunity Impact",
+        details: [
+          "10 X revenue growth within 12 months?",
+          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+        ],
+      },
+    ],
   },
   {
     id: 3,
@@ -59,6 +135,44 @@ export const CASE_STUDIES_LIST = [
     isProjectOngoing: true,
     minTeamSize: 10,
     maxTeamSize: 20,
+    valueProposition: [
+      {
+        title: "Time Impact",
+        details: [
+          "Rapid MVP Launch - in 3 months",
+          "Rapid feature implementations for marketing / care shows",
+        ],
+      },
+      {
+        title: "Opportunity Impact",
+        details: [
+          "NHS Certifified and already in UK Top 5 care software providers.",
+          "Open global distribution possibilities",
+        ],
+      },
+      {
+        title: "Productivity Impact",
+        details: [
+          "1 week turnaround for new features - more show & tell for prospects.",
+          "400 care homes onboarded with no team additions.",
+          "client onboarding - Less than a week.",
+        ],
+      },
+      {
+        title: "Financial Impact",
+        details: [
+          "Accelerated new funding for the venture.",
+          "Savings - 20%-30% infra cost reduction.",
+        ],
+      },
+      {
+        title: "Oppurtunity Impact",
+        details: [
+          "10 X revenue growth within 12 months?",
+          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+        ],
+      },
+    ],
   },
   {
     id: 4,
@@ -73,6 +187,44 @@ export const CASE_STUDIES_LIST = [
     isProjectOngoing: true,
     minTeamSize: 10,
     maxTeamSize: 20,
+    valueProposition: [
+      {
+        title: "Time Impact",
+        details: [
+          "Rapid MVP Launch - in 3 months",
+          "Rapid feature implementations for marketing / care shows",
+        ],
+      },
+      {
+        title: "Opportunity Impact",
+        details: [
+          "NHS Certifified and already in UK Top 5 care software providers.",
+          "Open global distribution possibilities",
+        ],
+      },
+      {
+        title: "Productivity Impact",
+        details: [
+          "1 week turnaround for new features - more show & tell for prospects.",
+          "400 care homes onboarded with no team additions.",
+          "client onboarding - Less than a week.",
+        ],
+      },
+      {
+        title: "Financial Impact",
+        details: [
+          "Accelerated new funding for the venture.",
+          "Savings - 20%-30% infra cost reduction.",
+        ],
+      },
+      {
+        title: "Oppurtunity Impact",
+        details: [
+          "10 X revenue growth within 12 months?",
+          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+        ],
+      },
+    ],
   },
   {
     id: 5,
@@ -88,6 +240,44 @@ export const CASE_STUDIES_LIST = [
     isProjectOngoing: true,
     minTeamSize: 5,
     maxTeamSize: 10,
+    valueProposition: [
+      {
+        title: "Time Impact",
+        details: [
+          "Rapid MVP Launch - in 3 months",
+          "Rapid feature implementations for marketing / care shows",
+        ],
+      },
+      {
+        title: "Opportunity Impact",
+        details: [
+          "NHS Certifified and already in UK Top 5 care software providers.",
+          "Open global distribution possibilities",
+        ],
+      },
+      {
+        title: "Productivity Impact",
+        details: [
+          "1 week turnaround for new features - more show & tell for prospects.",
+          "400 care homes onboarded with no team additions.",
+          "client onboarding - Less than a week.",
+        ],
+      },
+      {
+        title: "Financial Impact",
+        details: [
+          "Accelerated new funding for the venture.",
+          "Savings - 20%-30% infra cost reduction.",
+        ],
+      },
+      {
+        title: "Oppurtunity Impact",
+        details: [
+          "10 X revenue growth within 12 months?",
+          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+        ],
+      },
+    ],
   },
   {
     id: 6,
@@ -102,5 +292,43 @@ export const CASE_STUDIES_LIST = [
     isProjectOngoing: false,
     minTeamSize: 3,
     maxTeamSize: 10,
+    valueProposition: [
+      {
+        title: "Time Impact",
+        details: [
+          "Rapid MVP Launch - in 3 months",
+          "Rapid feature implementations for marketing / care shows",
+        ],
+      },
+      {
+        title: "Opportunity Impact",
+        details: [
+          "NHS Certifified and already in UK Top 5 care software providers.",
+          "Open global distribution possibilities",
+        ],
+      },
+      {
+        title: "Productivity Impact",
+        details: [
+          "1 week turnaround for new features - more show & tell for prospects.",
+          "400 care homes onboarded with no team additions.",
+          "client onboarding - Less than a week.",
+        ],
+      },
+      {
+        title: "Financial Impact",
+        details: [
+          "Accelerated new funding for the venture.",
+          "Savings - 20%-30% infra cost reduction.",
+        ],
+      },
+      {
+        title: "Oppurtunity Impact",
+        details: [
+          "10 X revenue growth within 12 months?",
+          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+        ],
+      },
+    ],
   },
 ];
