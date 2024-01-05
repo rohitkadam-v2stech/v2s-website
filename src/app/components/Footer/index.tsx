@@ -1,11 +1,6 @@
 import { Stack, Typography } from "@mui/material";
-import {
-  ALL_RIGHTS_RESERVED,
-  COOKIE_POLICY,
-  PRIVACY_POLICY,
-  REFUND_POLICY,
-  TERMS_AND_CONDITIONS,
-} from "./constants";
+
+import { messages } from "./messages";
 
 const Footer = () => (
   <Stack
@@ -13,18 +8,19 @@ const Footer = () => (
     color="white"
     justifyContent="space-around"
     py={1}
+    px={{ xs: 1 }}
     direction={{ xs: "column", sm: "row" }}
     spacing={{ xs: 1, sm: 2, md: 4 }}
   >
-    <Typography variant="subtitle2">{ALL_RIGHTS_RESERVED}</Typography>
+    <Typography variant="caption">{messages.allRightsReserved}</Typography>
     <Stack
       spacing={{ xs: 1, sm: 2, md: 4 }}
       direction={{ xs: "column", sm: "row" }}
     >
-      <Typography variant="subtitle2">{PRIVACY_POLICY}</Typography>
-      <Typography variant="subtitle2">{TERMS_AND_CONDITIONS}</Typography>
-      <Typography variant="subtitle2">{COOKIE_POLICY}</Typography>
-      <Typography variant="subtitle2">{REFUND_POLICY}</Typography>
+      <Typography variant="caption">{messages.privacyPolicy}</Typography>
+      <Typography variant="caption">{messages.termsAndConditions}</Typography>
+      <Typography variant="caption">{messages.cookiePolicy}</Typography>
+      <Typography variant="caption">{messages.refundPolicy}</Typography>
     </Stack>
   </Stack>
 );
