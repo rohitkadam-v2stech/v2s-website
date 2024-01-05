@@ -10,6 +10,7 @@ import { NAVBAR_ROUTES } from "./config/constant";
 import COLORS from "../../styles/colors";
 import useToggle from "../../hooks/useToggle";
 import MobileViewDrawer from "./components";
+import { APPLICATION_URLS } from "../../Routing/config/appsConfig";
 
 const NavBar: React.FC = () => {
   const navigate = useNavigate();
@@ -28,7 +29,15 @@ const NavBar: React.FC = () => {
             justifyContent="space-between"
             alignItems="center"
           >
-            <img alt="CompanyBrandLogo" src={v2sLogo} />
+            <img
+              alt="CompanyBrandLogo"
+              src={v2sLogo}
+              onClick={() =>
+                startTransition(() => {
+                  navigate(APPLICATION_URLS.HOME);
+                })
+              }
+            />
           </Stack>
 
           <Stack direction="row" spacing={0} alignItems="center">

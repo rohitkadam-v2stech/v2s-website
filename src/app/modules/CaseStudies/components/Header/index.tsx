@@ -16,8 +16,7 @@ const CaseStudiesHeader: React.FC = () => (
             </StyledExtraLargeBoldText>
 
             <StyledRegularText textAlign="justify">
-              Our work speaks volumes and here are some of the chosen stories
-              that have made an impact
+              {messages.caseStudiesDescription}
             </StyledRegularText>
           </Box>
         </Stack>

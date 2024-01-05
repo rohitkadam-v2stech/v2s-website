@@ -9,7 +9,7 @@ const APPLICATIONS = {
 
 type TApplications = (typeof APPLICATIONS)[keyof typeof APPLICATIONS];
 
-const APPLICATION_URLS: Partial<Record<TApplications, string>> = {
+const APPLICATION_URLS: Record<TApplications, string> = {
   [APPLICATIONS.HOME]: `/`,
   [APPLICATIONS.ABOUT_US]: `/about-us`,
   [APPLICATIONS.CASE_STUDIES]: `/case-studies`,

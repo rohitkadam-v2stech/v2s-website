@@ -11,7 +11,7 @@ import {
 
 import COLORS from "../../styles/colors";
 import { COUNTRIES_LIST } from "./config/constants";
-import CaseStudiesListing from "./components/CaseStudiesListing";
+import CaseStudiesListing from "./components/Listing";
 import { messages } from "./config/messages";
 import FilterIcon from "../../assets/filter.png";
 import CaseStudiesHeader from "./components/Header";
