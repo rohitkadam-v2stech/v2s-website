@@ -11,7 +11,7 @@ import {
   StyledRegularText,
   StyledSmallText,
 } from "../../style";
-import DashedDivider from "../../../../components/DashedDivider";
+import { DashedDivider } from "../../../../styles/style";
 
 const CaseStudiesListing: React.FC = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();

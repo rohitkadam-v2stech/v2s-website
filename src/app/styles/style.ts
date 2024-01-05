@@ -1,4 +1,4 @@
-import { Box, Fab, styled } from "@mui/material";
+import { Box, Fab, styled, Divider } from "@mui/material";
 import COLORS from "./colors";
 
 export const StyledFullScreenLoaderWrapper = styled(Box)({
@@ -20,3 +20,8 @@ export const StyledScrollToTopButton = styled(Fab)(() => ({
   color: COLORS.PRIMARY_BLUE,
   borderRadius: 2,
 }));
+
+export const DashedDivider = styled(Divider)({
+  border: 0,
+  borderTop: `2px dashed ${COLORS.LIGHT_BLUE}`, // Change color as needed
+});
