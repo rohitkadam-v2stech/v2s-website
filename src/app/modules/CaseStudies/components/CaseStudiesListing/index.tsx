@@ -11,6 +11,7 @@ import {
   StyledRegularText,
   StyledSmallText,
 } from "../../style";
+import DashedDivider from "../../../../components/DashedDivider";
 
 const CaseStudiesListing: React.FC = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();
@@ -49,14 +50,20 @@ const CaseStudiesListing: React.FC = () => {
             justifyContent="space-between"
           >
             <Stack>
-              <StyledLargeBoldText mb={1} color={COLORS.DARK_BLUE}>
+              <StyledLargeBoldText
+                mb={1}
+                textAlign="justify"
+                color={COLORS.DARK_BLUE}
+              >
                 {item.title}
               </StyledLargeBoldText>
 
-              <StyledRegularText mb={2}>{item.description}</StyledRegularText>
+              <StyledRegularText mb={2} textAlign="justify">
+                {item.description}
+              </StyledRegularText>
             </Stack>
 
-            <Stack>
+            <Stack spacing={1}>
               <Stack direction="row" spacing={0.5} alignContent="center">
                 <Typography color={COLORS.DARK_BLUE}>
                   {messages.readMore}
@@ -65,13 +72,7 @@ const CaseStudiesListing: React.FC = () => {
                 <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
               </Stack>
 
-              {!isOnMobile && (
-                <Divider
-                  sx={{
-                    bgcolor: COLORS.DARK_BLUE,
-                  }}
-                />
-              )}
+              {!isOnMobile && <DashedDivider />}
 
               <Stack
                 direction="row"
@@ -128,12 +129,7 @@ const CaseStudiesListing: React.FC = () => {
                       sx={{ color: COLORS.PRIMARY_BLUE }}
                     />
                   </Stack>
-
-                  <Divider
-                    sx={{
-                      bgcolor: COLORS.DARK_BLUE,
-                    }}
-                  />
+                  <DashedDivider />
                 </Stack>
               )}
             </Stack>
