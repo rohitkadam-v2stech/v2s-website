@@ -30,6 +30,24 @@ export const CASE_STUDIES_LIST = [
     isProjectOngoing: true,
     minTeamSize: 10,
     maxTeamSize: 20,
+    aboutClient:
+      "Our client in UK, provides innovative digital care management software for the social care sector, including care homes, supported living, domiciliary care, staff rota, scheduling and care planning",
+    projectRevenue: 2,
+    projectDuration: 6,
+    problemStatement:
+      "Client wanted to bring the SaaS application vision to life in elderly care area. He was looking for a technology partner to shoulder the entire responsibility of software development so that client can focus on their business vision",
+    solution: [
+      "Develop multi-tenant SaaS platform to support onboarding of multiple care homes",
+      "Online mobile application delivered to support carer working in remote areas without network connection",
+      "Voice based command interaction implemented using devices like Alexa to make interaction more convenient.",
+      "Care Planning System for care homes is CQC compliant and in line with KLOE’s, NICE guidelines, GDPR, safeguarding and all UK based regulatory bodies",
+      "Security for the system and data is robust and is compliant with DDOS and is monitored 24/7.",
+      "Single component based solution provided to support all types of care homes.",
+    ],
+    ongoingValueBasedRelationship: [
+      "Entire technical ownership other then first line support is manage by us from our offshore development center",
+      "Representing our client in meeting with third party such as API provider, Investors, hosting providers, care homes etc.",
+    ],
   },
   {
     id: 2,
