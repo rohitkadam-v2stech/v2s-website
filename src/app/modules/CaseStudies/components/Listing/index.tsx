@@ -23,9 +23,12 @@ const CaseStudiesListing: React.FC = () => {
   const handleReadMore = (item: any, index: number) => {
     console.log("item", item);
 
-    navigate(`${removeAsterisk(APPLICATION_URLS.CASE_STUDIES)}${index}`, {
-      state: item,
-    });
+    navigate(
+      `${removeAsterisk(APPLICATION_URLS.CASE_STUDIES)}${Number(item.id)}`,
+      {
+        state: item,
+      }
+    );
   };
 
   return (
