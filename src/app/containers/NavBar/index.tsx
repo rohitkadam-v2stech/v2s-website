@@ -21,8 +21,8 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <AppBar position="sticky" color="inherit" sx={{ mb: 2, py: 1, px: "5%" }}>
-        <StyledToolbar>
+      <AppBar position="sticky" color="inherit" sx={{ py: 1, px: "6%" }}>
+        <StyledToolbar disableGutters>
           <Stack
             direction="row"
             justifyContent="space-between"
@@ -31,8 +31,8 @@ const NavBar: React.FC = () => {
             <img alt="CompanyBrandLogo" src={v2sLogo} />
           </Stack>
 
-          <Stack direction="row" spacing={4} alignItems="center">
-            {NAVBAR_ROUTES.map((route) => (
+          <Stack direction="row" spacing={0} alignItems="center">
+            {NAVBAR_ROUTES.map((route, index) => (
               <StyledNavBarText
                 key={route.path}
                 color={
@@ -40,7 +40,10 @@ const NavBar: React.FC = () => {
                     ? COLORS.PRIMARY_BLUE
                     : COLORS.BLACK
                 }
-                sx={{ display: { xs: "none", md: "block" } }}
+                sx={{
+                  display: { xs: "none", md: "block" },
+                  marginRight: index < NAVBAR_ROUTES.length - 1 ? 4 : 0,
+                }}
                 onClick={() =>
                   startTransition(() => {
                     navigate(route.path);
