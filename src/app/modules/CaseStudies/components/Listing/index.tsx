@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { Grid, Stack, Typography } from "@mui/material";
 import EastIcon from "@mui/icons-material/East";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
@@ -12,9 +14,12 @@ import {
   StyledSmallText,
 } from "../../style";
 import DashedDivider from "../../../../components/DashedDivider";
+import { APPLICATION_URLS } from "../../../../Routing/config/appsConfig";
 
 const CaseStudiesListing: React.FC = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -64,7 +69,12 @@ const CaseStudiesListing: React.FC = () => {
               </StyledRegularText>
             </Stack>
 
-            <Stack spacing={1}>
+            <Stack
+              spacing={1}
+              onClick={() =>
+                navigate(`${APPLICATION_URLS.CASE_STUDIES}/${item.id}`)
+              }
+            >
               <Stack direction="row" spacing={0.5} alignContent="center">
                 <Typography color={COLORS.DARK_BLUE} sx={{ cursor: "pointer" }}>
                   {messages.readMore}
