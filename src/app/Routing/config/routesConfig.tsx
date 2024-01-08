@@ -1,19 +1,15 @@
-import { RouteProps } from "react-router-dom";
+import { type RouteProps } from "react-router-dom";
 import { APPLICATION_URLS } from "./appsConfig";
 import { lazy } from "react";
 
 const Home = lazy(() => import("../../modules/Home"));
 const AboutUs = lazy(() => import("../../modules/AboutUs"));
 const CaseStudies = lazy(() => import("../../modules/CaseStudies"));
-const CaseStudiesDetails = lazy(
-  () => import("../../modules/CaseStudies/components/Details")
-);
-
 const ContactUs = lazy(() => import("../../modules/ContactUs"));
 const Career = lazy(() => import("../../modules/Career"));
 const PageNotFound = lazy(() => import("../../modules/PageNotFound"));
 
-const ROUTES_CONFIG: any[] = [
+const ROUTES_CONFIG: RouteProps[] = [
   {
     path: APPLICATION_URLS.HOME,
     element: <Home />,
@@ -32,7 +28,7 @@ const ROUTES_CONFIG: any[] = [
   },
   {
     path: APPLICATION_URLS.CAREER,
-    element: <CaseStudiesDetails />,
+    element: <Career />,
   },
   {
     path: APPLICATION_URLS.PAGE_NOT_FOUND,

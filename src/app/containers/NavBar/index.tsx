@@ -1,4 +1,3 @@
-import { startTransition } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { AppBar, Drawer, IconButton, Stack } from "@mui/material";
@@ -11,14 +10,22 @@ import COLORS from "../../styles/colors";
 import useToggle from "../../hooks/useToggle";
 import MobileViewDrawer from "./components";
 import { APPLICATION_URLS } from "../../Routing/config/appsConfig";
+import { removeAsterisk } from "../../utils/helpers";
 
 const NavBar: React.FC = () => {
   const navigate = useNavigate();
 
   const { toggle: toggleMobileDrawer, value: isMobileDrawerOpen } = useToggle();
 
-  const location = useLocation();
-  const currentPath = location.pathname;
+  const { pathname: currentPath } = useLocation();
+
+  const handleNavigateHome = () => {
+    navigate(APPLICATION_URLS.HOME);
+  };
+
+  const handleNavigate = (path: string) => {
+    navigate(removeAsterisk(path));
+  };
 
   return (
     <>
@@ -32,11 +39,7 @@ const NavBar: React.FC = () => {
             <img
               alt="CompanyBrandLogo"
               src={v2sLogo}
-              onClick={() =>
-                startTransition(() => {
-                  navigate(APPLICATION_URLS.HOME);
-                })
-              }
+              onClick={handleNavigateHome}
             />
           </Stack>
 
@@ -56,11 +59,7 @@ const NavBar: React.FC = () => {
                     transition: "color 0.5s",
                   },
                 }}
-                onClick={() =>
-                  startTransition(() => {
-                    navigate(route.path);
-                  })
-                }
+                onClick={() => handleNavigate(route.path)}
               >
                 {route.label}
               </StyledNavBarText>
