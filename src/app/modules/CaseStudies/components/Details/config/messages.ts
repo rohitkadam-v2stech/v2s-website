@@ -1,1 +1,4 @@
-export const messages = {};
+export const messages = {
+  caseStudy: "CASE STUDY",
+  valueProposition: "Value Proposition",
+};
