@@ -7,6 +7,8 @@ import worldMap from "../../../../assets/world_map.png";
 import PropositionCard from "./components/PropositionCard";
 import AboutClients from "./components/AboutClients";
 import ProblemStatement from "./components/ProblemStatement";
+import YoutubePlayer from "../../../../components/YoutubePlayer";
+import { V2S_TECH_YOUTUBE_VIDEO_EMBED_ID } from "./config/constants";
 
 const CaseStudiesDetails: React.FC = () => {
   const { state } = useLocation();
@@ -100,12 +102,18 @@ const CaseStudiesDetails: React.FC = () => {
           {messages.valueProposition}
         </Typography>
         <Grid container justifyContent="center" px={22} gap={2} mt={2}>
-          {state.valueProposition.map((item: any, id: any) => (
+          {state.valueProposition.map((item: any, id: number) => (
             <Grid key={id} item>
               <PropositionCard title={item.title} details={item.details} />
             </Grid>
           ))}
         </Grid>
+      </Box>
+      <Box py={6} textAlign="center" bgcolor="white">
+        <YoutubePlayer
+          embedId={V2S_TECH_YOUTUBE_VIDEO_EMBED_ID}
+          containerProps={{ borderRadius: "20px", border: "none" }}
+        />
       </Box>
       <AboutClients data={state} />
       <ProblemStatement data={state} />

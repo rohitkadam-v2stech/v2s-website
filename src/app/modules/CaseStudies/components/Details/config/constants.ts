@@ -1,0 +1,1 @@
+export const V2S_TECH_YOUTUBE_VIDEO_EMBED_ID = "Uw7S7DoW-Ms";
