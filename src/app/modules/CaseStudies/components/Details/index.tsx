@@ -1,10 +1,12 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
+import COLORS from "../../../../styles/colors";
+import { messages } from "./config/messages";
 import { useLocation } from "react-router-dom";
 import useDeviceSize from "../../../../hooks/useDeviceSize";
-import COLORS from "../../../../styles/colors";
 import worldMap from "../../../../assets/world_map.png";
 import PropositionCard from "./components/PropositionCard";
-import { messages } from "./config/messages";
+import AboutClients from "./components/AboutClients";
+import ProblemStatement from "./components/ProblemStatement";
 
 const CaseStudiesDetails: React.FC = () => {
   const { state } = useLocation();
@@ -105,6 +107,8 @@ const CaseStudiesDetails: React.FC = () => {
           ))}
         </Grid>
       </Box>
+      <AboutClients data={state} />
+      <ProblemStatement data={state} />
     </>
   );
 };
