@@ -1,6 +1,7 @@
 import { Box, Grid, Paper, Stack, Typography, alpha } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import advisingOnTech from "../../../../assets/Advising on Technology.png";
+import { messages } from "./config/messages";
 
 const OurSpeciality = () => {
   const OUR_SPECIALTY: Array<{
@@ -39,7 +40,7 @@ const OurSpeciality = () => {
         fontWeight="600"
         fontSize="30px"
       >
-        Our Speciality
+        {messages.ourSpeciality}
       </Typography>
       <Stack
         justifyContent="space-between"

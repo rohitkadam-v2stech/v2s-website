@@ -1,5 +1,6 @@
 import { Box, Paper, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
+import { messages } from "./config/messages";
 
 const OurDomainExpertise = () => {
   const OUR_DOMAIN_EXPERTISE: Array<{
@@ -39,16 +40,17 @@ const OurDomainExpertise = () => {
   ];
 
   return (
-    <Box mt={12.5}>
+    <Box mb={12.5}>
       <Typography
         textAlign="center"
         color={COLORS.DARK_BLUE}
         fontWeight="600"
         fontSize="30px"
+        my={12.5}
       >
-        Our Domain Expertise
+        {messages.ourDomainExpertise}
       </Typography>
-      <Stack direction="row" justifyContent="space-between" spacing={4} m={20}>
+      <Stack direction="row" justifyContent="space-between" spacing={4} mx={20}>
         {OUR_DOMAIN_EXPERTISE.map(({ id, title, description }) => (
           <Paper
             key={id}

@@ -1,5 +1,6 @@
 import { Box, Divider, Grid, Paper, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
+import { messages } from "./config/messages";
 
 const FastFacts = () => {
   const FAST_FACTS_LIST: Array<{ title: string; value: string }> = [
@@ -45,7 +46,7 @@ const FastFacts = () => {
         variant="h4"
         fontWeight="bold"
       >
-        Fast Facts
+        {messages.fastFacts}
       </Typography>
       <Grid
         container

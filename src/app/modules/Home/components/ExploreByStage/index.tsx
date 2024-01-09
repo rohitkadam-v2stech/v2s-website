@@ -1,5 +1,6 @@
 import { Box, Button, Paper, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
+import { messages } from "./config/messages";
 
 const ExploreByStage = () => {
   const STAGE_IMAGES: Array<string> = [
@@ -16,7 +17,7 @@ const ExploreByStage = () => {
         fontWeight="600"
         fontSize="30px"
       >
-        Explore by stage
+        {messages.exploreByStage}
       </Typography>
       <Stack
         direction="row"
@@ -47,7 +48,7 @@ const ExploreByStage = () => {
           paddingBlock: "15px",
         }}
       >
-        Talk to us
+        {messages.talkToUs}
       </Button>
     </Stack>
   );
