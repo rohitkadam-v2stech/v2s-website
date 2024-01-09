@@ -1,3 +1,4 @@
+import ExploreByStage from "./components/ExploreByStage";
 import FastFacts from "./components/FastFacts";
 import MainSlider from "./components/MainSlider";
 import OurDomainExpertise from "./components/OurDomainExpertise";
@@ -12,6 +13,7 @@ const Home = () => {
       <OurOfferings />
       <OurDomainExpertise />
       <OurSpecialty />
+      <ExploreByStage />
     </>
   );
 };

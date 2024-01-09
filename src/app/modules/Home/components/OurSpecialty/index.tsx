@@ -31,7 +31,7 @@ const OurSpeciality = () => {
   ];
 
   return (
-    <Box bgcolor="white" mt={2}>
+    <Box bgcolor="white" mt={2} pb={10}>
       <Typography
         textAlign="center"
         p={12}
