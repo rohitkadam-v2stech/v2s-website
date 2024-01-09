@@ -1,22 +1,24 @@
+import { APPLICATION_URLS } from "../../../Routing/config/appsConfig";
+
 export const NAVBAR_ROUTES = [
   {
     label: "Home",
-    path: "/",
+    path: APPLICATION_URLS.HOME,
   },
   {
     label: "About Us",
-    path: "/about-us",
+    path: APPLICATION_URLS.ABOUT_US,
   },
   {
     label: "Case Studies",
-    path: "/case-studies",
+    path: APPLICATION_URLS.CASE_STUDIES,
   },
   {
     label: "Career",
-    path: "/career",
+    path: APPLICATION_URLS.CAREER,
   },
   {
     label: "Contact Us",
-    path: "/contact-us",
+    path: APPLICATION_URLS.CONTACT_US,
   },
 ] as const;

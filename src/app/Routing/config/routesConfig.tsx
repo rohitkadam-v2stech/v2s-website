@@ -1,4 +1,4 @@
-import { RouteProps } from "react-router-dom";
+import { type RouteProps } from "react-router-dom";
 import { APPLICATION_URLS } from "./appsConfig";
 import { lazy } from "react";
 
@@ -9,7 +9,7 @@ const ContactUs = lazy(() => import("../../modules/ContactUs"));
 const Career = lazy(() => import("../../modules/Career"));
 const PageNotFound = lazy(() => import("../../modules/PageNotFound"));
 
-const ROUTES_CONFIG: any[] = [
+const ROUTES_CONFIG: RouteProps[] = [
   {
     path: APPLICATION_URLS.HOME,
     element: <Home />,

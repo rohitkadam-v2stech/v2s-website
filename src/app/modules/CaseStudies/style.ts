@@ -10,6 +10,11 @@ export const StyledLargeBoldText = styled(Typography)({
   fontWeight: 700,
 });
 
+export const StyledLargeText = styled(Typography)({
+  fontSize: 32,
+  fontWeight: 400,
+});
+
 export const StyledRegularText = styled(Typography)({
   fontSize: 16,
   fontWeight: 400,

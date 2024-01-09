@@ -71,6 +71,28 @@ export const CASE_STUDIES_LIST = [
         ],
       },
     ],
+    aboutClient:
+      "Our client in UK, provides innovative digital care management software for the social care sector, including care homes, supported living, domiciliary care, staff rota, scheduling and care planning",
+    projectRevenue: 2,
+    projectDuration: 6,
+    problemStatement: {
+      main: null,
+      subProblemStatements: [
+        "Client wanted to bring the SaaS application vision to life in elderly care area. He was looking for a technology partner to shoulder the entire responsibility of software development so that client can focus on their business vision",
+      ],
+    },
+    solution: [
+      "Develop multi-tenant SaaS platform to support onboarding of multiple care homes",
+      "Online mobile application delivered to support carer working in remote areas without network connection",
+      "Voice based command interaction implemented using devices like Alexa to make interaction more convenient.",
+      "Care Planning System for care homes is CQC compliant and in line with KLOE’s, NICE guidelines, GDPR, safeguarding and all UK based regulatory bodies",
+      "Security for the system and data is robust and is compliant with DDOS and is monitored 24/7.",
+      "Single component based solution provided to support all types of care homes.",
+    ],
+    ongoingValueBasedRelationship: [
+      "Entire technical ownership other then first line support is manage by us from our offshore development center",
+      "Representing our client in meeting with third party such as API provider, Investors, hosting providers, care homes etc.",
+    ],
   },
   {
     id: 2,
@@ -119,6 +141,7 @@ export const CASE_STUDIES_LIST = [
           "Savings - 20%-30% infra cost reduction.",
         ],
       },
+
       // {
       //   title: "Oppurtunity Impact",
       //   details: [
@@ -126,6 +149,27 @@ export const CASE_STUDIES_LIST = [
       //     "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
       //   ],
       // },
+    ],
+    aboutClient:
+      "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors. More than 5,000 merchants are presently on the Qfix platform including educational institutions, governments, and clubs. The company solves for billing and invoices issues and has created robust workflow management solutions for these merchants. HDFC Bank is their lead distribution partner.",
+    projectRevenue: 400000,
+    projectDuration: 3,
+    problemStatement: {
+      main: null,
+      subProblemStatements: [
+        "Due to Demonetization event demand for online transaction has increased manifold, there was need to push for quicker release.",
+        "The customer wanted to build quick prototype to test in market with end users and investors.",
+      ],
+    },
+    solution: [
+      "Modular architecture helped to handle multi-tenant environment with sustainable, replicable process for new feature development.",
+      "V2STech SME for security interacted with relevant agencies and got this platform certified (e.g. Security testing expert, PCI-DSS agency etc.) well in time.",
+      "Expertise in Payment processing services helped clients with complex payment features such as merchant-based integration with multiple payment gateways providers, split/partial payments, refunds, reconciliation of funds, Point of Sale (POS) based payment collection etc.",
+      "As our extensive knowledge on application security and data security was built into the platform from the start, achieving PCI DSS compliance certification was easy, and application changes were reduced to minimal after audit. Saved 20% development effort for the client.",
+      "Re-engineered digitized template-driven process increased 20-25% efficiency for onboarding new Institutes.",
+    ],
+    ongoingValueBasedRelationship: [
+      "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
     ],
   },
   {
@@ -182,6 +226,27 @@ export const CASE_STUDIES_LIST = [
         ],
       },
     ],
+    aboutClient:
+      "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors. More than 5,000 merchants are presently on the Qfix platform including educational institutions, governments, and clubs. The company solves for billing and invoices issues and has created robust workflow management solutions for these merchants. HDFC Bank is their lead distribution partner.",
+    projectRevenue: 400000,
+    projectDuration: 3,
+    problemStatement: {
+      main: null,
+      subProblemStatements: [
+        "Due to Demonetization event demand for online transaction has increased manifold, there was need to push for quicker release.",
+        "The customer wanted to build quick prototype to test in market with end users and investors.",
+      ],
+    },
+    solution: [
+      "Modular architecture helped to handle multi-tenant environment with sustainable, replicable process for new feature development.",
+      "V2STech SME for security interacted with relevant agencies and got this platform certified (e.g. Security testing expert, PCI-DSS agency etc.) well in time.",
+      "Expertise in Payment processing services helped clients with complex payment features such as merchant-based integration with multiple payment gateways providers, split/partial payments, refunds, reconciliation of funds, Point of Sale (POS) based payment collection etc.",
+      "As our extensive knowledge on application security and data security was built into the platform from the start, achieving PCI DSS compliance certification was easy, and application changes were reduced to minimal after audit. Saved 20% development effort for the client.",
+      "Re-engineered digitized template-driven process increased 20-25% efficiency for onboarding new Institutes.",
+    ],
+    ongoingValueBasedRelationship: [
+      "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
+    ],
   },
   {
     id: 4,
@@ -236,6 +301,27 @@ export const CASE_STUDIES_LIST = [
           "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
         ],
       },
+    ],
+    aboutClient:
+      "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors. More than 5,000 merchants are presently on the Qfix platform including educational institutions, governments, and clubs. The company solves for billing and invoices issues and has created robust workflow management solutions for these merchants. HDFC Bank is their lead distribution partner.",
+    projectRevenue: 400000,
+    projectDuration: 3,
+    problemStatement: {
+      main: null,
+      subProblemStatements: [
+        "Due to Demonetization event demand for online transaction has increased manifold, there was need to push for quicker release.",
+        "The customer wanted to build quick prototype to test in market with end users and investors.",
+      ],
+    },
+    solution: [
+      "Modular architecture helped to handle multi-tenant environment with sustainable, replicable process for new feature development.",
+      "V2STech SME for security interacted with relevant agencies and got this platform certified (e.g. Security testing expert, PCI-DSS agency etc.) well in time.",
+      "Expertise in Payment processing services helped clients with complex payment features such as merchant-based integration with multiple payment gateways providers, split/partial payments, refunds, reconciliation of funds, Point of Sale (POS) based payment collection etc.",
+      "As our extensive knowledge on application security and data security was built into the platform from the start, achieving PCI DSS compliance certification was easy, and application changes were reduced to minimal after audit. Saved 20% development effort for the client.",
+      "Re-engineered digitized template-driven process increased 20-25% efficiency for onboarding new Institutes.",
+    ],
+    ongoingValueBasedRelationship: [
+      "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
     ],
   },
   {
@@ -293,6 +379,27 @@ export const CASE_STUDIES_LIST = [
         ],
       },
     ],
+    aboutClient:
+      "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors. More than 5,000 merchants are presently on the Qfix platform including educational institutions, governments, and clubs. The company solves for billing and invoices issues and has created robust workflow management solutions for these merchants. HDFC Bank is their lead distribution partner.",
+    projectRevenue: 400000,
+    projectDuration: 3,
+    problemStatement: {
+      main: null,
+      subProblemStatements: [
+        "Due to Demonetization event demand for online transaction has increased manifold, there was need to push for quicker release.",
+        "The customer wanted to build quick prototype to test in market with end users and investors.",
+      ],
+    },
+    solution: [
+      "Modular architecture helped to handle multi-tenant environment with sustainable, replicable process for new feature development.",
+      "V2STech SME for security interacted with relevant agencies and got this platform certified (e.g. Security testing expert, PCI-DSS agency etc.) well in time.",
+      "Expertise in Payment processing services helped clients with complex payment features such as merchant-based integration with multiple payment gateways providers, split/partial payments, refunds, reconciliation of funds, Point of Sale (POS) based payment collection etc.",
+      "As our extensive knowledge on application security and data security was built into the platform from the start, achieving PCI DSS compliance certification was easy, and application changes were reduced to minimal after audit. Saved 20% development effort for the client.",
+      "Re-engineered digitized template-driven process increased 20-25% efficiency for onboarding new Institutes.",
+    ],
+    ongoingValueBasedRelationship: [
+      "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
+    ],
   },
   {
     caseName: "FISSARA",
@@ -347,6 +454,27 @@ export const CASE_STUDIES_LIST = [
           "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
         ],
       },
+    ],
+    aboutClient:
+      "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors. More than 5,000 merchants are presently on the Qfix platform including educational institutions, governments, and clubs. The company solves for billing and invoices issues and has created robust workflow management solutions for these merchants. HDFC Bank is their lead distribution partner.",
+    projectRevenue: 400000,
+    projectDuration: 3,
+    problemStatement: {
+      main: null,
+      subProblemStatements: [
+        "Due to Demonetization event demand for online transaction has increased manifold, there was need to push for quicker release.",
+        "The customer wanted to build quick prototype to test in market with end users and investors.",
+      ],
+    },
+    solution: [
+      "Modular architecture helped to handle multi-tenant environment with sustainable, replicable process for new feature development.",
+      "V2STech SME for security interacted with relevant agencies and got this platform certified (e.g. Security testing expert, PCI-DSS agency etc.) well in time.",
+      "Expertise in Payment processing services helped clients with complex payment features such as merchant-based integration with multiple payment gateways providers, split/partial payments, refunds, reconciliation of funds, Point of Sale (POS) based payment collection etc.",
+      "As our extensive knowledge on application security and data security was built into the platform from the start, achieving PCI DSS compliance certification was easy, and application changes were reduced to minimal after audit. Saved 20% development effort for the client.",
+      "Re-engineered digitized template-driven process increased 20-25% efficiency for onboarding new Institutes.",
+    ],
+    ongoingValueBasedRelationship: [
+      "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
     ],
   },
 ];
