@@ -1,5 +1,7 @@
 import OurMissionIcon from "../../../assets/Our mission.png";
 
+export const V2S_TECH_YOUTUBE_VIDEO_EMBED_ID = "Uw7S7DoW-Ms";
+
 export const OUR_VALUES = [
   {
     icon: OurMissionIcon,

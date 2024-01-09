@@ -1,11 +1,15 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
-import { OUR_VALUES } from "../../config/constants";
+import {
+  OUR_VALUES,
+  V2S_TECH_YOUTUBE_VIDEO_EMBED_ID,
+} from "../../config/constants";
 import { DashedDivider } from "../../../../styles/style";
 import { messages } from "../../config/messages";
+import YoutubePlayer from "../../../../components/YoutubePlayer";
 
 const OurVision: React.FC = () => (
-  <Box>
+  <Box bgcolor={COLORS.WHITE}>
     <Box
       bgcolor={COLORS.LIGHT_BLUE}
       px={"6%"}
@@ -68,6 +72,23 @@ const OurVision: React.FC = () => (
           </Grid>
         ))}
       </Grid>
+    </Box>
+
+    <Box py={12} textAlign="center">
+      <Stack mb={8}>
+        <Typography fontSize={30} fontWeight={700} color={COLORS.DARK_BLUE}>
+          {messages.v2sTechSolutions}
+        </Typography>
+
+        <Typography fontSize={30} fontWeight={600} color={COLORS.DARK_BLUE}>
+          {messages.v2sTechDescription}
+        </Typography>
+      </Stack>
+
+      <YoutubePlayer
+        embedId={V2S_TECH_YOUTUBE_VIDEO_EMBED_ID}
+        containerProps={{ borderRadius: "20px", border: "none" }}
+      />
     </Box>
 
     <Box px={"6%"} py={4}>
