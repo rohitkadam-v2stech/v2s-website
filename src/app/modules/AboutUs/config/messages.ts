@@ -10,4 +10,7 @@ export const messages = {
   ourTeam: "Our Team",
   globalCollaboration: "Global Collaboration",
   globalCollaborationSubText: "spanning UK,US,and Africa",
+  blogs: "Blogs",
+  news: "News",
+  readMore: "Read More",
 };

@@ -83,7 +83,7 @@ const CaseStudiesListing: React.FC = () => {
               <Stack
                 direction="row"
                 spacing={0.5}
-                alignContent="center"
+                alignItems="center"
                 onClick={() => handleReadMore(item, index)}
               >
                 <Typography color={COLORS.DARK_BLUE} sx={{ cursor: "pointer" }}>
