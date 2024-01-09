@@ -6,7 +6,7 @@ import Slider from "../../../../components/Slider";
 
 const OurClients = () => {
   return (
-    <Box bgcolor={COLORS.WHITE}>
+    <Box bgcolor={COLORS.WHITE} pb={8}>
       <Stack spacing={10} justifyContent="center" alignItems="center" my={6}>
         <Typography
           px={12}
