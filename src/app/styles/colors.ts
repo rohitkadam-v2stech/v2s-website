@@ -6,6 +6,7 @@ const COLORS = {
   WHITE: "#FFF",
   LIGHT_GREY: "#cccccc",
   GREY_TEXT: "#6D6D6D",
+  SKY_BLUE: "#609bdc",
 };
 
 export default COLORS;
