@@ -1,5 +1,7 @@
 import OurMissionIcon from "../../../assets/Our mission.png";
 
+export const V2S_TECH_YOUTUBE_VIDEO_EMBED_ID = "Uw7S7DoW-Ms";
+
 export const OUR_VALUES = [
   {
     icon: OurMissionIcon,
@@ -84,5 +86,45 @@ export const OUR_TEAM = [
     avatar: "https://v2stech.com/wp-content/uploads/2023/10/Dayanand.png",
     name: "Dayanand Rahate",
     role: "Director",
+  },
+];
+
+export const BLOGS_LIST = [
+  {
+    image: "https://v2stech.com/wp-content/uploads/2022/10/mobile-product1.png",
+    title: "Strategies to make your product  stand out from competition",
+    description:
+      "Here are popular strategies and frameworks for prioritizing product features that can help your product to stand apart from competition.",
+  },
+  {
+    image:
+      "https://v2stech.com/wp-content/uploads/2023/11/4-steps-for-saas-product-dev.png",
+    title: "4 steps to build a SaaS product that gets funded",
+    description:
+      "Creating a SaaS product can get very complicated, very quickly. If any one of technical to business decisions isn’t right, your SaaS might not get funded. In this guide, we’re going to tell you how we’ve partnered with our clients to help them create a SaaS product that VCs want to fund and people will actually want to use.",
+  },
+];
+
+export const NEWS_LIST = [
+  {
+    image:
+      "https://v2stech.com/wp-content/uploads/2023/04/project-appreciation-1.png",
+    title: "Celebrating customer success",
+    description:
+      "We’re thrilled to celebrate client success with our team members.",
+  },
+  {
+    image:
+      "https://v2stech.com/wp-content/uploads/2023/08/sat-soft-skills-workshop-mahalakshmi.png",
+    title: "Coporate training in customer service and team building",
+    description:
+      "Here are popular strategies and frameworks for prioritizing product features that can help your product to stand apart from competition.",
+  },
+  {
+    image:
+      "https://v2stech.com/wp-content/uploads/2023/03/smespeak-thumb-nasscom.jpg",
+    title: "Insights from Vishal Samant in NASSCOM #SMELeadersSpeak ",
+    description:
+      "Insights from Vishal Samant, CEO at V2STech Solutions in NASSCOM #SMELeadersSpeak",
   },
 ];
