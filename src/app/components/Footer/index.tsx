@@ -4,11 +4,12 @@ import { messages } from "./messages";
 
 const Footer = () => (
   <Stack
-    bgcolor="navy"
+    bgcolor="#10182f"
     color="white"
-    justifyContent="space-around"
-    py={1}
-    px={{ xs: 1 }}
+    justifyContent="space-between"
+    alignItems="center"
+    py={3.5}
+    px={{ xs: 1, sm: 2, md: "6%", lg: "6%", xl: "6%" }}
     direction={{ xs: "column", sm: "row" }}
     spacing={{ xs: 1, sm: 2, md: 4 }}
   >

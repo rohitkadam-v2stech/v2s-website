@@ -48,12 +48,7 @@ const OurTeam: React.FC = () => (
       </Grid>
     </Box>
 
-    <img
-      style={{ padding: 8 }}
-      src={OurCultureImg}
-      alt="our-culture"
-      width="100%"
-    />
+    <img src={OurCultureImg} alt="our-culture" width="100%" />
   </>
 );
 
