@@ -1,6 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
+import { CLIENT_LOGOS } from "./constants";
+import Slider from "../../../../components/Slider";
 
 const OurClients = () => {
   return (
@@ -15,6 +17,21 @@ const OurClients = () => {
           {messages.ourClients}
         </Typography>
       </Stack>
+      <Box ml={2} bgcolor={COLORS.WHITE}>
+        <Slider>
+          {CLIENT_LOGOS.map((imagePath, id) => (
+            <Box
+              key={id}
+              justifyContent="center"
+              alignItems="center"
+              mx={6}
+              textAlign="center"
+            >
+              <img alt="" src={imagePath} />
+            </Box>
+          ))}
+        </Slider>
+      </Box>
     </Box>
   );
 };
