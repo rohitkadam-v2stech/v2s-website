@@ -6,7 +6,7 @@ import { BLOGS_LIST } from "../../config/constants";
 import OverviewCard from "../../../../components/OverviewCard";
 
 const Blogs: React.FC = () => (
-  <Box bgcolor={COLORS.LIGHT_BLUE}>
+  <Box bgcolor={COLORS.LIGHT_BLUE} mt={-2}>
     <Box px="6%" py={16}>
       <Typography
         fontSize={30}
