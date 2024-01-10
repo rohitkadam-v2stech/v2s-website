@@ -1,25 +1,30 @@
 import { Box, Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
+import saasDevelopment from "../../../../assets/ourOffering/saas.png";
+import productIdeation from "../../../../assets/ourOffering/new-product.png";
+import uiuxDesign from "../../../../assets/ourOffering/ux-design.png";
+import mvp from "../../../../assets/ourOffering/mvp.png";
+import scalingMaintenance from "../../../../assets/ourOffering/cube.png";
 import { OUR_OFFERINGS } from "./constants";
 
 const OurOfferings = () => {
-  const OFFERINGS_LIST: Array<{ icon: JSX.Element; title: string }> = [
-    { icon: <Typography>Icon</Typography>, title: "SaaS Development" },
+  const OFFERINGS_LIST: Array<{ icon: string; title: string }> = [
+    { icon: saasDevelopment, title: "SaaS Development" },
     {
-      icon: <Typography>Icon</Typography>,
+      icon: productIdeation,
       title: "Product Ideation & Consultation",
     },
     {
-      icon: <Typography>Icon</Typography>,
+      icon: uiuxDesign,
       title: "UI/UIX Design",
     },
     {
-      icon: <Typography>Icon</Typography>,
+      icon: mvp,
       title: "MVP Development",
     },
     {
-      icon: <Typography>Icon</Typography>,
+      icon: scalingMaintenance,
       title: "Scaling & Maintenance",
     },
   ];
@@ -34,14 +39,14 @@ const OurOfferings = () => {
       >
         {OUR_OFFERINGS}
       </Typography>
-      <Stack direction="row" justifyContent="space-around" mt={14}>
+      <Stack direction="row" justifyContent="space-around" mt={14} spacing={2}>
         {OFFERINGS_LIST.map(({ icon, title }) => (
-          <Stack key={title} alignItems="center" width={160} spacing={4}>
-            {icon}
+          <Stack key={title} alignItems="center" width={180} spacing={4}>
+            <img alt="" src={icon} height="50px" />
             <Typography
               textAlign="center"
-              fontWeight="bold"
-              fontSize={18}
+              fontWeight="600"
+              fontSize={22}
               color={COLORS.DARK_BLUE}
             >
               {title}

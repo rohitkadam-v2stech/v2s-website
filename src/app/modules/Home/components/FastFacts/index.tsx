@@ -61,8 +61,8 @@ const FastFacts = () => {
             <Paper
               elevation={0}
               sx={{
-                backgroundColor: COLORS.DARK_BLUE,
-                color: COLORS.WHITE,
+                backgroundColor: COLORS.WHITE,
+                color: COLORS.DARK_BLUE,
                 paddingBlock: 2,
                 paddingInline: 2,
                 height: 86,
