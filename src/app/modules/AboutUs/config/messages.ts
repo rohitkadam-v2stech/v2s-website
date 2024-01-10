@@ -1,7 +1,7 @@
 export const messages = {
   v2sTechSolutions: "V2S Tech Solutions",
-  aboutUs: "ABOUT US",
-  whoWeAre: "WHO WE ARE",
+  aboutUs: "About Us",
+  whoWeAre: "Who we are",
   aboutUsDescription:
     "Established in 2013, V2STech Solutions is an established & trusted IT services company based in India.",
   aboutUsSubDescription:

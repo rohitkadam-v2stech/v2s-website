@@ -1,31 +1,30 @@
 import OurMissionIcon from "../../../assets/Our mission.png";
+import OurVisionIcon from "../../../assets/aboutUsLogos/OurVision.png";
+import CoreValuesIcon from "../../../assets/aboutUsLogos/CoreValues.png";
+import SushantImg from "../../../assets/aboutUsLogos/Sushant.png";
+import VishalImg from "../../../assets/aboutUsLogos/Vishal.png";
+import VikasImg from "../../../assets/aboutUsLogos/Vikas.png";
+import DayanandImg from "../../../assets/aboutUsLogos/Dayanand.png";
+import BlogsProduct1 from "../../../assets/aboutUsLogos/MobileProduct1.png";
+import BlogsProduct2 from "../../../assets/aboutUsLogos/SaasProductSteps.png";
+import NewsImg1 from "../../../assets/aboutUsLogos/project-appreciation-1.png";
+import NewsImg2 from "../../../assets/aboutUsLogos/sat-soft-skills-workshop-mahalakshmi.png";
+import NewsImg3 from "../../../assets/aboutUsLogos/smespeak-thumb-nasscom.jpg";
 
 export const V2S_TECH_YOUTUBE_VIDEO_EMBED_ID = "Uw7S7DoW-Ms";
 
 export const OUR_VALUES = [
   {
-    icon: OurMissionIcon,
-    title: "Our mission",
-    description:
-      "We look forward to working hand-in-hand with our esteemed clientele to digitize business ideas and achieve high ROI with our SaaS expertise",
-    subDescription: [],
-  },
-  {
-    icon: "https://v2stech.com/wp-content/uploads/2023/11/Vision_100.png",
+    icon: OurVisionIcon,
     title: "Our vision",
     description: "To become a world-class SaaS provider",
     subDescription: [],
   },
   {
-    icon: "https://v2stech.com/wp-content/uploads/2023/11/Core_Values_100.png",
+    icon: CoreValuesIcon,
     title: "Core values",
     description: null,
-    subDescription: [
-      "Putting clients first",
-      "Driven by values",
-      "Achieving results",
-      "Fostering Innovation",
-    ],
+    subDescription: ["Committed", "Passionate", "Responsible"],
   },
 ];
 
@@ -68,22 +67,22 @@ export const HIGHLIGHTS = [
 
 export const OUR_TEAM = [
   {
-    avatar: "https://v2stech.com/wp-content/uploads/2023/10/Sushant.png",
+    avatar: SushantImg,
     name: "Sushant Sawant",
     role: "Director",
   },
   {
-    avatar: "https://v2stech.com/wp-content/uploads/2023/10/Vishal.png",
+    avatar: VishalImg,
     name: "Vishal Samant",
     role: "Director",
   },
   {
-    avatar: "https://v2stech.com/wp-content/uploads/2023/10/Vikas.png",
+    avatar: VikasImg,
     name: "Vikas Kale",
     role: "Director",
   },
   {
-    avatar: "https://v2stech.com/wp-content/uploads/2023/10/Dayanand.png",
+    avatar: DayanandImg,
     name: "Dayanand Rahate",
     role: "Director",
   },
@@ -91,14 +90,13 @@ export const OUR_TEAM = [
 
 export const BLOGS_LIST = [
   {
-    image: "https://v2stech.com/wp-content/uploads/2022/10/mobile-product1.png",
+    image: BlogsProduct1,
     title: "Strategies to make your product  stand out from competition",
     description:
       "Here are popular strategies and frameworks for prioritizing product features that can help your product to stand apart from competition.",
   },
   {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/11/4-steps-for-saas-product-dev.png",
+    image: BlogsProduct2,
     title: "4 steps to build a SaaS product that gets funded",
     description:
       "Creating a SaaS product can get very complicated, very quickly. If any one of technical to business decisions isn’t right, your SaaS might not get funded. In this guide, we’re going to tell you how we’ve partnered with our clients to help them create a SaaS product that VCs want to fund and people will actually want to use.",
@@ -107,22 +105,19 @@ export const BLOGS_LIST = [
 
 export const NEWS_LIST = [
   {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/04/project-appreciation-1.png",
+    image: NewsImg1,
     title: "Celebrating customer success",
     description:
       "We’re thrilled to celebrate client success with our team members.",
   },
   {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/08/sat-soft-skills-workshop-mahalakshmi.png",
+    image: NewsImg2,
     title: "Coporate training in customer service and team building",
     description:
       "Here are popular strategies and frameworks for prioritizing product features that can help your product to stand apart from competition.",
   },
   {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/03/smespeak-thumb-nasscom.jpg",
+    image: NewsImg3,
     title: "Insights from Vishal Samant in NASSCOM #SMELeadersSpeak ",
     description:
       "Insights from Vishal Samant, CEO at V2STech Solutions in NASSCOM #SMELeadersSpeak",

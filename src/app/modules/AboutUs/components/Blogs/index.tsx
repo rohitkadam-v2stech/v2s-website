@@ -18,7 +18,7 @@ const Blogs: React.FC = () => (
         {messages.blogs}
       </Typography>
 
-      <Grid container spacing={4}>
+      <Grid container spacing={16}>
         {BLOGS_LIST.map((blog, index) => (
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6} key={index}>
             <OverviewCard

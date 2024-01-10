@@ -17,7 +17,7 @@ const News: React.FC = () => (
       {messages.news}
     </Typography>
 
-    <Grid container spacing={4}>
+    <Grid container spacing={8}>
       {NEWS_LIST.map((news, index) => (
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4} key={index}>
           <OverviewCard
