@@ -1,4 +1,3 @@
-import OurMissionIcon from "../../../assets/Our mission.png";
 import OurVisionIcon from "../../../assets/aboutUsLogos/OurVision.png";
 import CoreValuesIcon from "../../../assets/aboutUsLogos/CoreValues.png";
 import SushantImg from "../../../assets/aboutUsLogos/Sushant.png";
@@ -56,7 +55,7 @@ export const HIGHLIGHTS = [
     value: "75+",
   },
   {
-    label: "Talented Team of Software Engineers",
+    label: "Man-months’ Efforts Delivered",
     value: "4000",
   },
   {
