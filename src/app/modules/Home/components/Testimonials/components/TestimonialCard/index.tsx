@@ -1,5 +1,4 @@
 import { Paper, Stack, Typography } from "@mui/material";
-import React from "react";
 import COLORS from "../../../../../../styles/colors";
 
 type TTestimonialCardProps = {
