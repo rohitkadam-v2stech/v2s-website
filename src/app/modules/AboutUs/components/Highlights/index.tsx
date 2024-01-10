@@ -28,7 +28,7 @@ const Highlights: React.FC = () => (
             {highlight.value}
           </Typography>
 
-          <Typography fontSize={14} fontWeight={400}>
+          <Typography fontSize={16} fontWeight={400}>
             {highlight.label}
           </Typography>
         </Grid>

@@ -1,4 +1,3 @@
-import { startTransition } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { IconButton, Stack } from "@mui/material";
@@ -7,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { StyledNavBarText } from "../style";
 import COLORS from "../../../styles/colors";
 import { NAVBAR_ROUTES } from "../config/constant";
+import { removeAsterisk } from "../../../utils/helpers";
 
 type TMobileViewDrawerProps = {
   toggleMobileDrawer: () => void;
@@ -19,6 +19,11 @@ const MobileViewDrawer: React.FC<TMobileViewDrawerProps> = ({
 
   const location = useLocation();
   const currentPath = location.pathname;
+
+  const handleNavigate = (path: string) => {
+    navigate(removeAsterisk(path));
+    toggleMobileDrawer();
+  };
 
   return (
     <Stack>
@@ -42,12 +47,7 @@ const MobileViewDrawer: React.FC<TMobileViewDrawerProps> = ({
             color={
               currentPath === route.path ? COLORS.PRIMARY_BLUE : COLORS.BLACK
             }
-            onClick={() => {
-              startTransition(() => {
-                navigate(route.path);
-              });
-              toggleMobileDrawer();
-            }}
+            onClick={() => handleNavigate(route.path)}
           >
             {route.label}
           </StyledNavBarText>

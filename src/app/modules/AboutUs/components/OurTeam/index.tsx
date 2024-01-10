@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { OUR_TEAM } from "../../config/constants";
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
+import OurCultureImg from "../../../../assets/aboutUsLogos/Culture.jpg";
 
 const OurTeam: React.FC = () => (
   <>
@@ -47,12 +48,7 @@ const OurTeam: React.FC = () => (
       </Grid>
     </Box>
 
-    <img
-      style={{ padding: 8 }}
-      src="https://v2stech.com/wp-content/uploads/2023/11/Culture.jpg"
-      alt="our-team"
-      width="100%"
-    />
+    <img src={OurCultureImg} alt="our-culture" width="100%" />
   </>
 );
 
