@@ -8,6 +8,7 @@ type TOverviewCardProps = {
   title: string;
   description: string;
   onReadMoreClick: React.MouseEventHandler<HTMLDivElement> | undefined;
+  imageHeight?: string | number;
 };
 
 const OverviewCard: React.FC<TOverviewCardProps> = ({
@@ -15,11 +16,12 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
   title,
   description,
   onReadMoreClick,
+  imageHeight = "100%",
 }) => (
   <>
     <Stack height="100%" justifyContent="space-between">
       <Stack>
-        <img src={image} alt="blogs" width="100%" />
+        <img src={image} alt="blogs" width="100%" height={imageHeight} />
 
         <Typography
           mt={4}

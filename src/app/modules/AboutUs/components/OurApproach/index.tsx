@@ -5,7 +5,45 @@ import { messages } from "../../config/messages";
 
 const OurApproach: React.FC = () => (
   <Box px="6%" py={8}>
-    <Box
+    <Typography fontSize={30} fontWeight={700} color={COLORS.DARK_BLUE}>
+      {messages.ourApproach}
+    </Typography>
+
+    <Grid container>
+      {OUR_APPROACH.map((values, index) => (
+        <Grid
+          key={index}
+          item
+          xs={12}
+          sm={12}
+          md={4}
+          lg={4}
+          xl={4}
+          sx={{ my: 4 }}
+        >
+          <Typography
+            fontSize={20}
+            fontWeight={700}
+            color={COLORS.DARK_BLUE}
+            mb={4}
+          >
+            {values.title}
+          </Typography>
+
+          {values?.description && (
+            <Typography
+              fontSize={16}
+              fontWeight={400}
+              mr={index < OUR_APPROACH.length - 1 ? 8 : 0}
+            >
+              {values.description}
+            </Typography>
+          )}
+        </Grid>
+      ))}
+    </Grid>
+
+    {/* <Box
       position="relative"
       border={`2px solid ${COLORS.DARK_BLUE}`}
       borderRadius="20px"
@@ -60,7 +98,7 @@ const OurApproach: React.FC = () => (
           </Grid>
         ))}
       </Grid>
-    </Box>
+    </Box> */}
   </Box>
 );
 
