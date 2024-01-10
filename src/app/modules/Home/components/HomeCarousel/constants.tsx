@@ -1,12 +1,13 @@
 import { messages } from "./config/messages";
 import { StyledCarouselBtn } from "./style";
-import BannerImageOne from "../../../../assets/News_02.png";
-import BannerImageTwo from "../../../../assets/News_03.png";
+import imageOne from "../../../../assets/homeCarousel/homeOne.png";
+import imageTwo from "../../../../assets/homeCarousel/homeTwo.png";
+import imageThree from "../../../../assets/homeCarousel/homeThree.png";
 import { TCarouselData } from "./config/types";
 
 export const HOME_CAROUSEL_CARD_LIST: Array<TCarouselData> = [
   {
-    imgPath: BannerImageOne,
+    imgPath: imageOne,
     title: messages.saasProductDevCompanyTitle,
     subtitle: messages.saasProductDevCompanySubtitle,
     carouselBtn: (
@@ -16,7 +17,7 @@ export const HOME_CAROUSEL_CARD_LIST: Array<TCarouselData> = [
     ),
   },
   {
-    imgPath: BannerImageTwo,
+    imgPath: imageTwo,
     title: messages.saasProductDevCompanyTitle,
     subtitle: messages.saasProductDevCompanySubtitle,
     carouselBtn: (
@@ -26,7 +27,7 @@ export const HOME_CAROUSEL_CARD_LIST: Array<TCarouselData> = [
     ),
   },
   {
-    imgPath: BannerImageOne,
+    imgPath: imageThree,
     title: messages.endToEndProductDevTitle,
     subtitle: messages.endToEndProductDevSubtitle,
     carouselBtn: (

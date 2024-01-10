@@ -1,31 +1,34 @@
 import { Box, Grid, Paper, Stack, Typography, alpha } from "@mui/material";
 import COLORS from "../../../../styles/colors";
-import advisingOnTech from "../../../../assets/Advising on Technology.png";
 import { messages } from "./config/messages";
+import advisingOnTechImg from "../../../../assets/ourSpeciality/Advising on Technology.png";
+import powerIdeasImg from "../../../../assets/ourSpeciality/Powering ideas through UIUX.png";
+import recoverStalledProductsImg from "../../../../assets/ourSpeciality/Recovering Stalled Products.png";
+import scaleUpImg from "../../../../assets/ourSpeciality/Scaleup ready Apps.png";
 
 const OurSpeciality = () => {
   const OUR_SPECIALTY: Array<{
-    icon: JSX.Element;
+    icon: string;
     title: string;
     subtitle: string;
   }> = [
     {
-      icon: <></>,
+      icon: powerIdeasImg,
       title: "Powering ideas through UI/UX",
       subtitle: "Benefit: Attract investor",
     },
     {
-      icon: <></>,
+      icon: recoverStalledProductsImg,
       title: "Recovering Stalled Products",
       subtitle: "Benefit: Get back on Track",
     },
     {
-      icon: <></>,
+      icon: scaleUpImg,
       title: "Scaleup ready Apps",
       subtitle: "Benefit: Seemless Growth",
     },
     {
-      icon: <></>,
+      icon: advisingOnTechImg,
       title: "Advising on Technology",
       subtitle: "Benefit: Virtual CTO",
     },
@@ -50,7 +53,7 @@ const OurSpeciality = () => {
         mx={44}
         sx={{ borderRadius: 4 }}
       >
-        {OUR_SPECIALTY.map((item, id) => (
+        {OUR_SPECIALTY.map(({ icon, subtitle, title }, id) => (
           <Paper
             key={id}
             sx={{
@@ -85,14 +88,14 @@ const OurSpeciality = () => {
                     }}
                     bgcolor={COLORS.WHITE}
                   >
-                    <img src={advisingOnTech} height={53} width={53} alt="" />
+                    <img src={icon} height={53} width={53} alt="" />
                   </Box>
                   <Typography
                     fontSize="21px"
                     fontWeight="600"
                     lineHeight="49px"
                   >
-                    {item.title}
+                    {title}
                   </Typography>
                 </Stack>
               </Grid>
@@ -105,7 +108,7 @@ const OurSpeciality = () => {
                 p={4}
               >
                 <Typography fontSize="21px" fontWeight="600" lineHeight="49px">
-                  {item.subtitle}
+                  {subtitle}
                 </Typography>
               </Grid>
             </Grid>

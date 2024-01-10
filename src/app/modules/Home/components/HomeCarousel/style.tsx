@@ -29,11 +29,12 @@ export const StyledContainer = styled(Box)<{ imgPath: string }>(
   ({ imgPath }) => ({
     backgroundImage: `url(${imgPath})`,
     backgroundSize: "cover",
-    height: "90vh",
+    height: "100vh",
     width: "100%",
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
+    paddingBottom: 40,
   })
 );
 
