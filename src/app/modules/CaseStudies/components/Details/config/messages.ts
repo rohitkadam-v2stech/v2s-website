@@ -1,8 +1,8 @@
 export const messages = {
-  caseStudy: "CASE STUDY",
+  caseStudy: "Case Study",
   valueProposition: "Value Proposition",
-  aboutClient: "AboutClient",
+  aboutClient: "About Client",
   problemStatement: "Problem Statement",
   solution: "Solution",
-  ongoingValueBasedRelationship: "Ongoing value based Relationship",
+  ongoingValueBasedRelationship: "Ongoing Value based-Relationship",
 };

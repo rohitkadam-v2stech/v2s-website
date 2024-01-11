@@ -12,7 +12,7 @@ const ProblemStatement: React.FC<TProblemStatementProps> = ({ data }) => {
   const { problemStatement, solution, ongoingValueBasedRelationship } = data;
   return (
     <>
-      <Box py={3} px={{ xs: 1, sm: 2, md: "10%", lg: "10%", xl: "10%" }}>
+      <Box py={3} px={{ xs: 4, sm: 4, md: "10%", lg: "10%", xl: "10%" }}>
         <Typography
           mb={1}
           fontSize={20}
@@ -43,7 +43,7 @@ const ProblemStatement: React.FC<TProblemStatementProps> = ({ data }) => {
 
       <Box
         py={3}
-        px={{ xs: 1, sm: 2, md: "10%", lg: "10%", xl: "10%" }}
+        px={{ xs: 4, sm: 4, md: "10%", lg: "10%", xl: "10%" }}
         bgcolor={COLORS.BACKGROUND_GREY}
       >
         <Typography
@@ -64,7 +64,7 @@ const ProblemStatement: React.FC<TProblemStatementProps> = ({ data }) => {
         </StyledRegularText>
       </Box>
 
-      <Box py={3} px={{ xs: 1, sm: 2, md: "10%", lg: "10%", xl: "10%" }}>
+      <Box py={3} px={{ xs: 4, sm: 4, md: "10%", lg: "10%", xl: "10%" }}>
         <Typography
           mb={1}
           fontSize={20}

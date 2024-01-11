@@ -9,7 +9,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontSize: 12,
+    fontSize: 14,
     fontFamily: `"Open Sans", sans-serif`,
   },
   spacing: 5,
