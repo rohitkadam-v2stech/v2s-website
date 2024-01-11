@@ -1,38 +1,12 @@
 import { Box, Grid, Paper, Stack, Typography, alpha } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
-import advisingOnTechImg from "../../../../assets/ourSpeciality/Advising on Technology.png";
-import powerIdeasImg from "../../../../assets/ourSpeciality/Powering ideas through UIUX.png";
-import recoverStalledProductsImg from "../../../../assets/ourSpeciality/Recovering Stalled Products.png";
-import scaleUpImg from "../../../../assets/ourSpeciality/Scaleup ready Apps.png";
+import { OUR_SPECIALTY } from "./constants";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
+import PhoneView from "./components/PhoneView";
 
 const OurSpeciality = () => {
-  const OUR_SPECIALTY: Array<{
-    icon: string;
-    title: string;
-    subtitle: string;
-  }> = [
-    {
-      icon: powerIdeasImg,
-      title: "Powering ideas through UI/UX",
-      subtitle: "Benefit: Attract investor",
-    },
-    {
-      icon: recoverStalledProductsImg,
-      title: "Recovering Stalled Products",
-      subtitle: "Benefit: Get back on Track",
-    },
-    {
-      icon: scaleUpImg,
-      title: "Scaleup ready Apps",
-      subtitle: "Benefit: Seemless Growth",
-    },
-    {
-      icon: advisingOnTechImg,
-      title: "Advising on Technology",
-      subtitle: "Benefit: Virtual CTO",
-    },
-  ];
+  const { isOnMobile } = useDeviceSize();
 
   return (
     <Box bgcolor="white" mt={2} pb={10}>
@@ -53,69 +27,86 @@ const OurSpeciality = () => {
         mx={44}
         sx={{ borderRadius: 4 }}
       >
-        {OUR_SPECIALTY.map(({ icon, subtitle, title }, id) => (
-          <Paper
-            key={id}
-            sx={{
-              borderRadius: 20.5,
-              width: "100%",
-              bgcolor: alpha(COLORS.LIGHT_BLUE, 0.4),
-              color: COLORS.DARK_BLUE,
-            }}
-            elevation={5}
-          >
-            <Grid container>
-              <Grid
-                item
-                md={7}
-                sm={11}
-                alignItems="center"
-                justifyContent="left"
-                container
-                bgcolor={COLORS.LIGHT_BLUE}
-                borderRadius={20.5}
-              >
-                <Stack
-                  direction="row"
-                  spacing={4}
-                  justifyContent="center"
+        {OUR_SPECIALTY.map(({ icon, subtitle, title }, id) => {
+          if (isOnMobile) {
+            return (
+              <PhoneView
+                key={id}
+                icon={icon}
+                subtitle={subtitle}
+                title={title}
+              />
+            );
+          }
+
+          return (
+            <Paper
+              key={id}
+              sx={{
+                borderRadius: 20.5,
+                width: "100%",
+                bgcolor: alpha(COLORS.LIGHT_BLUE, 0.4),
+                color: COLORS.DARK_BLUE,
+              }}
+              elevation={5}
+            >
+              <Grid container>
+                <Grid
+                  item
+                  md={7}
+                  sm={11}
                   alignItems="center"
+                  justifyContent="left"
+                  container
+                  bgcolor={COLORS.LIGHT_BLUE}
+                  borderRadius={20.5}
                 >
-                  <Box
-                    sx={{
-                      borderRadius: 20.5,
-                      py: 3.5,
-                      px: 4,
-                    }}
-                    bgcolor={COLORS.WHITE}
+                  <Stack
+                    direction="row"
+                    spacing={4}
+                    justifyContent="center"
+                    alignItems="center"
                   >
-                    <img src={icon} height={53} width={53} alt={title} />
-                  </Box>
+                    <Box
+                      sx={{
+                        borderRadius: 20.5,
+                        py: 3.5,
+                        px: 4,
+                      }}
+                      bgcolor={COLORS.WHITE}
+                    >
+                      <img src={icon} height={53} width={53} alt={title} />
+                    </Box>
+                    <Typography
+                      fontSize="21px"
+                      fontWeight="600"
+                      lineHeight="49px"
+                    >
+                      {title}
+                    </Typography>
+                  </Stack>
+                </Grid>
+                <Grid
+                  item
+                  md={5}
+                  sm={11}
+                  alignItems="center"
+                  justifyContent="left"
+                  container
+                  p={4}
+                >
                   <Typography
                     fontSize="21px"
                     fontWeight="600"
                     lineHeight="49px"
                   >
-                    {title}
+                    {subtitle}
                   </Typography>
-                </Stack>
+                </Grid>
               </Grid>
-              <Grid
-                item
-                md={5}
-                sm={11}
-                alignItems="center"
-                justifyContent="left"
-                container
-                p={4}
-              >
-                <Typography fontSize="21px" fontWeight="600" lineHeight="49px">
-                  {subtitle}
-                </Typography>
-              </Grid>
-            </Grid>
-          </Paper>
-        ))}
+            </Paper>
+          );
+        })}
       </Stack>
     </Box>
   );

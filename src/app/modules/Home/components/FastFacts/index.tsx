@@ -53,7 +53,7 @@ const FastFacts = () => {
         mt={2}
         direction="row"
         gap={6}
-        p={6}
+        paddingBlock={6}
         justifyContent="center"
       >
         {FAST_FACTS_LIST.map(({ title, value }) => (
