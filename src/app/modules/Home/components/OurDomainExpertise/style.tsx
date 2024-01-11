@@ -1,14 +1,21 @@
 import { Box, Paper, Stack, Typography, styled } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 
-export const StyledCard = styled(Paper)({
+export const StyledCard = styled(Paper)(({ theme }) => ({
   borderTopRightRadius: 40,
   borderBottomRightRadius: 40,
   paddingTop: "50px",
   paddingLeft: "16px",
-  width: 400,
-  height: 450,
-});
+  paddingBottom: "16px",
+  [theme.breakpoints.up("sm")]: {
+    width: 400,
+    height: 650,
+  },
+  [theme.breakpoints.up("md")]: {
+    width: 230,
+    height: 450,
+  },
+}));
 
 export const StyledCardNumberContainer = styled(Box)({
   borderTopLeftRadius: "15px",
@@ -30,7 +37,7 @@ export const StyledCardTitle = styled(Typography)({
   fontWeight: "700",
   lineHeight: "23px",
   height: 50,
-  marginTop: 6,
+  marginTop: 16,
   color: COLORS.DARK_BLUE,
 });
 
@@ -41,10 +48,16 @@ export const StyledCardContainer = styled(Stack)({
   marginTop: 4,
 });
 
-export const StyledCardDescription = styled(Typography)({
+export const StyledCardDescription = styled(Typography)(({ theme }) => ({
   fontSize: "17px",
   fontWeight: "600",
   lineHeight: "24px",
   paddingRight: 6,
   color: COLORS.DARK_BLUE,
-});
+  [theme.breakpoints.up("sm")]: {
+    marginBottom: 100,
+  },
+  [theme.breakpoints.up("md")]: {
+    marginBottom: 100,
+  },
+}));

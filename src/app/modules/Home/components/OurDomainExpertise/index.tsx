@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
@@ -11,10 +11,13 @@ import {
   StyledCardTitle,
 } from "./style";
 import { OUR_DOMAIN_EXPERTISE } from "./constants";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const OurDomainExpertise = () => {
+  const { isOnMobile, isOnDesktop } = useDeviceSize();
+
   return (
-    <Box mb={12.5}>
+    <Box mb={12.5} px={{ xs: 2, md: 6 }}>
       <Typography
         textAlign="center"
         color={COLORS.DARK_BLUE}
@@ -24,26 +27,28 @@ const OurDomainExpertise = () => {
       >
         {messages.ourDomainExpertise}
       </Typography>
-      <Stack direction="row" justifyContent="space-between" spacing={4} mx={20}>
+      <Grid container direction="row" justifyContent="center" gap={6}>
         {OUR_DOMAIN_EXPERTISE.map(({ id, title, description, icon }) => (
-          <StyledCard key={id} elevation={4}>
-            <StyledCardNumberContainer bgcolor={COLORS.PRIMARY_BLUE}>
-              <StyledCardNumberText>{id}</StyledCardNumberText>
-            </StyledCardNumberContainer>
-            <StyledCardTitle>{title}</StyledCardTitle>
-            <StyledCardContainer spacing={2} direction="column">
-              <StyledCardDescription>{description}</StyledCardDescription>
-              <img
-                alt="card_icon"
-                src={icon}
-                width={60}
-                height={50}
-                style={{ margin: "0px auto", paddingRight: "8px" }}
-              />
-            </StyledCardContainer>
-          </StyledCard>
+          <Grid key={id} item sm={6} md={2}>
+            <StyledCard elevation={4}>
+              <StyledCardNumberContainer bgcolor={COLORS.PRIMARY_BLUE}>
+                <StyledCardNumberText>{id}</StyledCardNumberText>
+              </StyledCardNumberContainer>
+              <StyledCardTitle>{title}</StyledCardTitle>
+              <StyledCardContainer spacing={6} direction="column">
+                <StyledCardDescription>{description}</StyledCardDescription>
+                <img
+                  alt="card_icon"
+                  src={icon}
+                  width={isOnMobile ? 80 : 70}
+                  height={isOnMobile ? 70 : 60}
+                  style={{ margin: "0px auto", paddingRight: "8px" }}
+                />
+              </StyledCardContainer>
+            </StyledCard>
+          </Grid>
         ))}
-      </Stack>
+      </Grid>
     </Box>
   );
 };

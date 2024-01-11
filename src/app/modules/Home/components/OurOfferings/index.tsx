@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import saasDevelopment from "../../../../assets/ourOffering/saas.png";
@@ -30,7 +30,7 @@ const OurOfferings = () => {
   ];
 
   return (
-    <Box bgcolor={COLORS.WHITE} p={12}>
+    <Box bgcolor={COLORS.WHITE} px={4} py={12}>
       <Typography
         variant="h4"
         textAlign="center"
@@ -39,21 +39,39 @@ const OurOfferings = () => {
       >
         {OUR_OFFERINGS}
       </Typography>
-      <Stack direction="row" justifyContent="space-around" mt={14} spacing={2}>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-around"
+        mt={10}
+        rowGap={4}
+        columnGap={2}
+      >
         {OFFERINGS_LIST.map(({ icon, title }) => (
-          <Stack key={title} alignItems="center" width={180} spacing={4}>
-            <img alt="" src={icon} height="50px" />
-            <Typography
-              textAlign="center"
-              fontWeight="600"
-              fontSize={22}
-              color={COLORS.DARK_BLUE}
-            >
-              {title}
-            </Typography>
-          </Stack>
+          <Grid
+            item
+            key={title}
+            alignItems="center"
+            textAlign="center"
+            width={180}
+            spacing={4}
+          >
+            <Stack justifyContent="space-between" spacing={2}>
+              <Box>
+                <img alt={title} src={icon} height="60px" />
+              </Box>
+              <Typography
+                textAlign="center"
+                fontWeight="600"
+                fontSize={22}
+                color={COLORS.DARK_BLUE}
+              >
+                {title}
+              </Typography>
+            </Stack>
+          </Grid>
         ))}
-      </Stack>
+      </Grid>
     </Box>
   );
 };

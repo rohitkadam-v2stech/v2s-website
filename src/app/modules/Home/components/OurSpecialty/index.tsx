@@ -67,7 +67,8 @@ const OurSpeciality = () => {
             <Grid container>
               <Grid
                 item
-                xs={7}
+                md={7}
+                sm={11}
                 alignItems="center"
                 justifyContent="left"
                 container
@@ -88,7 +89,7 @@ const OurSpeciality = () => {
                     }}
                     bgcolor={COLORS.WHITE}
                   >
-                    <img src={icon} height={53} width={53} alt="" />
+                    <img src={icon} height={53} width={53} alt={title} />
                   </Box>
                   <Typography
                     fontSize="21px"
@@ -101,7 +102,8 @@ const OurSpeciality = () => {
               </Grid>
               <Grid
                 item
-                xs={5}
+                md={5}
+                sm={11}
                 alignItems="center"
                 justifyContent="left"
                 container

@@ -57,7 +57,7 @@ const FastFacts = () => {
         justifyContent="center"
       >
         {FAST_FACTS_LIST.map(({ title, value }) => (
-          <Grid key={title} xs={2.5}>
+          <Grid key={title} xs={5} md={2.5}>
             <Paper
               elevation={0}
               sx={{
