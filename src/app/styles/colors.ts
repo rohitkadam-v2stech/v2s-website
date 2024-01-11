@@ -8,6 +8,8 @@ const COLORS = {
   GREY_TEXT: "#6D6D6D",
   BACKGROUND_GREY: "#f4f4f4",
   SKY_BLUE: "#609bdc",
+  OCEAN_BLUE: "#2a90c7",
+  NAVY_BLUE: "#34314b",
 };
 
 export default COLORS;

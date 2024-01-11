@@ -14,4 +14,5 @@ export const messages = {
   blogs: "Blogs",
   news: "News",
   readMore: "Read More",
+  ourGrowthStory: "Our Growth Story",
 };
