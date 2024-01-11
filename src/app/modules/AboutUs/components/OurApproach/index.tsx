@@ -12,7 +12,7 @@ import {
 
 const OurApproach: React.FC = () => {
   return (
-    <Box p="6%" bgcolor={COLORS.WHITE}>
+    <Box px="6%" py={20} bgcolor={COLORS.WHITE}>
       <StyledOutlinedContainer>
         <StyledCircleIcon />
 
