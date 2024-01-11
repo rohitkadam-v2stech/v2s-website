@@ -14,7 +14,6 @@ const PropositionCard: React.FC<TPropositionCardProps> = ({
   return (
     <Paper
       sx={{
-        width: { xs: 350, lg: 300 },
         borderRadius: 0,
         height: "100%",
         pb: 2,
@@ -26,15 +25,14 @@ const PropositionCard: React.FC<TPropositionCardProps> = ({
         bgcolor={COLORS.DARK_BLUE}
         color={COLORS.WHITE}
         fontWeight="bold"
+        fontSize={20}
       >
         {title}
       </Typography>
       <Box component="ul" py={2} pr={2}>
         {details.map((item) => (
           <Box key={item} component="li">
-            <Typography variant="body2" textAlign="justify">
-              {item}
-            </Typography>
+            <Typography>{item}</Typography>
           </Box>
         ))}
       </Box>

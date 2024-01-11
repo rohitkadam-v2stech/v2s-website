@@ -40,8 +40,8 @@ const AboutClients: React.FC<TAboutClientsProps> = ({ data }) => {
 
   return (
     <Box
-      py={2}
-      px={{ xs: 1, sm: 2, md: "10%", lg: "10%", xl: "10%" }}
+      py={6}
+      px={{ xs: 4, sm: 4, md: "10%", lg: "10%", xl: "10%" }}
       bgcolor={COLORS.BACKGROUND_GREY}
     >
       <Typography
@@ -61,14 +61,15 @@ const AboutClients: React.FC<TAboutClientsProps> = ({ data }) => {
         direction={isOnMobile || isOnTablet ? "column" : "row"}
         justifyContent="space-evenly"
         alignItems="center"
-        spacing={2}
+        spacing={6}
+        mt={8}
       >
         {aboutClientCards.map((data, index) => (
           <StyledAboutClientCard
             key={index}
-            sx={{
-              mr: index < aboutClientCards?.length - 1 ? 2 : 0,
-            }}
+            // sx={{
+            //   mr: index < aboutClientCards?.length - 1 ? 2 : 0,
+            // }}
           >
             <CardContent>
               <Typography fontSize={22} fontWeight={800} mb={1}>
