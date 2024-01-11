@@ -11,11 +11,17 @@ const BannerCard: React.FC<TCarouselData> = ({
   carouselBtn,
 }) => (
   <StyledContainer imgPath={imgPath}>
-    <StyledContent spacing={6}>
-      <Typography fontSize="35px" fontWeight="bold" lineHeight={1}>
+    <StyledContent spacing={6} mt={4}>
+      <Typography
+        fontSize={{ xs: "18px", sm: "24px", md: "35px", lg: "35px" }}
+        fontWeight="bold"
+        lineHeight={1}
+      >
         {title}
       </Typography>
-      <Typography fontSize="17px">{subtitle}</Typography>
+      <Typography fontSize={{ xs: "14px", sm: "17px", md: "17px", lg: "17px" }}>
+        {subtitle}
+      </Typography>
       <Box>{carouselBtn}</Box>
     </StyledContent>
   </StyledContainer>

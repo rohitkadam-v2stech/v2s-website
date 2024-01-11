@@ -21,22 +21,24 @@ const OurClients = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        pl={2}
-        pr={4}
-        gap={8}
-        bgcolor={COLORS.WHITE}
+        p={2}
+        columnGap={2}
+        rowGap={2}
       >
         {CLIENT_LOGOS.map((imagePath, id) => (
           <Grid
             key={id}
             item
-            xs={2}
+            sm={5.5}
+            xs={5.5}
+            md={2.5}
+            lg={2.5}
             justifyContent="center"
             alignItems="center"
-            mx={6}
+            // mx={6}
             textAlign="center"
           >
-            <img alt="brand_logos" src={imagePath} height={50} />
+            <img alt="brand_logos" src={imagePath} height={40} />
           </Grid>
         ))}
       </Grid>

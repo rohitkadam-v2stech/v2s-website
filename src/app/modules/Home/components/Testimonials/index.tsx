@@ -5,6 +5,7 @@ import { messages } from "./config/messages";
 import Slider from "../../../../components/Slider";
 import { SliderWrapper } from "./style";
 import nickLawford from "../../../../assets/testimonials/Fissara-2-696x392-1.jpg";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const Testimonials = () => {
   const TESTIMONIALS_POSTS: Array<{
@@ -48,8 +49,10 @@ const Testimonials = () => {
     },
   ];
 
+  const { isOnMobile, isOnTablet } = useDeviceSize();
+
   return (
-    <Box>
+    <Box pb={10} pr={4}>
       <Stack spacing={10} justifyContent="center" alignItems="center" my={6}>
         <Typography
           px={12}
@@ -60,15 +63,13 @@ const Testimonials = () => {
           {messages.testimonials}
         </Typography>
       </Stack>
-      <Stack spacing={3} mx={40} mb={10}>
-        <SliderWrapper>
-          <Slider slidesToShow={2}>
-            {TESTIMONIALS_POSTS.map((item) => (
-              <TestimonialCard {...item} />
-            ))}
-          </Slider>
-        </SliderWrapper>
-      </Stack>
+      <SliderWrapper>
+        <Slider slidesToShow={isOnMobile || isOnTablet ? 1 : 2}>
+          {TESTIMONIALS_POSTS.map((item) => (
+            <TestimonialCard {...item} />
+          ))}
+        </Slider>
+      </SliderWrapper>
     </Box>
   );
 };

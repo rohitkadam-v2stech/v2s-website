@@ -26,42 +26,90 @@ export const SliderWrapper = styled(Box)({
 
 // Replace with the path to your image
 export const StyledContainer = styled(Box)<{ imgPath: string }>(
-  ({ imgPath }) => ({
-    backgroundImage: `url(${imgPath})`,
-    backgroundSize: "cover",
-    height: "100vh",
-    width: "100%",
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    paddingBottom: 40,
-  })
+  ({ imgPath }) =>
+    ({ theme }) => ({
+      backgroundImage: `url(${imgPath})`,
+      backgroundSize: "cover",
+      display: "flex",
+      justifyContent: "flex-start",
+      alignItems: "center",
+      // // width: "100%",
+      // display: "flex",
+      // // paddingBottom: 40,
+      [theme.breakpoints.up("xs")]: {
+        height: "50vh",
+        width: "100%",
+        backgroundPosition: "center",
+      },
+      [theme.breakpoints.up("sm")]: {
+        height: "50vh",
+        width: "100%",
+        backgroundPosition: "center",
+      },
+      [theme.breakpoints.up("md")]: {
+        paddingBottom: 40,
+        height: "50vh",
+        width: "100%",
+        backgroundPosition: "center",
+      },
+      [theme.breakpoints.up("lg")]: {
+        height: "100vh",
+        paddingBottom: 40,
+        width: "100%",
+        backgroundPosition: "center",
+      },
+    })
 );
 
 export const StyledContent = styled(Stack)(({ theme }) => ({
-  paddingLeft: 90,
   color: COLORS.WHITE,
   borderRadius: theme.spacing(1),
-  width: 500,
+  [theme.breakpoints.up("xs")]: {
+    paddingLeft: 56,
+    width: 300,
+  },
+  [theme.breakpoints.up("sm")]: {
+    paddingLeft: 56,
+    width: 300,
+  },
+  [theme.breakpoints.up("md")]: {
+    paddingLeft: 50,
+    width: 300,
+  },
+  [theme.breakpoints.up("lg")]: {
+    paddingLeft: 90,
+    width: 500,
+  },
 }));
 
-export const StyledCarouselBtn = styled(Button)({
+export const StyledCarouselBtn = styled(Button)(({ theme }) => ({
   color: COLORS.WHITE,
   backgroundColor: COLORS.DARK_BLUE,
   borderRadius: 0,
   borderColor: COLORS.WHITE,
   borderWidth: 2,
   textTransform: "capitalize",
-  fontSize: 16,
-});
+  [theme.breakpoints.up("xs")]: {
+    fontSize: 14,
+  },
+  [theme.breakpoints.up("sm")]: {
+    fontSize: 14,
+  },
+  [theme.breakpoints.up("md")]: {
+    fontSize: 14,
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: 14,
+  },
+}));
 
-export const StyledIconBtn = styled(ArrowBack)({
+export const StyledIconBtn = styled(ArrowBack)(({ theme }) => ({
   display: "block",
   background: "red",
   position: "absolute",
   right: 20,
   zIndex: 1400,
-});
+}));
 
 // export const StyledPrevArrowBtn = styled((props) => <Box {...props} />)({
 //   display: "block",

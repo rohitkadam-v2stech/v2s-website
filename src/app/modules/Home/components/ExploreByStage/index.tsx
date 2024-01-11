@@ -1,8 +1,11 @@
-import { Button, Paper, Stack, Typography } from "@mui/material";
+import { Box, Button, Paper, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const ExploreByStage = () => {
+  const { isOnMobile, isOnTablet } = useDeviceSize();
+
   const STAGE_IMAGES: Array<string> = [
     "https://v2stech.com/wp-content/uploads/2023/10/earlt-stage.png",
     "https://v2stech.com/wp-content/uploads/2023/10/funded.png",
@@ -20,7 +23,7 @@ const ExploreByStage = () => {
         {messages.exploreByStage}
       </Typography>
       <Stack
-        direction="row"
+        direction={isOnMobile || isOnTablet ? "column" : "row"}
         justifyContent="center"
         spacing={4}
         alignItems="center"
@@ -35,21 +38,22 @@ const ExploreByStage = () => {
           />
         ))}
       </Stack>
-      <Button
-        variant="contained"
-        size="large"
-        sx={{
-          width: 500,
-          bgcolor: COLORS.DARK_BLUE,
-          color: "white",
-          fontSize: "16px",
-          lineHeight: "23px",
-          paddingInline: "200px",
-          paddingBlock: "15px",
-        }}
-      >
-        {messages.talkToUs}
-      </Button>
+      <Box width="40vw">
+        <Button
+          variant="contained"
+          size="large"
+          fullWidth
+          sx={{
+            bgcolor: COLORS.DARK_BLUE,
+            color: "white",
+            fontSize: "16px",
+            lineHeight: "23px",
+            paddingBlock: "15px",
+          }}
+        >
+          {messages.talkToUs}
+        </Button>
+      </Box>
     </Stack>
   );
 };
