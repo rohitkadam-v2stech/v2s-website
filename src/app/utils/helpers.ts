@@ -1,7 +1,7 @@
 import { SALES_EMAIL, WHATSAPP_NUMBER } from "../config/constants";
 
 export const removeAsterisk = (inputString: string): string => {
-  return inputString.replace(/\*/g, "");
+  return inputString.replace(/\/\*/g, "");
 };
 
 export const formatAmount = (value: number) => {
