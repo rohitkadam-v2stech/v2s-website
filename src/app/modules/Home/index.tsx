@@ -16,7 +16,7 @@ const Home = () => {
       <FastFacts />
       <OurOfferings />
       <OurDomainExpertise />
-      {/* <OurSpecialty /> */}
+      <OurSpecialty />
       <ExploreByStage />
       <OurClients />
       <Testimonials />
