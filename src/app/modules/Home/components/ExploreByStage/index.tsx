@@ -2,6 +2,7 @@ import { Box, Button, Paper, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
 import useDeviceSize from "../../../../hooks/useDeviceSize";
+import { navigateToWhatsAppContact } from "../../../../utils/helpers";
 
 const ExploreByStage = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();
@@ -50,6 +51,7 @@ const ExploreByStage = () => {
             lineHeight: "23px",
             paddingBlock: "15px",
           }}
+          onClick={navigateToWhatsAppContact}
         >
           {messages.talkToUs}
         </Button>

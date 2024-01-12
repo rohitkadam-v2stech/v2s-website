@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
@@ -14,7 +14,7 @@ import { OUR_DOMAIN_EXPERTISE } from "./constants";
 import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const OurDomainExpertise = () => {
-  const { isOnMobile, isOnDesktop } = useDeviceSize();
+  const { isOnMobile } = useDeviceSize();
 
   return (
     <Box mb={12.5} px={{ xs: 2, md: 6 }}>

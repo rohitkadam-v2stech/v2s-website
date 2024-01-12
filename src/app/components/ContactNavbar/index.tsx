@@ -7,6 +7,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 import { EMAIL, PHONE, socialMediaUrls } from "./constants";
 import COLORS from "../../styles/colors";
+import { navigateToMail } from "../../utils/helpers";
 
 const ContactNavbar = () => {
   const navigate = useNavigate();
@@ -56,10 +57,13 @@ const ContactNavbar = () => {
           <LocalPhoneIcon fontSize="small" />
           <Typography variant="subtitle1">{PHONE}</Typography>
         </Stack>
-        <Stack direction="row" spacing={1} alignItems="center">
-          <MailOutlineIcon fontSize="small" />
-          <Typography variant="subtitle1">{EMAIL}</Typography>
-        </Stack>
+
+        <div onClick={navigateToMail} style={{ cursor: "pointer" }}>
+          <Stack direction="row" spacing={1} alignItems="center">
+            <MailOutlineIcon fontSize="small" />
+            <Typography variant="subtitle1">{EMAIL}</Typography>
+          </Stack>
+        </div>
       </Stack>
     </Stack>
   );

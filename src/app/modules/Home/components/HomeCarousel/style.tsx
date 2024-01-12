@@ -1,4 +1,4 @@
-import { Box, Button, Stack, alpha, styled } from "@mui/material";
+import { Box, Button, Stack, styled } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { ArrowBack } from "@mui/icons-material";
 

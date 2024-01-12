@@ -4,6 +4,7 @@ import imageOne from "../../../../assets/homeCarousel/homeOne.png";
 import imageTwo from "../../../../assets/homeCarousel/homeTwo.png";
 import imageThree from "../../../../assets/homeCarousel/homeThree.png";
 import { TCarouselData } from "./config/types";
+import { navigateToWhatsAppContact } from "../../../../utils/helpers";
 
 export const HOME_CAROUSEL_CARD_LIST: Array<TCarouselData> = [
   {
@@ -11,7 +12,11 @@ export const HOME_CAROUSEL_CARD_LIST: Array<TCarouselData> = [
     title: messages.saasProductDevCompanyTitle,
     subtitle: messages.saasProductDevCompanySubtitle,
     carouselBtn: (
-      <StyledCarouselBtn variant="contained" size="large">
+      <StyledCarouselBtn
+        variant="contained"
+        size="large"
+        onClick={navigateToWhatsAppContact}
+      >
         {messages.saasProductDevCompanyBtn}
       </StyledCarouselBtn>
     ),
@@ -21,7 +26,11 @@ export const HOME_CAROUSEL_CARD_LIST: Array<TCarouselData> = [
     title: messages.saasProductDevCompanyTitle,
     subtitle: messages.saasProductDevCompanySubtitle,
     carouselBtn: (
-      <StyledCarouselBtn variant="contained" size="large">
+      <StyledCarouselBtn
+        variant="contained"
+        size="large"
+        onClick={navigateToWhatsAppContact}
+      >
         {messages.saasProductDevCompanyBtn}
       </StyledCarouselBtn>
     ),
@@ -31,7 +40,11 @@ export const HOME_CAROUSEL_CARD_LIST: Array<TCarouselData> = [
     title: messages.endToEndProductDevTitle,
     subtitle: messages.endToEndProductDevSubtitle,
     carouselBtn: (
-      <StyledCarouselBtn variant="contained" size="large">
+      <StyledCarouselBtn
+        variant="contained"
+        size="large"
+        onClick={navigateToWhatsAppContact}
+      >
         {messages.endToEndProductDevBtn}
       </StyledCarouselBtn>
     ),
