@@ -10,6 +10,7 @@ const COLORS = {
   SKY_BLUE: "#609bdc",
   OCEAN_BLUE: "#2a90c7",
   NAVY_BLUE: "#34314b",
+  FOOTER_BACKGROUND_COLOR: "#10182f",
 };
 
 export default COLORS;
