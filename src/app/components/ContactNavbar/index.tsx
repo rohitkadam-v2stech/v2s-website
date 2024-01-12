@@ -1,12 +1,20 @@
-import { Divider, Stack, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import { Divider, Link, Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import { EMAIL, PHONE } from "./constants";
+
+import { EMAIL, PHONE, socialMediaUrls } from "./constants";
 import COLORS from "../../styles/colors";
 
 const ContactNavbar = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (socialMedia: string) => {
+    navigate(socialMedia);
+  };
+
   return (
     <Stack
       direction="row"
@@ -20,11 +28,19 @@ const ContactNavbar = () => {
       sx={{ bgcolor: COLORS.DARK_BLUE }}
     >
       <Stack direction="row" alignItems="center" spacing={2} height={24}>
-        <LinkedInIcon
-          fontSize="medium"
-          sx={{ color: COLORS.WHITE, borderRadius: 100 }}
-        />
-        <FacebookOutlinedIcon fontSize="medium" sx={{ color: COLORS.WHITE }} />
+        <Link target="_blank" href={socialMediaUrls.linkedIn}>
+          <LinkedInIcon
+            fontSize="medium"
+            sx={{ color: COLORS.WHITE, borderRadius: 100, cursor: "pointer" }}
+          />
+        </Link>
+        <Link target="_blank" href={socialMediaUrls.facebook}>
+          <FacebookOutlinedIcon
+            fontSize="medium"
+            onClick={() => handleButtonClick(socialMediaUrls.facebook)}
+            sx={{ color: COLORS.WHITE, cursor: "pointer" }}
+          />
+        </Link>
       </Stack>
       <Stack
         color={COLORS.WHITE}
