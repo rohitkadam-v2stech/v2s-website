@@ -1,5 +1,4 @@
 import { Box, BoxProps } from "@mui/material";
-import React from "react";
 import { YOUTUBE_URL } from "./constants";
 
 type TYoutubePlayer = {

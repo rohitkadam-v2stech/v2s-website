@@ -21,8 +21,6 @@ const CaseStudiesListing: React.FC = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();
 
   const handleReadMore = (item: any, index: number) => {
-    console.log("item", item);
-
     navigate(
       `${removeAsterisk(APPLICATION_URLS.CASE_STUDIES)}${Number(item.id)}`,
       {

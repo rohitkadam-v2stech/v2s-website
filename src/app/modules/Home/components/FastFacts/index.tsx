@@ -53,16 +53,16 @@ const FastFacts = () => {
         mt={2}
         direction="row"
         gap={6}
-        p={6}
+        paddingBlock={6}
         justifyContent="center"
       >
         {FAST_FACTS_LIST.map(({ title, value }) => (
-          <Grid key={title} xs={2.5}>
+          <Grid key={title} xs={5} md={2.5}>
             <Paper
               elevation={0}
               sx={{
-                backgroundColor: COLORS.DARK_BLUE,
-                color: COLORS.WHITE,
+                backgroundColor: COLORS.WHITE,
+                color: COLORS.DARK_BLUE,
                 paddingBlock: 2,
                 paddingInline: 2,
                 height: 86,

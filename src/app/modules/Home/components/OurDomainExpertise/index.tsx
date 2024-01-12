@@ -1,46 +1,23 @@
-import { Box, Paper, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
+
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
+import {
+  StyledCard,
+  StyledCardContainer,
+  StyledCardDescription,
+  StyledCardNumberContainer,
+  StyledCardNumberText,
+  StyledCardTitle,
+} from "./style";
+import { OUR_DOMAIN_EXPERTISE } from "./constants";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const OurDomainExpertise = () => {
-  const OUR_DOMAIN_EXPERTISE: Array<{
-    id: number;
-    title: string;
-    description: string;
-  }> = [
-    {
-      id: 1,
-      title: "Education",
-      description: "1500 + Institutes using application to manage operations",
-    },
-    {
-      id: 2,
-      title: "Payment",
-      description:
-        "Custom checkout solution capable of handling 10+ million payment transactions monthly",
-    },
-    {
-      id: 3,
-      title: "Healthcare",
-      description:
-        "Supports 1,000's of service user with 1+ million data transaction daily",
-    },
-    {
-      id: 4,
-      title: "Resource Management",
-      description:
-        "Build product suite for waste movements, bulk haulage, people and property management",
-    },
-    {
-      id: 5,
-      title: "e-Governance",
-      description:
-        "Build Citizen friendly smart city solutions for state goverment and municipal corporations",
-    },
-  ];
+  const { isOnMobile, isOnDesktop } = useDeviceSize();
 
   return (
-    <Box mb={12.5}>
+    <Box mb={12.5} px={{ xs: 2, md: 6 }}>
       <Typography
         textAlign="center"
         color={COLORS.DARK_BLUE}
@@ -50,63 +27,28 @@ const OurDomainExpertise = () => {
       >
         {messages.ourDomainExpertise}
       </Typography>
-      <Stack direction="row" justifyContent="space-between" spacing={4} mx={20}>
-        {OUR_DOMAIN_EXPERTISE.map(({ id, title, description }) => (
-          <Paper
-            key={id}
-            style={{ width: 400, height: 450 }}
-            elevation={4}
-            sx={{
-              borderTopRightRadius: 40,
-              borderBottomRightRadius: 40,
-              pt: "50px",
-              pl: "15px",
-            }}
-          >
-            <Box
-              bgcolor={COLORS.PRIMARY_BLUE}
-              sx={{
-                borderTopLeftRadius: "15px",
-                borderBottomLeftRadius: "15px",
-                paddingInline: "13px",
-                boxShadow:
-                  "4px 1px 11px 0px rgba(44.19999999999999, 44.19999999999999, 44.19999999999999, 0.5) inset",
-              }}
-            >
-              <Typography
-                textAlign="center"
-                sx={{
-                  fontSize: "50px",
-                  fontWeight: "700",
-                  color: COLORS.WHITE,
-                }}
-              >
-                {id}
-              </Typography>
-            </Box>
-            <Typography
-              textAlign="left"
-              mt={2}
-              fontSize="22px"
-              fontWeight="700"
-              lineHeight="23px"
-              color={COLORS.DARK_BLUE}
-            >
-              {title}
-            </Typography>
-            <Typography
-              textAlign="left"
-              mt="20px"
-              fontSize="17px"
-              fontWeight="600"
-              lineHeight="24px"
-              color={COLORS.DARK_BLUE}
-            >
-              {description}
-            </Typography>
-          </Paper>
+      <Grid container direction="row" justifyContent="center" gap={6}>
+        {OUR_DOMAIN_EXPERTISE.map(({ id, title, description, icon }) => (
+          <Grid key={id} item sm={6} md={2}>
+            <StyledCard elevation={4}>
+              <StyledCardNumberContainer bgcolor={COLORS.PRIMARY_BLUE}>
+                <StyledCardNumberText>{id}</StyledCardNumberText>
+              </StyledCardNumberContainer>
+              <StyledCardTitle>{title}</StyledCardTitle>
+              <StyledCardContainer spacing={6} direction="column">
+                <StyledCardDescription>{description}</StyledCardDescription>
+                <img
+                  alt="card_icon"
+                  src={icon}
+                  width={isOnMobile ? 80 : 70}
+                  height={isOnMobile ? 70 : 60}
+                  style={{ margin: "0px auto", paddingRight: "8px" }}
+                />
+              </StyledCardContainer>
+            </StyledCard>
+          </Grid>
         ))}
-      </Stack>
+      </Grid>
     </Box>
   );
 };
