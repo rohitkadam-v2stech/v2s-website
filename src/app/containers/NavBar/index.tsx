@@ -29,7 +29,11 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <AppBar position="sticky" color="inherit" sx={{ py: 1, px: "6%" }}>
+      <AppBar
+        position="sticky"
+        color="inherit"
+        sx={{ py: 1, px: { xs: "1%", sm: "1%", md: "1%", lg: "6%" } }}
+      >
         <StyledToolbar disableGutters>
           <Stack
             direction="row"

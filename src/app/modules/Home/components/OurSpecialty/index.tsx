@@ -6,13 +6,14 @@ import useDeviceSize from "../../../../hooks/useDeviceSize";
 import PhoneView from "./components/PhoneView";
 
 const OurSpeciality = () => {
-  const { isOnMobile } = useDeviceSize();
+  const { isOnMobile, isOnTablet } = useDeviceSize();
 
   return (
     <Box bgcolor="white" mt={2} pb={10}>
       <Typography
         textAlign="center"
-        p={12}
+        px={12}
+        py={6}
         color={COLORS.DARK_BLUE}
         fontWeight="600"
         fontSize="30px"
@@ -24,11 +25,11 @@ const OurSpeciality = () => {
         alignItems="center"
         spacing={4}
         py={2}
-        mx={44}
+        mx={{ xs: 4, sm: 4, md: 20, lg: 44 }}
         sx={{ borderRadius: 4 }}
       >
         {OUR_SPECIALTY.map(({ icon, subtitle, title }, id) => {
-          if (isOnMobile) {
+          if (isOnMobile || isOnTablet) {
             return (
               <PhoneView
                 key={id}
@@ -81,6 +82,7 @@ const OurSpeciality = () => {
                       fontSize="21px"
                       fontWeight="600"
                       lineHeight="49px"
+                      noWrap
                     >
                       {title}
                     </Typography>
@@ -99,6 +101,7 @@ const OurSpeciality = () => {
                     fontSize="21px"
                     fontWeight="600"
                     lineHeight="49px"
+                    noWrap
                   >
                     {subtitle}
                   </Typography>

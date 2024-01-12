@@ -1,6 +1,7 @@
 import { Box, Divider, Grid, Paper, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const FastFacts = () => {
   const FAST_FACTS_LIST: Array<{ title: string; value: string }> = [
@@ -38,6 +39,8 @@ const FastFacts = () => {
     },
   ];
 
+  const { isOnMobile } = useDeviceSize();
+
   return (
     <Box bgcolor={COLORS.PRIMARY_BLUE}>
       <Typography
@@ -52,12 +55,14 @@ const FastFacts = () => {
         container
         mt={2}
         direction="row"
-        gap={6}
+        rowGap={5.5}
+        columnGap={3}
         paddingBlock={6}
+        paddingInline={0}
         justifyContent="center"
       >
         {FAST_FACTS_LIST.map(({ title, value }) => (
-          <Grid key={title} xs={5} md={2.5}>
+          <Grid key={title} xs={5.5} md={2.8}>
             <Paper
               elevation={0}
               sx={{
@@ -65,7 +70,7 @@ const FastFacts = () => {
                 color: COLORS.DARK_BLUE,
                 paddingBlock: 2,
                 paddingInline: 2,
-                height: 86,
+                height: isOnMobile ? 110 : 86,
                 borderRadius: 4,
               }}
             >
@@ -90,7 +95,9 @@ const FastFacts = () => {
                 >
                   {value}
                 </Typography>
-                <Typography variant="h5">{title}</Typography>
+                <Typography variant="h5" lineHeight={1.2}>
+                  {title}
+                </Typography>
               </Stack>
             </Paper>
           </Grid>

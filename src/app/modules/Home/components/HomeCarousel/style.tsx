@@ -42,13 +42,13 @@ export const StyledContainer = styled(Box)<{ imgPath: string }>(
         backgroundPosition: "center",
       },
       [theme.breakpoints.up("sm")]: {
-        height: "50vh",
+        height: "75vh",
         width: "100%",
         backgroundPosition: "center",
       },
       [theme.breakpoints.up("md")]: {
         paddingBottom: 40,
-        height: "50vh",
+        height: "100vh",
         width: "100%",
         backgroundPosition: "center",
       },
@@ -69,12 +69,12 @@ export const StyledContent = styled(Stack)(({ theme }) => ({
     width: 300,
   },
   [theme.breakpoints.up("sm")]: {
-    paddingLeft: 56,
+    paddingLeft: 75,
     width: 300,
   },
   [theme.breakpoints.up("md")]: {
-    paddingLeft: 50,
-    width: 300,
+    marginLeft: 10,
+    width: 500,
   },
   [theme.breakpoints.up("lg")]: {
     paddingLeft: 90,

@@ -23,27 +23,34 @@ const OurDomainExpertise = () => {
         color={COLORS.DARK_BLUE}
         fontWeight="600"
         fontSize="30px"
-        my={12.5}
+        my={{ xs: 6, sm: 6, md: 12.5, lg: 12.5 }}
       >
         {messages.ourDomainExpertise}
       </Typography>
-      <Grid container direction="row" justifyContent="center" gap={6}>
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        gap={6}
+      >
         {OUR_DOMAIN_EXPERTISE.map(({ id, title, description, icon }) => (
-          <Grid key={id} item sm={6} md={2}>
+          <Grid key={id} item xs={12} sm={6} md={3.5} lg={2}>
             <StyledCard elevation={4}>
               <StyledCardNumberContainer bgcolor={COLORS.PRIMARY_BLUE}>
                 <StyledCardNumberText>{id}</StyledCardNumberText>
               </StyledCardNumberContainer>
               <StyledCardTitle>{title}</StyledCardTitle>
-              <StyledCardContainer spacing={6} direction="column">
+              <StyledCardContainer spacing={4}>
                 <StyledCardDescription>{description}</StyledCardDescription>
-                <img
-                  alt="card_icon"
-                  src={icon}
-                  width={isOnMobile ? 80 : 70}
-                  height={isOnMobile ? 70 : 60}
-                  style={{ margin: "0px auto", paddingRight: "8px" }}
-                />
+                <Box textAlign="center" width="100%" pr={2}>
+                  <img
+                    alt="card_icon"
+                    src={icon}
+                    width={isOnMobile ? 80 : 70}
+                    height={isOnMobile ? 70 : 60}
+                  />
+                </Box>
               </StyledCardContainer>
             </StyledCard>
           </Grid>

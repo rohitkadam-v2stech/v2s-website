@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { Divider, Link, Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
@@ -10,12 +9,6 @@ import COLORS from "../../styles/colors";
 import { navigateToMail } from "../../utils/helpers";
 
 const ContactNavbar = () => {
-  const navigate = useNavigate();
-
-  const handleButtonClick = (socialMedia: string) => {
-    navigate(socialMedia);
-  };
-
   return (
     <Stack
       direction="row"
@@ -28,7 +21,7 @@ const ContactNavbar = () => {
       display={{ xs: "none", md: "flex", lg: "flex" }}
       sx={{ bgcolor: COLORS.DARK_BLUE }}
     >
-      <Stack direction="row" alignItems="center" spacing={2} height={24}>
+      <Stack direction="row" alignItems="center" spacing={2} height={24} pt={1}>
         <Link target="_blank" href={socialMediaUrls.linkedIn}>
           <LinkedInIcon
             fontSize="medium"
@@ -38,7 +31,6 @@ const ContactNavbar = () => {
         <Link target="_blank" href={socialMediaUrls.facebook}>
           <FacebookOutlinedIcon
             fontSize="medium"
-            onClick={() => handleButtonClick(socialMediaUrls.facebook)}
             sx={{ color: COLORS.WHITE, cursor: "pointer" }}
           />
         </Link>
