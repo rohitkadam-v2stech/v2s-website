@@ -1,5 +1,5 @@
 import { Paper, Stack, Typography } from "@mui/material";
-import { Person as PersonIcon } from "@mui/icons-material";
+
 import COLORS from "../../../../../../styles/colors";
 import useDeviceSize from "../../../../../../hooks/useDeviceSize";
 

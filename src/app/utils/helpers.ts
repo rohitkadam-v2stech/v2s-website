@@ -1,3 +1,5 @@
+import { SALES_EMAIL, WHATSAPP_NUMBER } from "../config/constants";
+
 export const removeAsterisk = (inputString: string): string => {
   return inputString.replace(/\*/g, "");
 };
@@ -21,4 +23,23 @@ export const formatAmount = (value: number) => {
       ? `${(value / 1000000000).toFixed(0)}B`
       : `${formattedNumber}B`;
   }
+};
+
+export const navigateToWhatsAppContact = () => {
+  // Create the WhatsApp link
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}`;
+  // Open the WhatsApp link in a new tab
+  window.open(whatsappLink, "_blank");
+};
+
+export const navigateToMail = () => {
+  // Replace the following values with your actual email and subject
+  const email = SALES_EMAIL;
+  const subject = "";
+
+  // Create the mailto link
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+
+  // Open the default email client
+  window.location.href = mailtoLink;
 };
