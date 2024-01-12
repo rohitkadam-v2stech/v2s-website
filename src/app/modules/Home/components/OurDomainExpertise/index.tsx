@@ -47,8 +47,8 @@ const OurDomainExpertise = () => {
                   <img
                     alt="card_icon"
                     src={icon}
-                    width={isOnMobile ? 80 : 70}
-                    height={isOnMobile ? 70 : 60}
+                    width={isOnMobile ? 80 : 50}
+                    height={isOnMobile ? 70 : 50}
                   />
                 </Box>
               </StyledCardContainer>
