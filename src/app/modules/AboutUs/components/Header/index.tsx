@@ -50,11 +50,14 @@ const Header: React.FC = () => {
         />
       </Grid>
 
-      <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} textAlign="center">
         <img
           src={BannerImg2}
           alt="banner2"
-          style={{ width: "100%", height: "100%" }}
+          style={{
+            width: isOnMobile || isOnTablet ? "70%" : "100%",
+            height: "100%",
+          }}
         />
       </Grid>
 
