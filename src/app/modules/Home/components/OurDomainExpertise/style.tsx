@@ -8,11 +8,15 @@ export const StyledCard = styled(Paper)(({ theme }) => ({
   paddingLeft: "16px",
   paddingBottom: "16px",
   [theme.breakpoints.up("sm")]: {
-    width: 400,
-    height: 650,
+    width: "100%",
+    height: 450,
   },
   [theme.breakpoints.up("md")]: {
-    width: 230,
+    width: "100%",
+    height: 450,
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "100%",
     height: 450,
   },
 }));
@@ -54,10 +58,10 @@ export const StyledCardDescription = styled(Typography)(({ theme }) => ({
   lineHeight: "24px",
   paddingRight: 6,
   color: COLORS.DARK_BLUE,
-  [theme.breakpoints.up("sm")]: {
-    marginBottom: 100,
-  },
-  [theme.breakpoints.up("md")]: {
-    marginBottom: 100,
-  },
+  // [theme.breakpoints.up("sm")]: {
+  //   marginBottom: 100,
+  // },
+  // [theme.breakpoints.up("md")]: {
+  //   marginBottom: 50,
+  // },
 }));

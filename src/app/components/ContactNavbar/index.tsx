@@ -20,7 +20,7 @@ const ContactNavbar = () => {
       display={{ xs: "none", md: "flex", lg: "flex" }}
       sx={{ bgcolor: COLORS.DARK_BLUE }}
     >
-      <Stack direction="row" alignItems="center" spacing={2} height={24}>
+      <Stack direction="row" alignItems="center" spacing={2} height={24} pt={1}>
         <Link target="_blank" href={socialMediaUrls.linkedIn}>
           <LinkedInIcon
             fontSize="medium"
