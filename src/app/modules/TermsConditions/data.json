@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "title": "Introduction",
+      "points": [
+        "These terms and conditions (“Agreement”) govern the provision of software product development services (the “Services”) by [Your Company Name], a [Legal Structure] registered in Mumbai, India (“Company”) to the client identified in the applicable statement of work (“Client”)."
+      ]
+    },
+    {
+      "title": "Scope Of Services",
+      "points": [
+        "The Company agrees to provide the Client with the Services in accordance with the terms and conditions outlined in this Agreement and any accompanying statement of work."
+      ]
+    },
+    {
+      "title": "Fees And Payments",
+      "points": [
+        "The Client agrees to pay the Company the fees specified in the statement of work, which may include upfront fees, milestone payments, and other applicable charges.",
+        "Payment terms and methods will be outlined in the statement of work. Failure to make timely payments may result in the suspension or termination of Services.",
+        "All fees are exclusive of any applicable taxes, and the Client shall be responsible for the payment of all such taxes."
+      ]
+    },
+    {
+      "title": "Refund Policy",
+      "points": [
+        "The Company will provide a refund only in the following circumstances:",
+        "The Company fails to deliver the agreed-upon Services as outlined in the statement of work.",
+        "The Client cancels the Services before the commencement of work, subject to a cancellation fee as specified in the statement of work.",
+        "The Client must submit a refund request in writing, providing detailed reasons for the request. The Company will review the request and determine the eligibility for a refund within a reasonable timeframe."
+      ]
+    },
+    {
+      "title": "Intellectual Property",
+      "points": [
+        "All intellectual property rights associated with the software developed during the provision of Services shall be owned by the Client upon full payment of all fees.",
+        "The Company retains the right to use the developed software for promotional and marketing purposes unless otherwise agreed upon in writing with the Client."
+      ]
+    },
+    {
+      "title": "Confidentiality",
+      "points": [
+        "Both parties agree to keep confidential all non-public information obtained during the provision of Services and not to disclose such information to third parties.",
+        "Confidentiality obligations shall survive the termination of this Agreement."
+      ]
+    },
+    {
+      "title": "Termination",
+      "points": [
+        "Either party may terminate this Agreement with written notice if the other party breaches a material term of this Agreement, subject to a cure period.",
+        "In the event of termination, the Client shall pay for all Services provided up to the date of termination.",
+        "The Company will provide a refund only in the following circumstances:",
+        "The Company fails to deliver the agreed-upon Services as outlined in the statement of work.",
+        "The Client cancels the Services before the commencement of work, subject to a cancellation fee as specified in the statement of work.",
+        "The Client must submit a refund request in writing, providing detailed reasons for the request. The Company will review the request and determine the eligibility for a refund within a reasonable timeframe."
+      ]
+    },
+    {
+      "title": "Governing Jurisdiction",
+      "points": [
+        "This Agreement shall be governed by and construed in accordance with the laws of India.",
+        "Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts in Mumbai, India."
+      ]
+    },
+    {
+      "title": "General Provisions",
+      "points": [
+        "These terms and conditions represent the general framework governing the relationship between the Company and the Client. Any specific details or modifications to these terms agreed upon by both parties and documented in a signed statement of work or separate agreement shall supersede and prevail over these general terms.",
+        "No oral representations or agreements not included in a signed written agreement shall have any force or effect.",
+        "The headings in this Agreement are for convenience only and shall not affect its interpretation."
+      ]
+    }
+  ]
+}

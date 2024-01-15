@@ -22,7 +22,7 @@ const APPLICATION_URLS: Record<TApplications, string> = {
   [APPLICATIONS.PRIVACY_POLICY]: "/privacy-policy",
   [APPLICATIONS.COOKIE_POLICY]: "/cookie-policy",
   [APPLICATIONS.REFUND_POLICY]: "/refund-policy",
-  [APPLICATIONS.TERMS_AND_CONDITIONS]: "/terms-conditions",
+  [APPLICATIONS.TERMS_AND_CONDITIONS]: "/terms-and-conditions",
   [APPLICATIONS.PAGE_NOT_FOUND]: "*",
 };
 
