@@ -1,7 +1,7 @@
 import { Box, Button, Grid, Paper, Stack, Typography } from "@mui/material";
+
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
-import useDeviceSize from "../../../../hooks/useDeviceSize";
 import { navigateToWhatsAppContact } from "../../../../utils/helpers";
 
 const ExploreByStage = () => {
