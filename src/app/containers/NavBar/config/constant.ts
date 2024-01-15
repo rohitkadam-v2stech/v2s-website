@@ -1,4 +1,5 @@
 import { APPLICATION_URLS } from "../../../Routing/config/appsConfig";
+import { removeAsterisk } from "../../../utils/helpers";
 
 export const NAVBAR_ROUTES = [
   {
@@ -11,7 +12,7 @@ export const NAVBAR_ROUTES = [
   },
   {
     label: "Case Studies",
-    path: APPLICATION_URLS.CASE_STUDIES,
+    path: removeAsterisk(APPLICATION_URLS.CASE_STUDIES),
   },
   {
     label: "Career",

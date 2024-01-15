@@ -4,6 +4,7 @@ const APPLICATIONS = {
   CASE_STUDIES: "CASE_STUDIES",
   CAREER: "CAREER",
   CONTACT_US: "CONTACT_US",
+  PRIVACY_POLICY: "PRIVACY_POLICY",
   PAGE_NOT_FOUND: "PAGE_NOT_FOUND",
 } as const;
 
@@ -15,6 +16,7 @@ const APPLICATION_URLS: Record<TApplications, string> = {
   [APPLICATIONS.CASE_STUDIES]: `/case-studies/*`,
   [APPLICATIONS.CAREER]: "/career",
   [APPLICATIONS.CONTACT_US]: "/contact-us",
+  [APPLICATIONS.PRIVACY_POLICY]: "/privacy-policy",
   [APPLICATIONS.PAGE_NOT_FOUND]: "*",
 };
 

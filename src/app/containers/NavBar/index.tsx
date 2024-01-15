@@ -10,7 +10,6 @@ import COLORS from "../../styles/colors";
 import useToggle from "../../hooks/useToggle";
 import MobileViewDrawer from "./components";
 import { APPLICATION_URLS } from "../../Routing/config/appsConfig";
-import { removeAsterisk } from "../../utils/helpers";
 
 const NavBar: React.FC = () => {
   const navigate = useNavigate();
@@ -24,7 +23,7 @@ const NavBar: React.FC = () => {
   };
 
   const handleNavigate = (path: string) => {
-    navigate(removeAsterisk(path));
+    navigate(path);
   };
 
   return (
