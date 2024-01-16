@@ -8,4 +8,14 @@ export const messages = {
     "501, 9 Mansi, Cross Lane no.1, Ram Maruti road, near Gaon devi ground, Thane (West), Maharashtra, India – 400602",
   businessQueries: "Business Queries",
   salesEmail: "sales@v2stech.com",
+
+  getStarted: "Ready to Get Started?",
+  formSubText:
+    "Your email address will not be published. Required fields are marked *",
+
+  namePlaceholder: "Your Name *",
+  emailPlaceholder: "Your Email *",
+  contactNumberPlaceholder: "Your Contact Number *",
+  messagePlaceholder: "Message",
+  sendMessage: "Send Message",
 };

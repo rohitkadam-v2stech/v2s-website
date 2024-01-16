@@ -29,43 +29,56 @@ const InitiativeCard: React.FC<TInitiativeCardProps> = ({
 }) => (
   <>
     <Stack height="100%" justifyContent="space-between" {...containerProps}>
-      <Stack>
-        <Box component="img" src={image} alt="blogs" {...imageContainerProps} />
+      <Stack height="100%" justifyContent="space-between">
+        <Stack>
+          <Box
+            component="img"
+            src={image}
+            alt="blogs"
+            {...imageContainerProps}
+          />
 
-        <Typography
-          mt={4}
-          fontSize={20}
-          fontWeight={700}
-          color={COLORS.DARK_BLUE}
-        >
-          {title}
-        </Typography>
-
-        <Typography
-          mt={2}
-          fontSize={14}
-          fontWeight={400}
-          color={COLORS.GREY_TEXT}
-          textAlign="justify"
-        >
-          {description}
-        </Typography>
-      </Stack>
-
-      <Stack spacing={1} mt={4}>
-        <Stack
-          direction="row"
-          spacing={0.5}
-          alignItems="center"
-          onClick={onReadMoreClick}
-        >
-          <Typography color={COLORS.DARK_BLUE} sx={{ cursor: "pointer" }}>
-            {messages.readMore}
+          <Typography
+            mt={4}
+            fontSize={20}
+            fontWeight={700}
+            color={COLORS.DARK_BLUE}
+          >
+            {title}
           </Typography>
 
-          <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
+          <Typography
+            mt={2}
+            fontSize={16}
+            fontWeight={400}
+            color={COLORS.GREY_TEXT}
+            textAlign="justify"
+          >
+            {description}
+          </Typography>
+        </Stack>
+
+        <Stack spacing={1} mt={4}>
+          <Stack
+            direction="row"
+            spacing={0.5}
+            alignItems="center"
+            onClick={onReadMoreClick}
+          >
+            <Typography
+              fontSize={16}
+              fontWeight={700}
+              color={COLORS.DARK_BLUE}
+              sx={{ cursor: "pointer" }}
+            >
+              {messages.readMore}
+            </Typography>
+
+            <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
+          </Stack>
         </Stack>
       </Stack>
+
       <Divider
         sx={{
           mt: 1,

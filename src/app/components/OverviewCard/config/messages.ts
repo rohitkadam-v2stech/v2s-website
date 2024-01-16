@@ -1,3 +1,3 @@
 export const messages = {
-  readMore: "Read more",
+  readMore: "Read More",
 };

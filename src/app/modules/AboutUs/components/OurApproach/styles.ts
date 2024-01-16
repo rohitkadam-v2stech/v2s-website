@@ -33,7 +33,8 @@ export const StyledOurApproachTitleContainer = styled(Box)({
 
 export const StyledContentGrid = styled(Grid)({
   marginLeft: -12,
-  paddingInline: 2,
+  // paddingInline: 2,
   paddingBlock: 20,
   backgroundColor: COLORS.WHITE,
+  paddingRight: 16,
 });
