@@ -1,0 +1,25 @@
+export const messages = {
+  careerAtV2stech: "Career at V2S Tech",
+  instructions: "Instructions",
+  instructionsContent:
+    "Freshers mail your CV and contact details to HR team at shweta.malde@v2stech.com To apply mail your CV with salary details to hrsupport@v2stech.com or contact 8291982537",
+  contactDetails: "Contact Details",
+  email: "Email :",
+  phone: "Phone :",
+  currentOpenings: "Current Openings",
+  jobTitle: "Job title",
+  experience: "Experience :",
+  position: "Position :",
+  noOfPosition: "No of position :",
+  industry: "Industry :",
+  roleCategory: "Role Category :",
+  location: "Location :",
+  postedOn: "Posted on :",
+  readMore: "Read More",
+  trustedBy: "Trusted By",
+  recognition: "Recognition",
+  lifeAtV2stech: "Life At V2stech",
+  weCareForOurEmployees: "We Care For Our Employees",
+  weCareForOurEmployeesContent:
+    "V2STech is committed to provide work environment that ensures every employee is treated with dignity and respect and afforded equitable treatment.We are committed in promoting a work environment that is conducive to the professional growth of its employees and encourages equality of opportunity. In furtherance of this commitment, the company has implemented and complied with the provisions of the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013; by constitution of the Internal Complaints Committee (ICC).",
+};

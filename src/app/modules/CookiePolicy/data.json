@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "title": "Introduction",
+      "points": [
+        "1.1 This Cookie Policy explains how [Your Company Name], a [Legal Structure] registered in Mumbai, India (“we,” “us,” or “our”), uses cookies and similar technologies on our website [yourwebsite.com] (the “Site”).",
+        "1.2 By using our Site, you agree to the use of cookies in accordance with this policy. If you do not agree to the use of these cookies, please disable them by following the instructions in Section 4 below.."
+      ]
+    },
+    {
+      "title": "What Are Cookies?",
+      "points": [
+        "2.1 Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work more efficiently and enhance your user experience."
+      ]
+    },
+    {
+      "title": "Types of Cookies We Use",
+      "points": [
+        "3.1 Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work more efficiently and enhance your user experience.",
+        "a. Essential Cookies: These cookies are necessary for the proper functioning of the Site and enable you to navigate and use its features.",
+        "b. Analytical/Performance Cookies: These cookies allow us to recognize and count the number of visitors to the Site and understand how visitors move around. This helps us improve the way our Site works,",
+        "c. Functionality Cookies: These cookies are used to recognize you when you return to our Site. They enable us to personalize content and remember your preferences.",
+        "d. Targeting Cookies: These cookies record your visit to our Site, the pages you have visited, and the links you have followed. We may use this information to make our Site more relevant to your interests."
+      ]
+    },
+    {
+      "title": "Managing Cookies",
+      "points": [
+        "4.1 Most browsers allow you to control cookies through their settings. However, disabling certain cookies may affect the functionality of our Site.",
+        "4.2 To learn how to manage cookies in your browser, please refer to the help section of your browser or visit www.allaboutcookies.org/manage- cookies."
+      ]
+    },
+    {
+      "title": "Changes to Our Cookie Policy",
+      "points": [
+        "5.1 We may update this Cookie Policy to reflect changes to our practices or for other operational, legal, or regulatory reasons. Any changes will be effective immediately upon the posting of the revised Cookie Policy."
+      ]
+    },
+    {
+      "title": "Contact Information",
+      "points": [
+        "6.1 If you have any questions about our use of cookies or this Cookie Policy, please contact us at [your@email.com]."
+      ]
+    },
+    {
+      "title": "Governing Law",
+      "points": [
+        "7.1 This Cookie Policy shall be governed by and construed in accordance with the laws of India.",
+        "7.2 Any disputes arising under or in connection with this Cookie Policy shall be subject to the exclusive jurisdiction of the courts in Mumbai, India."
+      ]
+    }
+  ]
+}

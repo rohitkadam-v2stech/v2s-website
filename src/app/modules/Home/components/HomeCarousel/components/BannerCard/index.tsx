@@ -13,7 +13,7 @@ const BannerCard: React.FC<TCarouselData> = ({
   <StyledContainer imgPath={imgPath}>
     <StyledContent spacing={6} mt={4}>
       <Typography
-        fontSize={{ xs: "18px", sm: "24px", md: "35px", lg: "35px" }}
+        fontSize={{ xs: "18px", sm: "23px", md: "35px", lg: "35px" }}
         fontWeight="bold"
         lineHeight={1}
       >

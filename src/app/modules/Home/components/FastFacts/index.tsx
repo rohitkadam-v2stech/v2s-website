@@ -47,7 +47,8 @@ const FastFacts = () => {
         textAlign="center"
         color="white"
         variant="h4"
-        fontWeight="bold"
+        fontWeight="600"
+        fontSize="30px"
       >
         {messages.fastFacts}
       </Typography>
@@ -60,6 +61,7 @@ const FastFacts = () => {
         paddingBlock={6}
         paddingInline={0}
         justifyContent="center"
+        px={{ xs: 0, sm: 0, md: 0, lg: 14, xl: 14 }}
       >
         {FAST_FACTS_LIST.map(({ title, value }) => (
           <Grid key={title} xs={5.5} md={2.8}>
@@ -91,11 +93,12 @@ const FastFacts = () => {
                   variant="h5"
                   fontWeight="bold"
                   textAlign="center"
-                  width={34}
+                  width={48}
+                  fontSize="25px"
                 >
                   {value}
                 </Typography>
-                <Typography variant="h5" lineHeight={1.2}>
+                <Typography variant="h5" lineHeight={1.2} fontSize="20px">
                   {title}
                 </Typography>
               </Stack>

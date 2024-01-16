@@ -44,17 +44,25 @@ const TestimonialCard: React.FC<TTestimonialCardProps> = ({
           src={author_image}
           sx={{
             borderRadius: 8,
-            height: { xs: "250px", sm: "250px", md: "200px", lg: "200px" },
+            height: { xs: "300px", sm: "300px", md: "300px", lg: "300px" },
             // width: { xs: "250px", sm: "250px", md: "200px", lg: "200px" },
           }}
         />
       )}
 
-      <Typography>{review}</Typography>
+      <Typography fontSize="16px" fontWeight="400">
+        {review}
+      </Typography>
       <Stack spacing={0.2}>
-        <Typography fontWeight="bold">{author}</Typography>
-        <Typography>{company}</Typography>
-        <Typography>{position}</Typography>
+        <Typography fontSize="14px" fontWeight="600">
+          {author}
+        </Typography>
+        <Typography fontSize="15px" fontWeight="400">
+          {company}
+        </Typography>
+        <Typography fontSize="15px" fontWeight="400">
+          {position}
+        </Typography>
       </Stack>
     </Stack>
   );

@@ -1,6 +1,7 @@
-import { type RouteProps } from "react-router-dom";
-import { APPLICATION_URLS } from "./appsConfig";
 import { lazy } from "react";
+import { type RouteProps } from "react-router-dom";
+
+import { APPLICATION_URLS } from "./appsConfig";
 
 const Home = lazy(() => import("../../modules/Home"));
 const AboutUs = lazy(() => import("../../modules/AboutUs"));
@@ -9,6 +10,9 @@ const ContactUs = lazy(() => import("../../modules/ContactUs"));
 const Career = lazy(() => import("../../modules/Career"));
 const PageNotFound = lazy(() => import("../../modules/PageNotFound"));
 const PrivacyPolicy = lazy(() => import("../../modules/PrivacyPolicy"));
+const CookiePolicy = lazy(() => import("../../modules/CookiePolicy"));
+const TermsConditions = lazy(() => import("../../modules/TermsConditions"));
+const RefundPolicy = lazy(() => import("../../modules/RefundPolicy"));
 
 const ROUTES_CONFIG: RouteProps[] = [
   {
@@ -34,6 +38,18 @@ const ROUTES_CONFIG: RouteProps[] = [
   {
     path: APPLICATION_URLS.PRIVACY_POLICY,
     element: <PrivacyPolicy />,
+  },
+  {
+    path: APPLICATION_URLS.COOKIE_POLICY,
+    element: <CookiePolicy />,
+  },
+  {
+    path: APPLICATION_URLS.REFUND_POLICY,
+    element: <RefundPolicy />,
+  },
+  {
+    path: APPLICATION_URLS.TERMS_AND_CONDITIONS,
+    element: <TermsConditions />,
   },
   {
     path: APPLICATION_URLS.PAGE_NOT_FOUND,
