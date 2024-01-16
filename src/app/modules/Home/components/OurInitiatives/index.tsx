@@ -17,25 +17,14 @@ const OurInitiatives: React.FC = () => (
       {messages.ourInitiatives}
     </Typography>
 
-    <Grid container gap={12} alignItems="center" justifyContent="center">
-      {OUR_INITIATIVES.map((news, index) => (
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={5}
-          lg={5}
-          xl={5}
-          key={index}
-          container
-          height="100%"
-        >
+    <Grid container spacing={16}>
+      {OUR_INITIATIVES.map((initiative, index) => (
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} key={index}>
           <InitiativeCard
-            image={news.image}
-            title={news.title}
-            description={news.description}
+            image={initiative.image}
+            title={initiative.title}
+            description={initiative.description}
             onReadMoreClick={() => {}}
-            containerProps={{ width: 640, height: 496 }}
           />
         </Grid>
       ))}

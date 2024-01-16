@@ -1,22 +1,14 @@
-import {
-  Box,
-  BoxProps,
-  Divider,
-  Stack,
-  StackProps,
-  Typography,
-} from "@mui/material";
+import { Divider, Stack, Typography } from "@mui/material";
 import EastIcon from "@mui/icons-material/East";
 import COLORS from "../../../../../../styles/colors";
 import { messages } from "../../config/messages";
+import useDeviceSize from "../../../../../../hooks/useDeviceSize";
 
 type TInitiativeCardProps = {
   image: string;
   title: string;
   description: string;
   onReadMoreClick: React.MouseEventHandler<HTMLDivElement> | undefined;
-  containerProps?: StackProps;
-  imageContainerProps?: BoxProps;
 };
 
 const InitiativeCard: React.FC<TInitiativeCardProps> = ({
@@ -24,40 +16,30 @@ const InitiativeCard: React.FC<TInitiativeCardProps> = ({
   title,
   description,
   onReadMoreClick,
-  containerProps,
-  imageContainerProps,
-}) => (
-  <>
-    <Stack justifyContent="space-between" {...containerProps}>
-      <Stack
-        justifyContent="space-between"
-        height="100%"
-        // width={620}
-        // bgcolor="red"
-      >
-        <Box>
-          <Box
-            component="img"
-            src={image}
-            alt="blogs"
-            width="100%"
-            // width={620}
-            height={320}
-            {...imageContainerProps}
-          />
+}) => {
+  const { isOnLargeDesktop } = useDeviceSize();
 
-          <Typography
-            fontSize="22px"
-            fontWeight="700"
-            mx={2}
-            color={COLORS.DARK_BLUE}
-          >
-            {title}
-          </Typography>
-        </Box>
+  return (
+    <>
+      <Stack height="100%" justifyContent="space-between">
+        <img
+          src={image}
+          alt="blogs"
+          width="100%"
+          height={isOnLargeDesktop ? 420 : 320}
+        />
 
         <Typography
-          mx={2}
+          mt={4}
+          fontSize={20}
+          fontWeight={700}
+          color={COLORS.DARK_BLUE}
+        >
+          {title}
+        </Typography>
+
+        <Typography
+          mt={2}
           fontSize={16}
           fontWeight={400}
           color={COLORS.GREY_TEXT}
@@ -66,24 +48,27 @@ const InitiativeCard: React.FC<TInitiativeCardProps> = ({
           {description}
         </Typography>
 
-        <Stack
-          px={2}
-          direction="row"
-          spacing={0.5}
-          alignItems="center"
-          onClick={onReadMoreClick}
-        >
-          <Typography
-            fontSize="16px"
-            color={COLORS.DARK_BLUE}
-            sx={{ cursor: "pointer" }}
+        <Stack spacing={1} mt={4}>
+          <Stack
+            direction="row"
+            spacing={0.5}
+            alignItems="center"
+            onClick={onReadMoreClick}
           >
-            {messages.readMore}
-          </Typography>
+            <Typography
+              fontSize={16}
+              fontWeight={700}
+              color={COLORS.DARK_BLUE}
+              sx={{ cursor: "pointer" }}
+            >
+              {messages.readMore}
+            </Typography>
 
-          <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
+            <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
+          </Stack>
         </Stack>
       </Stack>
+
       <Divider
         sx={{
           mt: 1,
@@ -91,8 +76,8 @@ const InitiativeCard: React.FC<TInitiativeCardProps> = ({
           borderTop: `2px dashed ${COLORS.DARK_BLUE}`,
         }}
       />
-    </Stack>
-  </>
-);
+    </>
+  );
+};
 
 export default InitiativeCard;

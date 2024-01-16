@@ -15,10 +15,10 @@ const ContactUsForm: React.FC = () => {
     >
       <Stack bgcolor="#f7f7f7" p={4}>
         <Typography fontSize={32} fontWeight={700}>
-          Ready to Get Started?
+          {messages.getStarted}
         </Typography>
         <Typography fontSize={16} fontWeight={400} mb={1}>
-          Your email address will not be published. Required fields are marked *
+          {messages.formSubText}
         </Typography>
 
         <Stack spacing={4}>
@@ -38,11 +38,15 @@ const ContactUsForm: React.FC = () => {
           />
 
           <TextField
-            type="number"
+            type="tel"
             name="contact_number"
             variant="outlined"
             placeholder={messages.contactNumberPlaceholder}
             required
+            inputProps={{
+              pattern: "[0-9+]+",
+              title: "Only numbers and the plus sign (+) are allowed.",
+            }}
           />
 
           <TextField
