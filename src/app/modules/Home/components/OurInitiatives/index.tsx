@@ -6,7 +6,7 @@ import { messages } from "./config/messages";
 import { OUR_INITIATIVES } from "./constants";
 
 const OurInitiatives: React.FC = () => (
-  <Box px="6%" pb={10} bgcolor={COLORS.LIGHT_BLUE}>
+  <Box px="8%" pb={10} bgcolor={COLORS.LIGHT_BLUE}>
     <Typography
       fontSize="30px"
       fontWeight="600"
