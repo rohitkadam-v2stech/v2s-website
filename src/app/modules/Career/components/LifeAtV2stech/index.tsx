@@ -11,7 +11,7 @@ const LifeAtV2stech = () => {
       bgcolor={COLORS.WHITE}
       py={6}
       spacing={4}
-      px={{ xs: 0, sm: 2, md: 10, lg: 20 }}
+      px={{ xs: 0, sm: 2, md: 10, lg: 22 }}
     >
       <Typography fontSize="24px" fontWeight="700" color={COLORS.DARK_BLUE}>
         {messages.lifeAtV2stech}

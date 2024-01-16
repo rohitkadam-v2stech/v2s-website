@@ -30,26 +30,26 @@ const Recognition = () => {
         alignItems="center"
         // bgcolor="red"
         spacing={2}
-        px={{ xs: 4, sm: 4, md: 12, lg: 52 }}
+        px={{ xs: 4, sm: 4, md: 16, lg: 44, xl: 44 }}
       >
-        <Grid item xs={12} sm={12} md={12} lg={3}>
+        <Grid item xs={12} sm={12} md={3} lg={3}>
           <Box bgcolor={COLORS.WHITE} height="100%" textAlign="center" py={0}>
-            <Box component="img" src={topDeveloper} height={120} />
+            <Box component="img" src={topDeveloper} height={104} />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={3}>
+        <Grid item xs={12} sm={12} md={3} lg={3}>
           <Box bgcolor={COLORS.WHITE} height="100%" textAlign="center">
-            <Box component="img" src={topSoftwareCompany} height={120} />
+            <Box component="img" src={topSoftwareCompany} height={100} />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={3}>
+        <Grid item xs={12} sm={12} md={3} lg={3}>
           <Box bgcolor={COLORS.WHITE} height="100%" textAlign="center">
-            <Box component="img" src={techReviewerCompany} height={120} />
+            <Box component="img" src={techReviewerCompany} height={100} />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={3}>
+        <Grid item xs={12} sm={12} md={3} lg={3}>
           <Box bgcolor={COLORS.WHITE} height="100%" textAlign="center">
-            <Box component="img" src={designRush} height={120} />
+            <Box component="img" src={designRush} height={100} />
           </Box>
         </Grid>
       </Grid>

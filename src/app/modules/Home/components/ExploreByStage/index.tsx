@@ -13,21 +13,17 @@ const ExploreByStage = () => {
 
   return (
     <Stack
-      spacing={10}
+      spacing={6}
       justifyContent="center"
       alignItems="center"
-      my={6}
-      px={4}
+      mt={6}
+      mb={2}
+      px={6}
     >
-      <Typography
-        px={12}
-        color={COLORS.DARK_BLUE}
-        fontWeight="600"
-        fontSize="30px"
-      >
+      <Typography color={COLORS.DARK_BLUE} fontWeight="600" fontSize="30px">
         {messages.exploreByStage}
       </Typography>
-      <Grid container justifyContent="space-evenly" alignItems="center" gap={4}>
+      <Grid container justifyContent="space-evenly" alignItems="center" gap={2}>
         {STAGE_IMAGES.map((imgPath, id) => (
           <Grid item xs={12} sm={9} md={3} lg={3}>
             <Paper

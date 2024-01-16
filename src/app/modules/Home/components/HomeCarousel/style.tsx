@@ -12,14 +12,15 @@ export const SliderWrapper = styled(Box)({
   // position: "absolute",
   // right: 100,
   // },
+  backgroundColor: COLORS.PRIMARY_BLUE,
   ".slick-dots li.slick-active button:before": {
     color: COLORS.WHITE,
     fontSize: 12,
-    marginTop: 20,
+    marginTop: 10,
   },
   ".slick-dots li button:before": {
     fontSize: 12,
-    marginTop: 20,
+    marginTop: 10,
     color: COLORS.DARK_BLUE,
   },
 });
@@ -37,26 +38,41 @@ export const StyledContainer = styled(Box)<{ imgPath: string }>(
       // display: "flex",
       // // paddingBottom: 40,
       [theme.breakpoints.up("xs")]: {
-        height: "50vh",
+        height: "60vh",
         width: "100%",
+        // paddingBottom: 40,
         backgroundPosition: "center",
+        // backgroundColor: "pink",
       },
       [theme.breakpoints.up("sm")]: {
         height: "75vh",
         width: "100%",
+        // paddingBottom: 40,
         backgroundPosition: "center",
+        // backgroundColor: "green",
       },
       [theme.breakpoints.up("md")]: {
         paddingBottom: 40,
+        // marginBottom: 40,
         height: "100vh",
         width: "100%",
         backgroundPosition: "center",
+        // backgroundColor: "yellow",
       },
       [theme.breakpoints.up("lg")]: {
-        height: "100vh",
-        paddingBottom: 40,
+        height: "110vh",
+        // paddingBottom: 40,
+        width: "100%",
+        // marginBottom: 20,
+        backgroundPosition: "center",
+        // backgroundColor: "red",
+      },
+      [theme.breakpoints.up("xl")]: {
+        height: "140vh",
+        paddingBottom: 120,
         width: "100%",
         backgroundPosition: "center",
+        // backgroundColor: "blue",
       },
     })
 );
@@ -66,11 +82,11 @@ export const StyledContent = styled(Stack)(({ theme }) => ({
   borderRadius: theme.spacing(1),
   [theme.breakpoints.up("xs")]: {
     paddingLeft: 56,
-    width: 300,
+    width: 480,
   },
   [theme.breakpoints.up("sm")]: {
     paddingLeft: 75,
-    width: 300,
+    width: 480,
   },
   [theme.breakpoints.up("md")]: {
     marginLeft: 10,

@@ -44,7 +44,7 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
       {/* </Box> */}
       <Stack
         bgcolor={COLORS.WHITE}
-        spacing="20px"
+        spacing="14px"
         style={{
           borderBottomLeftRadius: "10px",
           borderBottomRightRadius: "10px",

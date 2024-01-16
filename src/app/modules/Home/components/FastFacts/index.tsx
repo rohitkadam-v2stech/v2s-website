@@ -61,7 +61,7 @@ const FastFacts = () => {
         paddingBlock={6}
         paddingInline={0}
         justifyContent="center"
-        px={{ xs: 0, sm: 0, md: 0, lg: 14, xl: 14 }}
+        px={{ xs: 0, sm: 0, md: 0, lg: 16, xl: 16 }}
       >
         {FAST_FACTS_LIST.map(({ title, value }) => (
           <Grid key={title} xs={5.5} md={2.8}>

@@ -23,7 +23,7 @@ const TermsConditions = () => (
           <Stack spacing={3}>
             {points.map((point, id) => (
               <Typography key={id} fontSize="16px" textAlign="justify">
-                {points.length !== 1 && `${mainIndex + 1}.${id}`} {point}
+                {points.length !== 1 && `${mainIndex + 1}.${id + 1}`} {point}
               </Typography>
             ))}
           </Stack>
