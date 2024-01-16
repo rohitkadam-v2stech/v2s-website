@@ -66,6 +66,7 @@ const Header: React.FC<THeaderProps> = ({ state }) => {
               lineHeight: 1.2,
               fontWeight: "bold",
               color: COLORS.DARK_BLUE,
+              textTransform: "uppercase",
             }}
           >
             {state.caseName}

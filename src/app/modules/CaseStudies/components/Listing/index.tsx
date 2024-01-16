@@ -65,7 +65,6 @@ const CaseStudiesListing: React.FC = () => {
             <Stack>
               <StyledLargeBoldText
                 mb={1}
-                textAlign="justify"
                 color={COLORS.DARK_BLUE}
                 lineHeight={1.2}
               >
@@ -84,7 +83,12 @@ const CaseStudiesListing: React.FC = () => {
                 alignItems="center"
                 onClick={() => handleReadMore(item, index)}
               >
-                <Typography color={COLORS.DARK_BLUE} sx={{ cursor: "pointer" }}>
+                <Typography
+                  fontSize={16}
+                  fontWeight={700}
+                  color={COLORS.DARK_BLUE}
+                  sx={{ cursor: "pointer" }}
+                >
                   {messages.readMore}
                 </Typography>
 

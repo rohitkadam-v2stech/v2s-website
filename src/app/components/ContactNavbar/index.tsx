@@ -1,12 +1,12 @@
 import { Divider, Link, Stack, Typography } from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 import { EMAIL, PHONE, socialMediaUrls } from "./constants";
 import COLORS from "../../styles/colors";
 import { navigateToMail } from "../../utils/helpers";
+import FacebookIcon from "../../assets/facebook.png";
+import LinkedInIcon from "../../assets/linkedin.png";
 
 const ContactNavbar = () => {
   return (
@@ -21,18 +21,12 @@ const ContactNavbar = () => {
       display={{ xs: "none", md: "flex", lg: "flex" }}
       sx={{ bgcolor: COLORS.DARK_BLUE }}
     >
-      <Stack direction="row" alignItems="center" spacing={2} height={24} pt={1}>
+      <Stack direction="row" alignItems="center" spacing={1} height={24} pt={1}>
         <Link target="_blank" href={socialMediaUrls.linkedIn}>
-          <LinkedInIcon
-            fontSize="medium"
-            sx={{ color: COLORS.WHITE, borderRadius: 100, cursor: "pointer" }}
-          />
+          <img src={LinkedInIcon} alt="linkedin-icon" height={18} />
         </Link>
         <Link target="_blank" href={socialMediaUrls.facebook}>
-          <FacebookOutlinedIcon
-            fontSize="medium"
-            sx={{ color: COLORS.WHITE, cursor: "pointer" }}
-          />
+          <img src={FacebookIcon} alt="facebook-icon" height={18} />
         </Link>
       </Stack>
       <Stack

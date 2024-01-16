@@ -34,7 +34,7 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
 
         <Typography
           mt={2}
-          fontSize={14}
+          fontSize={16}
           fontWeight={400}
           color={COLORS.GREY_TEXT}
           textAlign="justify"
@@ -50,7 +50,12 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
           alignItems="center"
           onClick={onReadMoreClick}
         >
-          <Typography color={COLORS.DARK_BLUE} sx={{ cursor: "pointer" }}>
+          <Typography
+            fontSize={16}
+            fontWeight={700}
+            color={COLORS.DARK_BLUE}
+            sx={{ cursor: "pointer" }}
+          >
             {messages.readMore}
           </Typography>
 

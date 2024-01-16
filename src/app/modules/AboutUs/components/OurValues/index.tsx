@@ -1,4 +1,6 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+
 import COLORS from "../../../../styles/colors";
 import {
   OUR_VALUES,
@@ -52,7 +54,7 @@ const OurVision: React.FC = () => (
 
             {values?.description && (
               <Typography
-                fontSize={14}
+                fontSize={16}
                 fontWeight={400}
                 color={COLORS.DARK_BLUE}
               >
@@ -61,33 +63,59 @@ const OurVision: React.FC = () => (
             )}
 
             {values?.subDescription?.map((subValues) => (
-              <ul style={{ listStyle: "none", padding: 0 }}>
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: COLORS.DARK_BLUE,
-                  }}
+              // <ul
+              //   style={{
+              //     listStyle: "none",
+              //     padding: 0,
+              //     listStylePosition: "inside",
+              //   }}
+              // >
+              //   <li
+              //     style={{
+              //       display: "flex",
+              //       alignItems: "center",
+              //       justifyContent: "center",
+              //       color: COLORS.DARK_BLUE,
+              //     }}
+              //   >
+              //     <span
+              //       style={{
+              //         paddingRight: "4px",
+              //         fontSize: "24px",
+              //         marginBlock: -6,
+              //       }}
+              //     >
+              //       &#8226;
+              //     </span>
+              //     <Typography
+              //       fontSize={16}
+              //       fontWeight={400}
+              //       color={COLORS.DARK_BLUE}
+              //     >
+              //       {subValues}
+              //     </Typography>
+              //   </li>
+              // </ul>
+
+              <Stack
+                key={subValues}
+                direction="row"
+                spacing={2}
+                justifyContent="center"
+                alignItems="center"
+                textAlign="justify"
+              >
+                <FiberManualRecordIcon
+                  sx={{ fontSize: 8, color: COLORS.DARK_BLUE }}
+                />
+                <Typography
+                  fontSize={16}
+                  fontWeight={400}
+                  color={COLORS.DARK_BLUE}
                 >
-                  <span
-                    style={{
-                      paddingRight: "4px",
-                      fontSize: "24px",
-                      marginBlock: -6,
-                    }}
-                  >
-                    &#8226;
-                  </span>
-                  <Typography
-                    fontSize={14}
-                    fontWeight={400}
-                    color={COLORS.DARK_BLUE}
-                  >
-                    {subValues}
-                  </Typography>
-                </li>
-              </ul>
+                  {subValues}
+                </Typography>
+              </Stack>
             ))}
           </Grid>
         ))}
