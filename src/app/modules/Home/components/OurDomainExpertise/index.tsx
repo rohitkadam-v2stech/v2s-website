@@ -33,6 +33,7 @@ const OurDomainExpertise = () => {
         justifyContent="center"
         alignItems="center"
         gap={6}
+        px={{ xs: 0, sm: 0, md: 0, lg: 2, xl: 2 }}
       >
         {OUR_DOMAIN_EXPERTISE.map(({ id, title, description, icon }) => (
           <Grid key={id} item xs={12} sm={6} md={3.5} lg={2}>

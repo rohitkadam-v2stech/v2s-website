@@ -29,8 +29,8 @@ const OurAssociation: React.FC = () => {
 
     <Box px={isOnMobile ? 2 : "15%"} py={8} mb={16}>
       <Typography
-        fontSize={30}
-        fontWeight={700}
+        fontSize="30px"
+        fontWeight="600"
         color={COLORS.DARK_BLUE}
         textAlign="center"
         mb={6}

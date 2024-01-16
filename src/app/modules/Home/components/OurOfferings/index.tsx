@@ -35,7 +35,8 @@ const OurOfferings = () => {
         variant="h4"
         textAlign="center"
         color={COLORS.DARK_BLUE}
-        fontWeight="bold"
+        fontWeight="600"
+        fontSize="30px"
       >
         {OUR_OFFERINGS}
       </Typography>
@@ -46,6 +47,7 @@ const OurOfferings = () => {
         mt={10}
         rowGap={4}
         columnGap={2}
+        px={{ xs: 0, sm: 0, md: 0, lg: 10, xl: 10 }}
       >
         {OFFERINGS_LIST.map(({ icon, title }) => (
           <Grid
@@ -63,7 +65,7 @@ const OurOfferings = () => {
               <Typography
                 textAlign="center"
                 fontWeight="600"
-                fontSize={22}
+                fontSize="19px"
                 color={COLORS.DARK_BLUE}
               >
                 {title}

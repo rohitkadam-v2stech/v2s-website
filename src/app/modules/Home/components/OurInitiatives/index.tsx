@@ -8,36 +8,34 @@ import { OUR_INITIATIVES } from "./constants";
 const OurInitiatives: React.FC = () => (
   <Box px="6%" pb={10} bgcolor={COLORS.LIGHT_BLUE}>
     <Typography
-      fontSize={30}
-      fontWeight={700}
+      fontSize="30px"
+      fontWeight="600"
       color={COLORS.DARK_BLUE}
       textAlign="center"
-      py={16}
+      py={6}
     >
       {messages.ourInitiatives}
     </Typography>
 
-    <Grid container gap={8} alignItems="center" justifyContent="center">
+    <Grid container gap={6} alignItems="center" justifyContent="center">
       {OUR_INITIATIVES.map((news, index) => (
         <Grid
           item
           xs={12}
           sm={12}
-          md={4}
-          lg={4}
-          xl={4}
+          md={5}
+          lg={5}
+          xl={5}
           key={index}
           container
-          justifyContent="center"
-          alignItems="center"
+          height="100%"
         >
           <InitiativeCard
             image={news.image}
             title={news.title}
             description={news.description}
             onReadMoreClick={() => {}}
-            containerProps={{ width: 400, height: 400 }}
-            imageContainerProps={{ height: 200 }}
+            containerProps={{ width: 640, height: 520 }}
           />
         </Grid>
       ))}
