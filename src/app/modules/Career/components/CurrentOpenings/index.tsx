@@ -27,7 +27,7 @@ const CurrentOpenings = () => (
         gap="20px"
         justifyContent="center"
         alignItems="center"
-        px={{ xs: 2, sm: 2, md: 2, lg: 0 }}
+        px={{ xs: 2, sm: 2, md: 2, lg: 8 }}
         py="10px"
       >
         {jobsData.data.map((item, id) => (

@@ -23,7 +23,7 @@ const TrustedBy = () => {
         justifyContent="center"
         alignItems="center"
         spacing={4}
-        px={{ xs: 2, sm: 2, md: 2, lg: 2 }}
+        px={{ xs: 2, sm: 2, md: 2, lg: 6 }}
       >
         <Grid item xs={12} sm={12} md={3.5} lg={3.5}>
           <Box component="img" src={glassdoorReview} width="100%" />

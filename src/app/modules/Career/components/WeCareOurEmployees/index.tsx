@@ -12,7 +12,7 @@ const WeCareOurEmployees = () => {
         </Typography>
       </Box>
       <Grid container gap={2}>
-        <Grid item xs={12} sm={12} md={7.2} lg={7.2}>
+        <Grid item xs={12} sm={12} md={7.1} lg={7.1}>
           <Typography textAlign="justify" fontSize="16px" lineHeight="26px">
             {messages.weCareForOurEmployeesContent}
           </Typography>

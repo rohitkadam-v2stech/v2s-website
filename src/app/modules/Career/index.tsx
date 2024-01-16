@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
 
 import COLORS from "../../styles/colors";
 import { messages } from "./config/messages";
@@ -16,12 +16,11 @@ const Career = () => {
       <StyledImageContainer />
       <Grid
         container
-        px={{ xs: 4, sm: 10, md: 12, lg: 22 }}
+        px={{ xs: 4, sm: 4, md: 12, lg: 22 }}
         py={8}
         bgcolor={COLORS.WHITE}
-        gap={4}
       >
-        <Grid item xs={12} md={8.8} lg={8.9} xl={8.9}>
+        <Grid item xs={12} md={8.5} lg={8.5} xl={8.5}>
           <Stack spacing={2}>
             <Typography
               fontSize="30px"
@@ -30,13 +29,15 @@ const Career = () => {
             >
               {messages.instructions}
             </Typography>
-            <Typography fontSize="20px" fontWeight="400">
+            <Typography fontSize="20px" fontWeight="400" textAlign="justify">
               {messages.instructionsContent}
             </Typography>
           </Stack>
         </Grid>
-        <Grid item md={0.2} lg={0.2} xl={0.2} />
-        <Grid item xs={12} md={2.5} lg={2.5} xl={2.5}>
+        <Grid item md={0.1} lg={0.1} xl={0.1} textAlign="center" px={2}>
+          <Divider orientation="vertical" />
+        </Grid>
+        <Grid item xs={12} md={3.2} lg={3.2} xl={3.2}>
           <Stack spacing={2}>
             <Typography
               fontSize="30px"
