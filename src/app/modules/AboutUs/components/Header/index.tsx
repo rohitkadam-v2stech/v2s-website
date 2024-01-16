@@ -64,7 +64,7 @@ const Header: React.FC = () => {
       <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
         <Stack height="100%" justifyContent="center">
           <Typography
-            fontSize={25}
+            fontSize={24}
             fontWeight={700}
             color={COLORS.DARK_BLUE}
             textTransform="uppercase"
