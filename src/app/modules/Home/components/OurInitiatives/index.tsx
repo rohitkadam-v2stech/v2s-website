@@ -17,7 +17,7 @@ const OurInitiatives: React.FC = () => (
       {messages.ourInitiatives}
     </Typography>
 
-    <Grid container gap={6} alignItems="center" justifyContent="center">
+    <Grid container gap={12} alignItems="center" justifyContent="center">
       {OUR_INITIATIVES.map((news, index) => (
         <Grid
           item
@@ -35,7 +35,7 @@ const OurInitiatives: React.FC = () => (
             title={news.title}
             description={news.description}
             onReadMoreClick={() => {}}
-            containerProps={{ width: 640, height: 520 }}
+            containerProps={{ width: 640, height: 496 }}
           />
         </Grid>
       ))}
