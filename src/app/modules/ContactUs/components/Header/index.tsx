@@ -17,10 +17,16 @@ const Header: React.FC = () => {
           md={6.5}
           lg={6.5}
           xl={6.5}
-          px={isOnMobile || isOnTablet ? 4 : 12}
+          pl={isOnMobile || isOnTablet ? 4 : "7%"}
+          pr={isOnMobile || isOnTablet ? 4 : 8}
         >
           <Stack height="100%" justifyContent="center" py={4}>
-            <Typography fontSize={40} fontWeight={700} color={COLORS.WHITE}>
+            <Typography
+              fontSize={40}
+              fontWeight={700}
+              color={COLORS.WHITE}
+              mb={2}
+            >
               {messages.contactUs}
             </Typography>
 

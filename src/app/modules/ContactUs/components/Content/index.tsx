@@ -9,7 +9,7 @@ const Content: React.FC = () => {
 
   return (
     <Box bgcolor={COLORS.WHITE}>
-      <Grid container p={isOnMobile || isOnTablet ? 4 : 12}>
+      <Grid container p={isOnMobile || isOnTablet ? 4 : "7%"}>
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
           <BusinessQueries />
         </Grid>
