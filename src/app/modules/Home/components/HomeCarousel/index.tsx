@@ -9,7 +9,11 @@ import PrevArrowBtn from "./components/PrevArrowBtn";
 import NextArrowBtn from "./components/NextArrowBtn";
 
 const HomeCarousel = () => (
-  <Box bgcolor={COLORS.PRIMARY_BLUE} pb={12}>
+  <Box
+    bgcolor={COLORS.PRIMARY_BLUE}
+    sx={{ height: "100%" }}
+    pb={{ xs: 12, sm: 10, md: 12, lg: 12, xl: 12 }}
+  >
     <SliderWrapper>
       <Slider
         arrows

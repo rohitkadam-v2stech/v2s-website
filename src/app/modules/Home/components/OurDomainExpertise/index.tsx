@@ -17,13 +17,13 @@ const OurDomainExpertise = () => {
   const { isOnMobile } = useDeviceSize();
 
   return (
-    <Box mb={12.5} px={{ xs: 2, md: 6 }}>
+    <Box mb={12.5} px={{ xs: 2, md: 6, lg: 8, xl: 8 }}>
       <Typography
         textAlign="center"
         color={COLORS.DARK_BLUE}
         fontWeight="600"
         fontSize="30px"
-        my={{ xs: 6, sm: 6, md: 12.5, lg: 12.5 }}
+        my={{ xs: 6, sm: 6, md: 8, lg: 8 }}
       >
         {messages.ourDomainExpertise}
       </Typography>
@@ -33,7 +33,7 @@ const OurDomainExpertise = () => {
         justifyContent="center"
         alignItems="center"
         gap={6}
-        px={{ xs: 0, sm: 0, md: 0, lg: 2, xl: 2 }}
+        px={{ xs: 0, sm: 0, md: 0, lg: 4, xl: 4 }}
       >
         {OUR_DOMAIN_EXPERTISE.map(({ id, title, description, icon }) => (
           <Grid key={id} item xs={12} sm={6} md={3.5} lg={2}>
