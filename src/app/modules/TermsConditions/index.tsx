@@ -9,7 +9,7 @@ const TermsConditions = () => (
       variant="h2"
       fontWeight="bold"
       color={COLORS.DARK_BLUE}
-      fontSize="50px"
+      fontSize="40px"
       my={8}
     >
       {messages.termsAndConditions}

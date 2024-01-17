@@ -1,3 +1,3 @@
 export const messages = {
-  refundPolicy: "Refund policy",
+  refundPolicy: "Refund Policy",
 };
