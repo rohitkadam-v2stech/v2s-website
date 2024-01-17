@@ -17,7 +17,7 @@ const Recognition = () => {
       <Typography
         mt={4}
         mb={6}
-        fontSize="24px"
+        fontSize="30px"
         fontWeight="700"
         color={COLORS.DARK_BLUE}
       >

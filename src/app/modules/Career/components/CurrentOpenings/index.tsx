@@ -10,7 +10,7 @@ import "./style.css";
 const CurrentOpenings = () => (
   <Box bgcolor={COLORS.BACKGROUND_GREY}>
     <Stack justifyContent="center" alignItems="center" py={6} spacing="20px">
-      <Typography fontSize="24px" fontWeight="700" color={COLORS.DARK_BLUE}>
+      <Typography fontSize="30px" fontWeight="700" color={COLORS.DARK_BLUE}>
         {messages.currentOpenings}
       </Typography>
       <div className="search-container">

@@ -7,7 +7,7 @@ const WeCareOurEmployees = () => {
   return (
     <Stack spacing={4} mx={{ xs: 2, sm: 2, md: 8, lg: 22 }} py={8}>
       <Box sx={{ textAlign: "center" }}>
-        <Typography fontSize="24px" fontWeight="700" color={COLORS.DARK_BLUE}>
+        <Typography fontSize="30px" fontWeight="700" color={COLORS.DARK_BLUE}>
           {messages.weCareForOurEmployees}
         </Typography>
       </Box>

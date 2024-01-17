@@ -13,7 +13,7 @@ const LifeAtV2stech = () => {
       spacing={4}
       px={{ xs: 0, sm: 2, md: 10, lg: 22 }}
     >
-      <Typography fontSize="24px" fontWeight="700" color={COLORS.DARK_BLUE}>
+      <Typography fontSize="30px" fontWeight="700" color={COLORS.DARK_BLUE}>
         {messages.lifeAtV2stech}
       </Typography>
       <Box component="img" width="100%" src={lifeAtV2stech} />
