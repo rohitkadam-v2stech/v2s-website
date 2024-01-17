@@ -9,7 +9,7 @@ const OurInitiatives: React.FC = () => (
   <Box px="8%" pb={10} bgcolor={COLORS.LIGHT_BLUE}>
     <Typography
       fontSize="30px"
-      fontWeight="600"
+      fontWeight="700"
       color={COLORS.DARK_BLUE}
       textAlign="center"
       py={6}

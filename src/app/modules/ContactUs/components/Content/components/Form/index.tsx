@@ -67,6 +67,7 @@ const ContactUsForm: React.FC = () => {
                 textTransform: "uppercase",
                 bgcolor: COLORS.DARK_BLUE,
                 color: COLORS.WHITE,
+                fontSize: 14,
               }}
             >
               {messages.sendMessage}

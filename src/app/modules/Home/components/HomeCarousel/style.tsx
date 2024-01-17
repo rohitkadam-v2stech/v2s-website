@@ -106,16 +106,16 @@ export const StyledCarouselBtn = styled(Button)(({ theme }) => ({
   borderWidth: 2,
   textTransform: "capitalize",
   [theme.breakpoints.up("xs")]: {
-    fontSize: 14,
+    fontSize: 16,
   },
   [theme.breakpoints.up("sm")]: {
-    fontSize: 14,
+    fontSize: 16,
   },
   [theme.breakpoints.up("md")]: {
-    fontSize: 14,
+    fontSize: 16,
   },
   [theme.breakpoints.up("lg")]: {
-    fontSize: 14,
+    fontSize: 16,
   },
 }));
 

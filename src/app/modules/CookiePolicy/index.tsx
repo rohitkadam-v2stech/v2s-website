@@ -7,9 +7,9 @@ const CookiePolicy = () => (
   <Box my={3} px={{ xs: 2, sm: 2, md: 10, lg: 22 }}>
     <Typography
       variant="h2"
-      fontWeight="bold"
+      fontWeight={700}
       color={COLORS.DARK_BLUE}
-      fontSize="50px"
+      fontSize="40px"
       my={8}
     >
       {messages.cookiePolicy}
@@ -25,6 +25,7 @@ const CookiePolicy = () => (
               <Typography
                 key={id}
                 fontSize="16px"
+                fontWeight={400}
                 textAlign="justify"
                 pl={
                   point.includes("a. ") ||

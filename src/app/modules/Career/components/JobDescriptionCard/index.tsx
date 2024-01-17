@@ -1,5 +1,5 @@
 import { ArrowRightAlt } from "@mui/icons-material";
-import { Box, Button, Paper, Stack, Typography } from "@mui/material";
+import { Paper, Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
@@ -58,20 +58,21 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
             }`}
           </Typography>
         ))}
-        <Box>
-          <Button
-            sx={{
-              textTransform: "none",
-              color: COLORS.DARK_BLUE,
-              float: "right",
-              fontSize: "14px",
-            }}
-            size="small"
-            endIcon={<ArrowRightAlt />}
+
+        <Stack direction="row" justifyContent="end" alignItems="center">
+          <Typography
+            fontSize={16}
+            fontWeight={700}
+            color={COLORS.DARK_BLUE}
+            sx={{ cursor: "pointer" }}
           >
             {messages.readMore}
-          </Button>
-        </Box>
+          </Typography>
+
+          <ArrowRightAlt
+            sx={{ pt: 0.6, color: COLORS.DARK_BLUE, cursor: "pointer" }}
+          />
+        </Stack>
       </Stack>
     </Paper>
   );

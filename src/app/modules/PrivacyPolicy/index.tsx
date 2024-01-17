@@ -8,9 +8,9 @@ const PrivacyPolicy = () => (
   <Box mb={3} px={{ xs: 2, sm: 2, md: 10, lg: 22 }}>
     <Typography
       variant="h2"
-      fontWeight="bold"
       color={COLORS.DARK_BLUE}
-      fontSize="50px"
+      fontSize="40px"
+      fontWeight={700}
       my={8}
     >
       {messages.privacyPolicy}
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => (
           <Typography fontSize="24px" fontWeight="700">
             {title}
           </Typography>
-          <Typography fontSize="16px" textAlign="justify">
+          <Typography fontSize="16px" fontWeight={400} textAlign="justify">
             {description}
           </Typography>
         </Stack>

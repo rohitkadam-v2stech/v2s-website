@@ -25,7 +25,7 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
 
         <Typography
           mt={4}
-          fontSize={20}
+          fontSize={22}
           fontWeight={700}
           color={COLORS.DARK_BLUE}
         >
