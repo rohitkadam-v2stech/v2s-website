@@ -14,7 +14,8 @@ import CaseStudiesHeader from "../../components/Header";
 import FilterIcon from "../../../../assets/filter.png";
 import CaseStudiesListing from "../../components/Listing";
 import { messages } from "../../config/messages";
-import caseStudiesData from "../../data.json";
+// import caseStudiesData from "../../data.json";
+import { CASE_STUDIES_LIST } from "../../config/constants";
 
 // TODO: any type temp added
 
@@ -23,20 +24,16 @@ const CaseStudiesList = () => {
   const [allCountries, setAllCountries] = useState<
     Array<{ id: number; label: string }>
   >([]);
-  const [allCaseStudies, setAllCaseStudies] = useState<any>(
-    caseStudiesData.data
-  );
+  const [allCaseStudies, setAllCaseStudies] = useState<any>(CASE_STUDIES_LIST);
 
   useEffect(() => {
-    const countriesList = caseStudiesData.data
-      .map((item) => ({
-        id: item.id,
-        label: item.country,
-      }))
-      .filter(
-        ({ label }, index, arr) =>
-          arr.findIndex((obj) => obj.label === label) === index
-      );
+    const countriesList = CASE_STUDIES_LIST.map((item) => ({
+      id: item.id,
+      label: item.country,
+    })).filter(
+      ({ label }, index, arr) =>
+        arr.findIndex((obj) => obj.label === label) === index
+    );
 
     setAllCountries(countriesList);
   }, []);
@@ -44,10 +41,10 @@ const CaseStudiesList = () => {
   const handleCountryChange = (event: any) => {
     setCountry(event.target.value);
     if (event.target.value === "all") {
-      setAllCaseStudies(caseStudiesData.data);
+      setAllCaseStudies(CASE_STUDIES_LIST);
     } else {
       setAllCaseStudies(() => {
-        const updatedAllCaseStudies = caseStudiesData.data.filter(
+        const updatedAllCaseStudies = CASE_STUDIES_LIST.filter(
           ({ country: countryName }: any) => countryName === event.target.value
         );
         return updatedAllCaseStudies;

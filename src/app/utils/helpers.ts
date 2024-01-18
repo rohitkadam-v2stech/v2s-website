@@ -43,3 +43,8 @@ export const navigateToMail = () => {
   // Open the default email client
   window.location.href = mailtoLink;
 };
+
+export const copyToClipboard = (value: string) => {
+  navigator.clipboard.writeText(value);
+  alert("Copied text to clipboard.");
+};

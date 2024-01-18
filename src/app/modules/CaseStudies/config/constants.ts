@@ -1,3 +1,17 @@
+import DomainLogo1 from "../../../assets/caseStudiesDetails/Domain1.png";
+import CareImg1 from "../../../assets/caseStudiesDetails/Care1.png";
+
+import FissaraLogo from "../../../assets/caseStudiesDetails/FissaraLogo.png";
+import FissaraImg1 from "../../../assets/caseStudiesDetails/Fissara1.png";
+
+// import QfixLogo from "../../../assets/caseStudiesDetails/QfixLogo.png";
+import QfixImg1 from "../../../assets/caseStudiesDetails/Qfix1.png";
+import QfixImg2 from "../../../assets/caseStudiesDetails/Qfix2.png";
+import QfixImg3 from "../../../assets/caseStudiesDetails/Qfix3.png";
+import QfixImg4 from "../../../assets/caseStudiesDetails/Qfix4.png";
+
+import RipplehireImg from "../../../assets/caseStudiesDetails/Ripplehire.png";
+
 export const COUNTRIES_LIST = [
   {
     id: "1",
@@ -21,6 +35,7 @@ export const CASE_STUDIES_LIST = [
   {
     id: 1,
     caseName: "Carebeans",
+    domain: { name: "Healthcare", logo: DomainLogo1 },
     country: "UK",
     title: "Developing one of the top 5 service providers in care industry",
     subtitle:
@@ -92,10 +107,12 @@ export const CASE_STUDIES_LIST = [
       "Entire technical ownership other then first line support is manage by us from our offshore development center",
       "Representing our client in meeting with third party such as API provider, Investors, hosting providers, care homes etc.",
     ],
+    projectScreenshots: [CareImg1],
   },
   {
     id: 2,
     caseName: "Qfix",
+    domain: { name: "Education", logo: DomainLogo1 },
     country: "India",
     title:
       "Improved platform with 12 major and 50 minor releases in 3 years. Every release was on-time and within budget.",
@@ -105,6 +122,7 @@ export const CASE_STUDIES_LIST = [
       "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors.",
     image:
       "https://v2stech.com/wp-content/uploads/2023/05/cs-6-qfix-768x427.png",
+    // image: QfixLogo,
     flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
     startYear: 2017,
     endYear: 2020,
@@ -163,10 +181,12 @@ export const CASE_STUDIES_LIST = [
     ongoingValueBasedRelationship: [
       "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
     ],
+    projectScreenshots: [QfixImg1, QfixImg2, QfixImg3, QfixImg4],
   },
   {
     id: 3,
     caseName: "Fissara",
+    domain: { name: "Resource Management", logo: DomainLogo1 },
     country: "UK",
     title:
       "Transforming SaaS platform to multitenant architecture & build multiple products",
@@ -174,7 +194,8 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2016.",
-    image: "https://v2stech.com/wp-content/uploads/2023/11/CS_Fissara.png",
+    // image: "https://v2stech.com/wp-content/uploads/2023/11/CS_Fissara.png",
+    image: FissaraLogo,
     flag: "https://v2stech.com/wp-content/uploads/2023/11/UK.png",
     startYear: 2016,
     endYear: null,
@@ -238,10 +259,12 @@ export const CASE_STUDIES_LIST = [
       "Generating knowledge base",
       "Product enhancement",
     ],
+    projectScreenshots: [FissaraImg1],
   },
   {
     id: 4,
     caseName: "Pathlock",
+    domain: { name: "Access Orchestration", logo: DomainLogo1 },
     country: "USA",
     title:
       "Asynchronous business process execution handles high volume through user centred design",
@@ -316,6 +339,7 @@ export const CASE_STUDIES_LIST = [
   {
     id: 5,
     caseName: "Pinelabs",
+    domain: { name: "FinTech", logo: DomainLogo1 },
     country: "India",
     title:
       "Integration of a merchant portal into payments platform to facilitate tax collection",
@@ -393,6 +417,7 @@ export const CASE_STUDIES_LIST = [
   {
     caseName: "RippleHire",
     id: 6,
+    domain: { name: "Recruitment", logo: DomainLogo1 },
     country: "India",
     title: "Product modernization for a cutting edge recruitment SaaS",
     subtitle:
@@ -465,5 +490,6 @@ export const CASE_STUDIES_LIST = [
       "Scaling team up and down based on task requirement",
       "Continuous involvement of technology and domain specialists is reducing overhead of documentation, communication and rework.",
     ],
+    projectScreenshots: [RipplehireImg],
   },
 ];

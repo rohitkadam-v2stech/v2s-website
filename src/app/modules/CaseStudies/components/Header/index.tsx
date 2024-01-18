@@ -2,7 +2,7 @@ import { Box, Grid, Stack } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
-import CaseStudiesBanner from "../../../../assets/world_map.png";
+import CaseStudiesBanner from "../../../../assets/aboutUsLogos/GlobalCollaboratorsMap.png";
 import { StyledExtraLargeBoldText, StyledRegularText } from "../../style";
 
 const CaseStudiesHeader: React.FC = () => (
