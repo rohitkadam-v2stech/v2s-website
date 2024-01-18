@@ -1,6 +1,6 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import EastIcon from "@mui/icons-material/East";
-import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+// import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
 import { CASE_STUDIES_LIST } from "../../config/constants";
 import COLORS from "../../../../styles/colors";
@@ -62,7 +62,10 @@ const CaseStudiesListing: React.FC = () => {
             flexDirection="column"
             justifyContent="space-between"
           >
-            <Stack>
+            <Stack
+              sx={{ cursor: "pointer" }}
+              onClick={() => handleReadMore(item, index)}
+            >
               <StyledLargeBoldText
                 mb={1}
                 color={COLORS.DARK_BLUE}
@@ -114,19 +117,13 @@ const CaseStudiesListing: React.FC = () => {
                     >{`${item.startYear}-${item.endYear}`}</StyledSmallText>
                   )}
                   <Typography color={COLORS.GREY_TEXT}>|</Typography>
-                  {/* <Divider
-                  orientation="vertical"
-                  // variant="middle"
-                  flexItem
-                  sx={{ bgcolor: COLORS.GREY_TEXT }}
-                /> */}
 
                   <StyledSmallText color={COLORS.GREY_TEXT}>
                     {`${messages.teamSize} ${item.minTeamSize}-${item.maxTeamSize}`}
                   </StyledSmallText>
                 </Stack>
 
-                {!isOnMobile && (
+                {/* {!isOnMobile && (
                   <Stack
                     direction="row"
                     spacing={0.5}
@@ -141,10 +138,10 @@ const CaseStudiesListing: React.FC = () => {
                       sx={{ color: COLORS.PRIMARY_BLUE }}
                     />
                   </Stack>
-                )}
+                )} */}
               </Stack>
 
-              {isOnMobile && (
+              {/* {isOnMobile && (
                 <Stack spacing={1}>
                   <Stack direction="row" spacing={0.5}>
                     <StyledSmallText color={COLORS.PRIMARY_BLUE}>
@@ -158,7 +155,7 @@ const CaseStudiesListing: React.FC = () => {
                   </Stack>
                   <DashedDivider />
                 </Stack>
-              )}
+              )} */}
             </Stack>
           </Grid>
         </Grid>
