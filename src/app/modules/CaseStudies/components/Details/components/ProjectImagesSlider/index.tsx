@@ -1,6 +1,7 @@
 import { Box, Stack } from "@mui/material";
 import Slider from "../../../../../../components/Slider";
 import useDeviceSize from "../../../../../../hooks/useDeviceSize";
+import COLORS from "../../../../../../styles/colors";
 
 type TProjectImagesSliderProps = {
   state: any;
@@ -19,6 +20,7 @@ const ProjectImagesSlider: React.FC<TProjectImagesSliderProps> = ({
           display="flex"
           flexDirection="row"
           justifyContent="center"
+          bgcolor={COLORS.WHITE}
         >
           <img
             src={state?.projectScreenshots[0]}
@@ -28,7 +30,11 @@ const ProjectImagesSlider: React.FC<TProjectImagesSliderProps> = ({
           />
         </Box>
       ) : (
-        <Box px={{ xs: 4, sm: 4, md: "10%", lg: "10%", xl: "10%" }} py={8}>
+        <Box
+          px={{ xs: 4, sm: 4, md: "10%", lg: "10%", xl: "10%" }}
+          py={8}
+          bgcolor={COLORS.WHITE}
+        >
           <Stack px={"20%"} py={4} justifyContent="center">
             <Slider slidesToShow={1}>
               {state?.projectScreenshots?.map((item: any, index: number) => (

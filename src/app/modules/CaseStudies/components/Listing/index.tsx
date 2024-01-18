@@ -145,9 +145,9 @@ const CaseStudiesListing: React.FC<TCaseStudiesListingProps> = ({ data }) => {
                 )} */}
               </Stack>
 
-              {/* {isOnMobile && (
+              {isOnMobile && (
                 <Stack spacing={1}>
-                  <Stack direction="row" spacing={0.5}>
+                  {/* <Stack direction="row" spacing={0.5}>
                     <StyledSmallText color={COLORS.PRIMARY_BLUE}>
                       {messages.download}
                     </StyledSmallText>
@@ -156,10 +156,10 @@ const CaseStudiesListing: React.FC<TCaseStudiesListingProps> = ({ data }) => {
                       fontSize="small"
                       sx={{ color: COLORS.PRIMARY_BLUE }}
                     />
-                  </Stack>
+                  </Stack> */}
                   <DashedDivider />
                 </Stack>
-              )} */}
+              )}
             </Stack>
           </Grid>
         </Grid>
