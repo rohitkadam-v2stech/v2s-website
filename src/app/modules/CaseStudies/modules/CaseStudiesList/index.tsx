@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   Box,
@@ -12,17 +12,52 @@ import {
 import COLORS from "../../../../styles/colors";
 import CaseStudiesHeader from "../../components/Header";
 import FilterIcon from "../../../../assets/filter.png";
-import { COUNTRIES_LIST } from "../../config/constants";
 import CaseStudiesListing from "../../components/Listing";
 import { messages } from "../../config/messages";
+import caseStudiesData from "../../data.json";
+
+// TODO: any type temp added
 
 const CaseStudiesList = () => {
-  const [country, setCountry] = useState<string | number | null>(null);
+  const [country, setCountry] = useState<string>();
+  const [allCountries, setAllCountries] = useState<
+    Array<{ id: number; label: string }>
+  >([]);
+  const [allCaseStudies, setAllCaseStudies] = useState<any>(
+    caseStudiesData.data
+  );
+
+  useEffect(() => {
+    const countriesList = caseStudiesData.data
+      .map((item) => ({
+        id: item.id,
+        label: item.country,
+      }))
+      .filter(
+        ({ label }, index, arr) =>
+          arr.findIndex((obj) => obj.label === label) === index
+      );
+
+    setAllCountries(countriesList);
+  }, []);
+
+  const handleCountryChange = (event: any) => {
+    setCountry(event.target.value);
+    if (event.target.value === "all") {
+      setAllCaseStudies(caseStudiesData.data);
+    } else {
+      setAllCaseStudies(() => {
+        const updatedAllCaseStudies = caseStudiesData.data.filter(
+          ({ country: countryName }: any) => countryName === event.target.value
+        );
+        return updatedAllCaseStudies;
+      });
+    }
+  };
 
   return (
     <Box bgcolor={COLORS.WHITE}>
       <Box mb={12}>
-        {/* Insert Background image in this box */}
         <CaseStudiesHeader />
       </Box>
 
@@ -40,16 +75,16 @@ const CaseStudiesList = () => {
               backgroundColor: COLORS.LIGHT_BLUE,
               width: 200,
             }}
-            value={country || "select"}
-            onChange={(event) => setCountry(event.target.value)}
+            value={country || "all"}
+            onChange={handleCountryChange}
             size="small"
           >
-            <MenuItem value="select" disabled>
-              {messages.country}
+            <MenuItem value="all" selected>
+              {messages.all}
             </MenuItem>
-            {COUNTRIES_LIST.map((country) => (
-              <MenuItem key={country.id} value={country.id}>
-                {country.label}
+            {allCountries.map(({ id, label }) => (
+              <MenuItem key={id} value={label}>
+                {label}
               </MenuItem>
             ))}
           </Select>
@@ -59,7 +94,7 @@ const CaseStudiesList = () => {
           sx={{ my: 1, width: "100%", height: 2, bgcolor: COLORS.DARK_BLUE }}
         />
 
-        <CaseStudiesListing />
+        <CaseStudiesListing data={allCaseStudies} />
       </Box>
     </Box>
   );

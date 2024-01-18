@@ -21,6 +21,7 @@ export const CASE_STUDIES_LIST = [
   {
     id: 1,
     caseName: "Carebeans",
+    country: "UK",
     title: "Developing one of the top 5 service providers in care industry",
     subtitle:
       "This product recognized as top 5 service providers in care industry",
@@ -95,6 +96,7 @@ export const CASE_STUDIES_LIST = [
   {
     id: 2,
     caseName: "Qfix",
+    country: "India",
     title:
       "Improved platform with 12 major and 50 minor releases in 3 years. Every release was on-time and within budget.",
     subtitle:
@@ -165,6 +167,7 @@ export const CASE_STUDIES_LIST = [
   {
     id: 3,
     caseName: "Fissara",
+    country: "UK",
     title:
       "Transforming SaaS platform to multitenant architecture & build multiple products",
     subtitle:
@@ -239,6 +242,7 @@ export const CASE_STUDIES_LIST = [
   {
     id: 4,
     caseName: "Pathlock",
+    country: "USA",
     title:
       "Asynchronous business process execution handles high volume through user centred design",
     subtitle:
@@ -312,6 +316,7 @@ export const CASE_STUDIES_LIST = [
   {
     id: 5,
     caseName: "Pinelabs",
+    country: "India",
     title:
       "Integration of a merchant portal into payments platform to facilitate tax collection",
     subtitle:
@@ -388,6 +393,7 @@ export const CASE_STUDIES_LIST = [
   {
     caseName: "RippleHire",
     id: 6,
+    country: "India",
     title: "Product modernization for a cutting edge recruitment SaaS",
     subtitle:
       "This product recognized as top 5 service providers in care industry",
