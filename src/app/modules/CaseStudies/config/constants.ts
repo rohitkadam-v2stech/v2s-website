@@ -10,6 +10,8 @@ import QfixImg2 from "../../../assets/caseStudiesDetails/Qfix2.png";
 import QfixImg3 from "../../../assets/caseStudiesDetails/Qfix3.png";
 import QfixImg4 from "../../../assets/caseStudiesDetails/Qfix4.png";
 
+import RipplehireImg from "../../../assets/caseStudiesDetails/Ripplehire.png";
+
 export const COUNTRIES_LIST = [
   {
     id: "1",
@@ -488,5 +490,6 @@ export const CASE_STUDIES_LIST = [
       "Scaling team up and down based on task requirement",
       "Continuous involvement of technology and domain specialists is reducing overhead of documentation, communication and rework.",
     ],
+    projectScreenshots: [RipplehireImg],
   },
 ];
