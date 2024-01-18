@@ -59,6 +59,7 @@ const Header: React.FC<THeaderProps> = ({ state }) => {
           >
             {messages.caseStudy}
           </Typography>
+
           <Typography
             sx={{
               fontSize:
@@ -72,7 +73,19 @@ const Header: React.FC<THeaderProps> = ({ state }) => {
             {state.caseName}
           </Typography>
 
-          <DashedDivider sx={{ mb: 2 }} />
+          <DashedDivider sx={{ mb: 1 }} />
+
+          <Stack direction="row" spacing={2} mb={1} alignItems="center">
+            <img src={state?.domain?.logo} alt="domain-logo" height={26} />
+
+            <Typography
+              fontSize={24}
+              fontWeight={600}
+              color={COLORS.LIGHT_BLUE}
+            >
+              {state?.domain?.name}
+            </Typography>
+          </Stack>
 
           <Typography
             sx={{

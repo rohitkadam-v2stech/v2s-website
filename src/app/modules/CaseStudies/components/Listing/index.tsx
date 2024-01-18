@@ -1,8 +1,8 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import EastIcon from "@mui/icons-material/East";
 // import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+import { useNavigate } from "react-router-dom";
 
-import { CASE_STUDIES_LIST } from "../../config/constants";
 import COLORS from "../../../../styles/colors";
 import useDeviceSize from "../../../../hooks/useDeviceSize";
 import { messages } from "../../config/messages";
@@ -12,11 +12,15 @@ import {
   StyledSmallText,
 } from "../../style";
 import { DashedDivider } from "../../../../styles/style";
-import { useNavigate } from "react-router-dom";
 import { APPLICATION_URLS } from "../../../../Routing/config/appsConfig";
 import { removeAsterisk } from "../../../../utils/helpers";
+import { TCaseStudyData } from "../../config/types";
 
-const CaseStudiesListing: React.FC = () => {
+type TCaseStudiesListingProps = {
+  data: Array<TCaseStudyData>;
+};
+
+const CaseStudiesListing: React.FC<TCaseStudiesListingProps> = ({ data }) => {
   const navigate = useNavigate();
   const { isOnMobile, isOnTablet } = useDeviceSize();
 
@@ -31,7 +35,7 @@ const CaseStudiesListing: React.FC = () => {
 
   return (
     <>
-      {CASE_STUDIES_LIST.map((item, index) => (
+      {data.map((item, index) => (
         <Grid
           container
           columnSpacing={4}

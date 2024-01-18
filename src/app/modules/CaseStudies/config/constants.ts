@@ -1,9 +1,10 @@
+import DomainLogo1 from "../../../assets/caseStudiesDetails/Domain1.png";
 import CareImg1 from "../../../assets/caseStudiesDetails/Care1.png";
 
 import FissaraLogo from "../../../assets/caseStudiesDetails/FissaraLogo.png";
 import FissaraImg1 from "../../../assets/caseStudiesDetails/Fissara1.png";
 
-import QfixLogo from "../../../assets/caseStudiesDetails/QfixLogo.png";
+// import QfixLogo from "../../../assets/caseStudiesDetails/QfixLogo.png";
 import QfixImg1 from "../../../assets/caseStudiesDetails/Qfix1.png";
 import QfixImg2 from "../../../assets/caseStudiesDetails/Qfix2.png";
 import QfixImg3 from "../../../assets/caseStudiesDetails/Qfix3.png";
@@ -32,6 +33,8 @@ export const CASE_STUDIES_LIST = [
   {
     id: 1,
     caseName: "Carebeans",
+    domain: { name: "Healthcare", logo: DomainLogo1 },
+    country: "UK",
     title: "Developing one of the top 5 service providers in care industry",
     subtitle:
       "This product recognized as top 5 service providers in care industry",
@@ -107,15 +110,17 @@ export const CASE_STUDIES_LIST = [
   {
     id: 2,
     caseName: "Qfix",
+    domain: { name: "Education", logo: DomainLogo1 },
+    country: "India",
     title:
       "Improved platform with 12 major and 50 minor releases in 3 years. Every release was on-time and within budget.",
     subtitle:
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors.",
-    // image:
-    //   "https://v2stech.com/wp-content/uploads/2023/05/cs-6-qfix-768x427.png",
-    image: QfixLogo,
+    image:
+      "https://v2stech.com/wp-content/uploads/2023/05/cs-6-qfix-768x427.png",
+    // image: QfixLogo,
     flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
     startYear: 2017,
     endYear: 2020,
@@ -179,6 +184,8 @@ export const CASE_STUDIES_LIST = [
   {
     id: 3,
     caseName: "Fissara",
+    domain: { name: "Resource Management", logo: DomainLogo1 },
+    country: "UK",
     title:
       "Transforming SaaS platform to multitenant architecture & build multiple products",
     subtitle:
@@ -255,6 +262,8 @@ export const CASE_STUDIES_LIST = [
   {
     id: 4,
     caseName: "Pathlock",
+    domain: { name: "Access Orchestration", logo: DomainLogo1 },
+    country: "USA",
     title:
       "Asynchronous business process execution handles high volume through user centred design",
     subtitle:
@@ -328,6 +337,8 @@ export const CASE_STUDIES_LIST = [
   {
     id: 5,
     caseName: "Pinelabs",
+    domain: { name: "FinTech", logo: DomainLogo1 },
+    country: "India",
     title:
       "Integration of a merchant portal into payments platform to facilitate tax collection",
     subtitle:
@@ -404,6 +415,8 @@ export const CASE_STUDIES_LIST = [
   {
     caseName: "RippleHire",
     id: 6,
+    domain: { name: "Recruitment", logo: DomainLogo1 },
+    country: "India",
     title: "Product modernization for a cutting edge recruitment SaaS",
     subtitle:
       "This product recognized as top 5 service providers in care industry",

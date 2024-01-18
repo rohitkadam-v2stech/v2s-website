@@ -1,17 +1,13 @@
-import { Box, Stack } from "@mui/material";
 import { useLocation } from "react-router-dom";
 
 import AboutClients from "./components/AboutClients";
 import ProblemStatement from "./components/ProblemStatement";
 import ValueProposition from "./components/ValueProposition";
 import Header from "./components/Header";
-import Slider from "../../../../components/Slider";
-import useDeviceSize from "../../../../hooks/useDeviceSize";
+import ProjectImagesSlider from "./components/ProjectImagesSlider";
 
 const CaseStudiesDetails: React.FC = () => {
   const { state } = useLocation();
-
-  const { isOnMobile } = useDeviceSize();
 
   return (
     <>
@@ -19,7 +15,9 @@ const CaseStudiesDetails: React.FC = () => {
 
       <ValueProposition state={state} />
 
-      {state?.projectScreenshots?.length <= 1 ? (
+      {state?.projectScreenshots && <ProjectImagesSlider state={state} />}
+
+      {/* {state?.projectScreenshots?.length <= 1 ? (
         <Box
           px="6%"
           py={8}
@@ -47,7 +45,7 @@ const CaseStudiesDetails: React.FC = () => {
             </Slider>
           </Stack>
         </Box>
-      )}
+      )} */}
 
       <AboutClients data={state} />
       <ProblemStatement data={state} />

@@ -4,7 +4,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 import { EMAIL, PHONE, socialMediaUrls } from "./constants";
 import COLORS from "../../styles/colors";
-import { navigateToMail } from "../../utils/helpers";
+import { copyToClipboard, navigateToMail } from "../../utils/helpers";
 import FacebookIcon from "../../assets/facebook.png";
 import LinkedInIcon from "../../assets/linkedin.png";
 
@@ -39,7 +39,13 @@ const ContactNavbar = () => {
           <Divider color={COLORS.WHITE} orientation="vertical" flexItem />
         }
       >
-        <Stack direction="row" spacing={1} alignItems="center">
+        <Stack
+          direction="row"
+          spacing={1}
+          alignItems="center"
+          sx={{ cursor: "pointer" }}
+          onClick={() => copyToClipboard(PHONE)}
+        >
           <LocalPhoneIcon fontSize="small" />
           <Typography variant="subtitle1">{PHONE}</Typography>
         </Stack>

@@ -8,4 +8,5 @@ export const messages = {
   ongoingSince: "Ongoing since",
   teamSize: "Team size",
   download: "Download",
+  all: "All countries",
 };
