@@ -2,13 +2,16 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
 import { CLIENT_LOGOS } from "./constants";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const OurClients = () => {
+  const { isOnMobile } = useDeviceSize();
+
   return (
     <Box bgcolor={COLORS.WHITE} pb={8}>
       <Stack spacing={10} justifyContent="center" alignItems="center" my={6}>
         <Typography
-          px={12}
+          px={isOnMobile ? 4 : 12}
           color={COLORS.DARK_BLUE}
           fontWeight="600"
           fontSize="30px"
@@ -21,24 +24,23 @@ const OurClients = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        p={2}
-        columnGap={2}
-        rowGap={2}
+        px={isOnMobile ? 4 : 12}
+        py={2}
+        spacing={4}
       >
         {CLIENT_LOGOS.map((imagePath, id) => (
           <Grid
             key={id}
             item
-            sm={5.5}
-            xs={5.5}
-            md={2.5}
-            lg={2.5}
+            sm={6}
+            xs={12}
+            md={3}
+            lg={3}
             justifyContent="center"
             alignItems="center"
-            // mx={6}
             textAlign="center"
           >
-            <img alt="brand_logos" src={imagePath} height={40} />
+            <img alt="brand_logos" src={imagePath} />
           </Grid>
         ))}
       </Grid>

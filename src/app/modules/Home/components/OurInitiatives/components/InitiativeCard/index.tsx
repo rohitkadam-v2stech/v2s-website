@@ -2,7 +2,6 @@ import { Divider, Stack, Typography } from "@mui/material";
 import EastIcon from "@mui/icons-material/East";
 import COLORS from "../../../../../../styles/colors";
 import { messages } from "../../config/messages";
-import useDeviceSize from "../../../../../../hooks/useDeviceSize";
 
 type TInitiativeCardProps = {
   image: string;
@@ -17,17 +16,10 @@ const InitiativeCard: React.FC<TInitiativeCardProps> = ({
   description,
   onReadMoreClick,
 }) => {
-  const { isOnLargeDesktop } = useDeviceSize();
-
   return (
     <>
       <Stack height="100%" justifyContent="space-between">
-        <img
-          src={image}
-          alt="blogs"
-          width="100%"
-          height={isOnLargeDesktop ? 420 : 320}
-        />
+        <img src={image} alt="blogs" width="100%" />
 
         <Typography
           mt={4}

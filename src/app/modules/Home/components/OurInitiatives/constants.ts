@@ -1,30 +1,17 @@
+import InitiativeImg1 from "../../../../assets/ourInsights/insights1.png";
+import InitiativeImg2 from "../../../../assets/ourInsights/insights2.png";
+
 export const OUR_INITIATIVES = [
   {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/04/project-appreciation-1.png",
-    title: "Celebrating customer success",
-    description:
-      "We’re thrilled to celebrate client success with our team members.",
-  },
-  {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/08/sat-soft-skills-workshop-mahalakshmi.png",
-    title: "Coporate training in customer service and team building",
+    image: InitiativeImg1,
+    title: "Strategies to make your product  stand out from competition",
     description:
       "Here are popular strategies and frameworks for prioritizing product features that can help your product to stand apart from competition.",
   },
   {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/03/smespeak-thumb-nasscom.jpg",
-    title: "Insights from Vishal Samant in NASSCOM #SMELeadersSpeak ",
+    image: InitiativeImg2,
+    title: "4 steps to build a SaaS product that gets funded",
     description:
-      "Insights from Vishal Samant, CEO at V2STech Solutions in NASSCOM #SMELeadersSpeak",
-  },
-  {
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/03/smespeak-thumb-nasscom.jpg",
-    title: "Insights from Vishal Samant in NASSCOM #SMELeadersSpeak ",
-    description:
-      "Insights from Vishal Samant, CEO at V2STech Solutions in NASSCOM #SMELeadersSpeak",
+      "Creating a SaaS product can get very complicated, very quickly. If any one of technical to business decisions isn’t right, your SaaS might not get funded. In this guide, we’re going to tell you how we’ve partnered with our clients to help them create a SaaS product that VCs want to fund and people will actually want to use.",
   },
 ];

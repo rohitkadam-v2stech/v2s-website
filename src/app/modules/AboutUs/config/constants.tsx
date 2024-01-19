@@ -8,11 +8,11 @@ import SushantImg from "../../../assets/aboutUsLogos/Sushant.png";
 import VishalImg from "../../../assets/aboutUsLogos/Vishal.png";
 import VikasImg from "../../../assets/aboutUsLogos/Vikas.png";
 import DayanandImg from "../../../assets/aboutUsLogos/Dayanand.png";
-import BlogsProduct1 from "../../../assets/aboutUsLogos/MobileProduct1.png";
-import BlogsProduct2 from "../../../assets/aboutUsLogos/SaasProductSteps.png";
-import NewsImg1 from "../../../assets/aboutUsLogos/project-appreciation-1.png";
-import NewsImg2 from "../../../assets/aboutUsLogos/sat-soft-skills-workshop-mahalakshmi.png";
-import NewsImg3 from "../../../assets/aboutUsLogos/smespeak-thumb-nasscom.jpg";
+import BlogsProduct1 from "../../../assets/aboutUsLogos/blogs1.png";
+import BlogsProduct2 from "../../../assets/aboutUsLogos/blogs2.png";
+import NewsImg1 from "../../../assets/aboutUsLogos/news1.png";
+import NewsImg2 from "../../../assets/aboutUsLogos/news2.png";
+import NewsImg3 from "../../../assets/aboutUsLogos/news3.png";
 
 export const V2S_TECH_YOUTUBE_VIDEO_EMBED_ID = "Uw7S7DoW-Ms";
 

@@ -12,6 +12,23 @@ import PathlockImg1 from "../../../assets/caseStudiesDetails/Pathlock1.png";
 import PathlockImg2 from "../../../assets/caseStudiesDetails/Pathlock2.png";
 import RipplehireImg from "../../../assets/caseStudiesDetails/Ripplehire.png";
 
+import CareMap from "../../../assets/caseStudiesListing/care-map.png";
+import QfixMap from "../../../assets/caseStudiesListing/qfix-map.png";
+import FissaraMap from "../../../assets/caseStudiesListing/fissara-map.png";
+import PinelabsMap from "../../../assets/caseStudiesListing/pinelabs-map.png";
+import PathlockMap from "../../../assets/caseStudiesListing/pathlock-map.png";
+import RipplehireMap from "../../../assets/caseStudiesListing/ripplehire-map.png";
+
+import Care from "../../../assets/caseStudiesListing/Care-logo.png";
+import Qfix from "../../../assets/caseStudiesListing/qfix-logo.png";
+import Pathlock from "../../../assets/caseStudiesListing/pathlock-logo.png";
+import Pinelabs from "../../../assets/caseStudiesListing/pinelabs-logo.jpg";
+import Ripplehire from "../../../assets/caseStudiesListing/ripple-hire-logo.png";
+
+import India from "../../../assets/caseStudiesListing/India.png";
+import UK from "../../../assets/caseStudiesListing/UK.png";
+import USA from "../../../assets/caseStudiesListing/US.png";
+
 export const COUNTRIES_LIST = [
   {
     id: "1",
@@ -42,8 +59,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in UK, provides innovative digital care management software for the social care sector, including care homes, supported living, domiciliary care, staff rota, scheduling and care planning",
-    image: "https://v2stech.com/wp-content/uploads/2023/11/Care_02-1.png",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/UK.png",
+    image: Care,
+    flag: UK,
+    mapImage: CareMap,
     startYear: 2017,
     endYear: null,
     isProjectOngoing: true,
@@ -80,7 +98,7 @@ export const CASE_STUDIES_LIST = [
         ],
       },
       {
-        title: "Oppurtunity Impact",
+        title: "Growth Impact",
         details: [
           "10 X revenue growth within 12 months?",
           "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
@@ -120,10 +138,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors.",
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/05/cs-6-qfix-768x427.png",
-    // image: QfixLogo,
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
+    image: Qfix,
+    flag: India,
+    mapImage: QfixMap,
     startYear: 2017,
     endYear: 2020,
     isProjectOngoing: false,
@@ -133,30 +150,35 @@ export const CASE_STUDIES_LIST = [
       {
         title: "Time Impact",
         details: [
-          "Rapid MVP Launch - in 3 months",
-          "Rapid feature implementations for marketing / care shows",
+          "Rapid MVP Launch - in 3 months, product readiness in 2 years",
         ],
       },
       {
         title: "Opportunity Impact",
         details: [
-          "NHS Certifified and already in UK Top 5 care software providers.",
-          "Open global distribution possibilities",
+          "PCI DSS complaint payment aggragrator platform",
+          "Extend Product offering beyond education domains",
         ],
       },
       {
         title: "Productivity Impact",
         details: [
           "1 week turnaround for new features - more show & tell for prospects.",
-          "400 care homes onboarded with no team additions.",
-          "client onboarding - Less than a week.",
+          "5500 institues and 2M+ users  onboarded with no team additions.",
         ],
       },
       {
         title: "Financial Impact",
         details: [
-          "Accelerated new funding for the venture.",
-          "Savings - 20%-30% infra cost reduction.",
+          "Received Seed funding.",
+          "Acquired by Pinelabs (leading fintech Unicorn in India).",
+        ],
+      },
+      {
+        title: "Growth Impact",
+        details: [
+          "Rapid growth - in 5 years since launch from 0 to 5500 Institues from 0 to 2M+ users from 0 to 100000 transaction per day 250000+ App donwloads.",
+          "Acquired by Pinelabs (leading fintech Unicorn in India).",
         ],
       },
     ],
@@ -196,7 +218,8 @@ export const CASE_STUDIES_LIST = [
       "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2016.",
     // image: "https://v2stech.com/wp-content/uploads/2023/11/CS_Fissara.png",
     image: FissaraLogo,
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/UK.png",
+    flag: UK,
+    mapImage: FissaraMap,
     startYear: 2016,
     endYear: null,
     isProjectOngoing: true,
@@ -205,39 +228,21 @@ export const CASE_STUDIES_LIST = [
     valueProposition: [
       {
         title: "Time Impact",
-        details: [
-          "Rapid MVP Launch - in 3 months",
-          "Rapid feature implementations for marketing / care shows",
-        ],
+        details: ["Suite of products launched in 5 years"],
       },
       {
         title: "Opportunity Impact",
-        details: [
-          "NHS Certifified and already in UK Top 5 care software providers.",
-          "Open global distribution possibilities",
-        ],
+        details: ["Business growth in 4 industries/domains."],
       },
       {
         title: "Productivity Impact",
         details: [
-          "1 week turnaround for new features - more show & tell for prospects.",
-          "400 care homes onboarded with no team additions.",
-          "client onboarding - Less than a week.",
+          "Technical framework - Reduced product suite development cost by 50%.",
         ],
       },
       {
-        title: "Financial Impact",
-        details: [
-          "Accelerated new funding for the venture.",
-          "Savings - 20%-30% infra cost reduction.",
-        ],
-      },
-      {
-        title: "Oppurtunity Impact",
-        details: [
-          "10 X revenue growth within 12 months?",
-          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
-        ],
+        title: "Growth Impact",
+        details: ["Platform tailormade for Large-Mid-Small enterprises"],
       },
     ],
     aboutClient:
@@ -272,8 +277,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in USA, helps 100+ fortune 500 organisation automate the enforcement of controls of access, process, or cybersecurity checks, for any business application to whom V2STech provide technology consulting on UI enhancement as per design system guideline, product enhancements and business process automation.",
-    image: "https://v2stech.com/wp-content/uploads/2023/11/CS_US.png",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/US.png",
+    image: Pathlock,
+    flag: USA,
+    mapImage: PathlockMap,
     startYear: 2017,
     endYear: null,
     isProjectOngoing: true,
@@ -282,38 +288,18 @@ export const CASE_STUDIES_LIST = [
     valueProposition: [
       {
         title: "Time Impact",
-        details: [
-          "Rapid MVP Launch - in 3 months",
-          "Rapid feature implementations for marketing / care shows",
-        ],
+        details: ["Rapid implementation - full product UX upgrade in 6 months"],
       },
       {
         title: "Opportunity Impact",
         details: [
-          "NHS Certifified and already in UK Top 5 care software providers.",
-          "Open global distribution possibilities",
-        ],
-      },
-      {
-        title: "Productivity Impact",
-        details: [
-          "1 week turnaround for new features - more show & tell for prospects.",
-          "400 care homes onboarded with no team additions.",
-          "client onboarding - Less than a week.",
+          "Extend Product offering beyond Web version - Mobile version provided EDGE over compitition.",
         ],
       },
       {
         title: "Financial Impact",
         details: [
-          "Accelerated new funding for the venture.",
-          "Savings - 20%-30% infra cost reduction.",
-        ],
-      },
-      {
-        title: "Oppurtunity Impact",
-        details: [
-          "10 X revenue growth within 12 months?",
-          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+          "Rapid rollout resulted in onboarding of fortune 500 customer base.",
         ],
       },
     ],
@@ -348,9 +334,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client founded in 1998 is an Indian company that provides financing and retail transaction technology. It is a unicorn startup, with a valuation of over US$5 billion to whom V2STech is providing a merchant integration solution.",
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/01/marketing-brand-awareness-saas.jpg",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
+    image: Pinelabs,
+    flag: India,
+    mapImage: PinelabsMap,
     startYear: 2021,
     endYear: null,
     isProjectOngoing: true,
@@ -359,38 +345,22 @@ export const CASE_STUDIES_LIST = [
     valueProposition: [
       {
         title: "Time Impact",
-        details: [
-          "Rapid MVP Launch - in 3 months",
-          "Rapid feature implementations for marketing / care shows",
-        ],
+        details: ["Rapid rollout in 3 months to extend merchant reach"],
       },
       {
         title: "Opportunity Impact",
-        details: [
-          "NHS Certifified and already in UK Top 5 care software providers.",
-          "Open global distribution possibilities",
-        ],
+        details: ["Extend Product offering beyond education domains"],
       },
       {
         title: "Productivity Impact",
         details: [
-          "1 week turnaround for new features - more show & tell for prospects.",
-          "400 care homes onboarded with no team additions.",
-          "client onboarding - Less than a week.",
+          "Configuraton Driven Framework reduced onboarding efforts by 70%",
         ],
       },
       {
-        title: "Financial Impact",
+        title: "Growth Impact",
         details: [
-          "Accelerated new funding for the venture.",
-          "Savings - 20%-30% infra cost reduction.",
-        ],
-      },
-      {
-        title: "Oppurtunity Impact",
-        details: [
-          "10 X revenue growth within 12 months?",
-          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
+          "Universal platform offering - Big oppurtunity to onboard & integrate wider merchant base",
         ],
       },
     ],
@@ -426,9 +396,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client is a 12 year old Indian company with over US$ 5 million turnover, recognized by NASSCOM as a Nasscom Emerge50 winner for its futuristic HR technology for recruitment that offers a cloud-based hiring platform, trusted by top global and Indian brands. to whom V2STech is providing software development services from 2022.",
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/11/hr-form-builder1-768x506.png",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
+    image: Ripplehire,
+    flag: India,
+    mapImage: RipplehireMap,
     startYear: 2020,
     endYear: 2021,
     isProjectOngoing: false,
@@ -436,40 +406,22 @@ export const CASE_STUDIES_LIST = [
     maxTeamSize: 10,
     valueProposition: [
       {
-        title: "Time Impact",
-        details: [
-          "Rapid MVP Launch - in 3 months",
-          "Rapid feature implementations for marketing / care shows",
-        ],
-      },
-      {
         title: "Opportunity Impact",
-        details: [
-          "NHS Certifified and already in UK Top 5 care software providers.",
-          "Open global distribution possibilities",
-        ],
+        details: ["Rapid customer onboarding - Time reduce by 60%"],
       },
       {
         title: "Productivity Impact",
         details: [
-          "1 week turnaround for new features - more show & tell for prospects.",
-          "400 care homes onboarded with no team additions.",
-          "client onboarding - Less than a week.",
+          "Increased team capacity - Technical team freed up from support tasks",
         ],
       },
       {
         title: "Financial Impact",
-        details: [
-          "Accelerated new funding for the venture.",
-          "Savings - 20%-30% infra cost reduction.",
-        ],
+        details: ["Savings - 20%-30% support team cost reduction"],
       },
       {
-        title: "Opportunity Impact",
-        details: [
-          "10 X revenue growth within 12 months?",
-          "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
-        ],
+        title: "Growth Impact",
+        details: ["30% revenue growth in 12 months"],
       },
     ],
     aboutClient:
