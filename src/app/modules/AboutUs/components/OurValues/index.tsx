@@ -106,10 +106,10 @@ const OurVision: React.FC = () => {
           </Typography>
         </Stack>
 
-        <YoutubePlayer
+        {/* <YoutubePlayer
           embedId={V2S_TECH_YOUTUBE_VIDEO_EMBED_ID}
           containerProps={{ borderRadius: "20px", border: "none" }}
-        />
+        /> */}
       </Box>
 
       <Box px={"6%"} py={4}>
