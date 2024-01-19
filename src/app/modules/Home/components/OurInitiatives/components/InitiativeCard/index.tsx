@@ -48,7 +48,7 @@ const InitiativeCard: React.FC<TInitiativeCardProps> = ({
           {description}
         </Typography>
 
-        <Stack spacing={1} mt={4}>
+        {/* <Stack spacing={1} mt={4}>
           <Stack
             direction="row"
             spacing={0.5}
@@ -66,7 +66,7 @@ const InitiativeCard: React.FC<TInitiativeCardProps> = ({
 
             <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
           </Stack>
-        </Stack>
+        </Stack> */}
       </Stack>
 
       <Divider

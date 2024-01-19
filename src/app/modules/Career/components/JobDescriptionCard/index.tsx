@@ -59,7 +59,7 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
           </Typography>
         ))}
 
-        <Stack direction="row" justifyContent="end" alignItems="center">
+        {/* <Stack direction="row" justifyContent="end" alignItems="center">
           <Typography
             fontSize={16}
             fontWeight={700}
@@ -72,7 +72,7 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
           <ArrowRightAlt
             sx={{ pt: 0.6, color: COLORS.DARK_BLUE, cursor: "pointer" }}
           />
-        </Stack>
+        </Stack> */}
       </Stack>
     </Paper>
   );

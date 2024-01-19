@@ -27,13 +27,18 @@ const CaseStudiesList = () => {
   const [allCaseStudies, setAllCaseStudies] = useState<any>(CASE_STUDIES_LIST);
 
   useEffect(() => {
-    const countriesList = CASE_STUDIES_LIST.map((item) => ({
-      id: item.id,
-      label: item.country,
-    })).filter(
-      ({ label }, index, arr) =>
-        arr.findIndex((obj) => obj.label === label) === index
-    );
+    const countriesList = CASE_STUDIES_LIST.slice()
+      .sort(({ country }, { country: anotherCountry }) =>
+        country.localeCompare(anotherCountry)
+      )
+      .map((item) => ({
+        id: item.id,
+        label: item.country,
+      }))
+      .filter(
+        ({ label }, index, arr) =>
+          arr.findIndex((obj) => obj.label === label) === index
+      );
 
     setAllCountries(countriesList);
   }, []);

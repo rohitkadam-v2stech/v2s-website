@@ -19,15 +19,15 @@ export const COUNTRIES_LIST = [
   },
   {
     id: "2",
-    label: "United States",
+    label: "India",
   },
   {
     id: "3",
-    label: "United Kingdom",
+    label: "United States",
   },
   {
     id: "4",
-    label: "India",
+    label: "United Kingdom",
   },
 ];
 
@@ -477,7 +477,7 @@ export const CASE_STUDIES_LIST = [
     projectRevenue: 1000000,
     projectDuration: 7,
     problemStatement: {
-      main: "The user interface for new customer onboarding was missing and the developer was doing the same using the SQL script in the database. Due to which their core technical team were occupied in manually onboarding of new customers. This was impacting the rollout of new features and potential business growth",
+      main: "The usCOUNTRIES_LISTer interface for new customer onboarding was missing and the developer was doing the same using the SQL script in the database. Due to which their core technical team were occupied in manually onboarding of new customers. This was impacting the rollout of new features and potential business growth",
       subProblemStatement: [],
     },
     solution: [

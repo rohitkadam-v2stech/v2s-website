@@ -1,5 +1,5 @@
 export const messages = {
-  v2sTechSolutions: "V2S Tech Solutions",
+  v2sTechSolutions: "V2STech Solutions",
   aboutUs: "About Us",
   whoWeAre: "Who we are",
   aboutUsDescription:

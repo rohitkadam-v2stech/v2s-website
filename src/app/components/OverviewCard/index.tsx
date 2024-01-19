@@ -43,7 +43,7 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
         </Typography>
       </Stack>
 
-      <Stack spacing={1} mt={4}>
+      {/* <Stack spacing={1} mt={4}>
         <Stack
           direction="row"
           spacing={0.5}
@@ -61,7 +61,7 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
 
           <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
         </Stack>
-      </Stack>
+      </Stack> */}
     </Stack>
 
     <Divider

@@ -34,7 +34,7 @@ const FastFacts = () => {
       value: "2",
     },
     {
-      title: "Users with V2S Tech Powered Apps",
+      title: "Users with V2STech Powered Apps",
       value: "1M",
     },
   ];
