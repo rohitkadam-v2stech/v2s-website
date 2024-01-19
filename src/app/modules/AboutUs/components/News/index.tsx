@@ -22,7 +22,7 @@ const News: React.FC = () => (
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4} key={index}>
           <OverviewCard
             image={news.image}
-            imageHeight={220}
+            // imageHeight={220}
             title={news.title}
             description={news.description}
             onReadMoreClick={() => {}}

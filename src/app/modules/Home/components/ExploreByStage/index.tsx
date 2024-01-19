@@ -4,11 +4,15 @@ import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
 import { navigateToWhatsAppContact } from "../../../../utils/helpers";
 
+import ExploreByStageImg1 from "../../../../assets/exploreByStage/earlt-stage.png";
+import ExploreByStageImg2 from "../../../../assets/exploreByStage/funded.png";
+import ExploreByStageImg3 from "../../../../assets/exploreByStage/growth-1.png";
+
 const ExploreByStage = () => {
   const STAGE_IMAGES: Array<string> = [
-    "https://v2stech.com/wp-content/uploads/2023/10/earlt-stage.png",
-    "https://v2stech.com/wp-content/uploads/2023/10/funded.png",
-    "https://v2stech.com/wp-content/uploads/2023/10/growth-1.png",
+    ExploreByStageImg1,
+    ExploreByStageImg2,
+    ExploreByStageImg3,
   ];
 
   return (

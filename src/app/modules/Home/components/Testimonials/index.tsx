@@ -5,8 +5,9 @@ import { messages } from "./config/messages";
 import Slider from "../../../../components/Slider";
 import { SliderWrapper } from "./style";
 import useDeviceSize from "../../../../hooks/useDeviceSize";
+import { TESTIMONIALS } from "./config/constant";
 
-import data from "./testimonials_data.json";
+// import data from "./testimonials_data.json";
 
 const Testimonials = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();
@@ -25,7 +26,7 @@ const Testimonials = () => {
       </Stack>
       <SliderWrapper>
         <Slider slidesToShow={isOnMobile || isOnTablet ? 1 : 2}>
-          {data.map((item) => (
+          {TESTIMONIALS.map((item) => (
             <TestimonialCard {...item} />
           ))}
         </Slider>
