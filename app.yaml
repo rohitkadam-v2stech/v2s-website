@@ -1,4 +1,4 @@
-service: v2stech-website # Name of your service (application)
+#service: v2stech-website # Name of your service (application)
 runtime: nodejs16
 handlers:
   # Serve all static files with urls ending with a file extension

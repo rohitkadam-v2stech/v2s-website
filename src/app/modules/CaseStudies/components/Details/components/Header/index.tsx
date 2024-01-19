@@ -1,6 +1,6 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../../../styles/colors";
-import worldMap from "../../../../../../assets/world_map.png";
+// import worldMap from "../../../../../../assets/world_map.png";
 import useDeviceSize from "../../../../../../hooks/useDeviceSize";
 import { messages } from "../../config/messages";
 import { DashedDivider } from "../../../../../../styles/style";
@@ -23,7 +23,7 @@ const Header: React.FC<THeaderProps> = ({ state }) => {
       }}
     >
       {/* Image Grid */}
-      <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+      {/* <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
         <Box position="relative">
           <img
             src={worldMap}
@@ -44,6 +44,14 @@ const Header: React.FC<THeaderProps> = ({ state }) => {
             />
           )}
         </Box>
+      </Grid> */}
+
+      <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+        <img
+          src={state?.mapImage}
+          alt="project-screenshot"
+          style={{ height: "100%", width: "100%" }}
+        />
       </Grid>
 
       {/* Content Grid */}

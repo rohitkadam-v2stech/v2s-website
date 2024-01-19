@@ -12,6 +12,23 @@ import PathlockImg1 from "../../../assets/caseStudiesDetails/Pathlock1.png";
 import PathlockImg2 from "../../../assets/caseStudiesDetails/Pathlock2.png";
 import RipplehireImg from "../../../assets/caseStudiesDetails/Ripplehire.png";
 
+import CareMap from "../../../assets/caseStudiesListing/care-map.png";
+import QfixMap from "../../../assets/caseStudiesListing/qfix-map.png";
+import FissaraMap from "../../../assets/caseStudiesListing/fissara-map.png";
+import PinelabsMap from "../../../assets/caseStudiesListing/pinelabs-map.png";
+import PathlockMap from "../../../assets/caseStudiesListing/pathlock-map.png";
+import RipplehireMap from "../../../assets/caseStudiesListing/ripplehire-map.png";
+
+import Care from "../../../assets/caseStudiesListing/Care-logo.png";
+import Qfix from "../../../assets/caseStudiesListing/qfix-logo.png";
+import Pathlock from "../../../assets/caseStudiesListing/pathlock-logo.png";
+import Pinelabs from "../../../assets/caseStudiesListing/pinelabs-logo.jpg";
+import Ripplehire from "../../../assets/caseStudiesListing/ripple-hire-logo.png";
+
+import India from "../../../assets/caseStudiesListing/India.png";
+import UK from "../../../assets/caseStudiesListing/UK.png";
+import USA from "../../../assets/caseStudiesListing/US.png";
+
 export const COUNTRIES_LIST = [
   {
     id: "1",
@@ -42,8 +59,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in UK, provides innovative digital care management software for the social care sector, including care homes, supported living, domiciliary care, staff rota, scheduling and care planning",
-    image: "https://v2stech.com/wp-content/uploads/2023/11/Care_02-1.png",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/UK.png",
+    image: Care,
+    flag: UK,
+    mapImage: CareMap,
     startYear: 2017,
     endYear: null,
     isProjectOngoing: true,
@@ -120,10 +138,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors.",
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/05/cs-6-qfix-768x427.png",
-    // image: QfixLogo,
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
+    image: Qfix,
+    flag: India,
+    mapImage: QfixMap,
     startYear: 2017,
     endYear: 2020,
     isProjectOngoing: false,
@@ -196,7 +213,8 @@ export const CASE_STUDIES_LIST = [
       "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2016.",
     // image: "https://v2stech.com/wp-content/uploads/2023/11/CS_Fissara.png",
     image: FissaraLogo,
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/UK.png",
+    flag: UK,
+    mapImage: FissaraMap,
     startYear: 2016,
     endYear: null,
     isProjectOngoing: true,
@@ -272,8 +290,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in USA, helps 100+ fortune 500 organisation automate the enforcement of controls of access, process, or cybersecurity checks, for any business application to whom V2STech provide technology consulting on UI enhancement as per design system guideline, product enhancements and business process automation.",
-    image: "https://v2stech.com/wp-content/uploads/2023/11/CS_US.png",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/US.png",
+    image: Pathlock,
+    flag: USA,
+    mapImage: PathlockMap,
     startYear: 2017,
     endYear: null,
     isProjectOngoing: true,
@@ -348,9 +367,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client founded in 1998 is an Indian company that provides financing and retail transaction technology. It is a unicorn startup, with a valuation of over US$5 billion to whom V2STech is providing a merchant integration solution.",
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/01/marketing-brand-awareness-saas.jpg",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
+    image: Pinelabs,
+    flag: India,
+    mapImage: PinelabsMap,
     startYear: 2021,
     endYear: null,
     isProjectOngoing: true,
@@ -426,9 +445,9 @@ export const CASE_STUDIES_LIST = [
       "This product recognized as top 5 service providers in care industry",
     description:
       "Our client is a 12 year old Indian company with over US$ 5 million turnover, recognized by NASSCOM as a Nasscom Emerge50 winner for its futuristic HR technology for recruitment that offers a cloud-based hiring platform, trusted by top global and Indian brands. to whom V2STech is providing software development services from 2022.",
-    image:
-      "https://v2stech.com/wp-content/uploads/2023/11/hr-form-builder1-768x506.png",
-    flag: "https://v2stech.com/wp-content/uploads/2023/11/India.png",
+    image: Ripplehire,
+    flag: India,
+    mapImage: RipplehireMap,
     startYear: 2020,
     endYear: 2021,
     isProjectOngoing: false,
