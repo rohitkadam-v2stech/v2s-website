@@ -1,17 +1,20 @@
-import fissaraLogo from "../../../../assets/clientLogos/fissara.png";
-import carebeansLogo from "../../../../assets/clientLogos/Carebeans.jpg";
-import digiallyLogo from "../../../../assets/clientLogos/Digially-full-logo-in-White.png";
+import fissaraLogo from "../../../../assets/clientLogos/Fissara.png";
+import carebeansLogo from "../../../../assets/clientLogos/Carebeans.png";
+import digiallyLogo from "../../../../assets/clientLogos/DigiAlly.png";
 // import groupLogo from "../../../../assets/clientLogos/aderro-logo-marketing.png";
-import pinelabsLogo from "../../../../assets/clientLogos/pathlock_color.jpg";
-import qfixLogo from "../../../../assets/clientLogos/qfix-logo-new.png";
-import ripplehireLogo from "../../../../assets/clientLogos/ripple_logoblack.png";
+import pathlockLogo from "../../../../assets/clientLogos/Pathlock.png";
+import qfixLogo from "../../../../assets/clientLogos/Qfix.png";
+import ripplehireLogo from "../../../../assets/clientLogos/RippleHire.png";
+import pinelabsLogo from "../../../../assets/clientLogos/Pinelabs.png";
+import wtcLogo from "../../../../assets/clientLogos/WTC.png";
 
 export const CLIENT_LOGOS: Array<typeof fissaraLogo> = [
   fissaraLogo,
   carebeansLogo,
   digiallyLogo,
-  // groupLogo,
-  pinelabsLogo,
+  pathlockLogo,
   qfixLogo,
   ripplehireLogo,
+  pinelabsLogo,
+  wtcLogo,
 ];
