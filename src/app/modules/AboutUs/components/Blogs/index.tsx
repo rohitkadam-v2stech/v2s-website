@@ -23,7 +23,7 @@ const Blogs: React.FC = () => (
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6} key={index}>
             <OverviewCard
               image={blog.image}
-              imageHeight={280}
+              // imageHeight={280}
               title={blog.title}
               description={blog.description}
               onReadMoreClick={() => {}}

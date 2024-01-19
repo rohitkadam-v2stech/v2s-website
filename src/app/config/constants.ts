@@ -1,10 +1,17 @@
+import MsmeLogo from "../assets/msme-logo.png";
+import ConfluentLogo from "../assets/confluent-logo.png";
+import ScgtLogo from "../assets/scgt-logo.png";
+import NaascomLogo from "../assets/naascom-logo.png";
+import MongoDbLogo from "../assets/mongodblogo.png";
+import GoodFirmsLogo from "../assets/goodfirms.png";
+
 export const OUR_ASSOCIATION_IMAGES_LIST = [
-  "https://v2stech.com/wp-content/uploads/2023/02/msme-logo.png",
-  "https://v2stech.com/wp-content/uploads/2023/02/confluent-logo.png",
-  "https://v2stech.com/wp-content/uploads/2023/02/scgt-logo.png",
-  "https://v2stech.com/wp-content/uploads/2023/02/naascom-logo.png",
-  "https://v2stech.com/wp-content/uploads/2023/02/mongodblogobrand1-resized.png",
-  "https://v2stech.com/wp-content/uploads/2023/02/goodfirms.png",
+  MsmeLogo,
+  ConfluentLogo,
+  ScgtLogo,
+  NaascomLogo,
+  MongoDbLogo,
+  GoodFirmsLogo,
 ];
 
 export const WHATSAPP_NUMBER = "918779742488";
