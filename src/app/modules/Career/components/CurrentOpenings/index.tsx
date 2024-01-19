@@ -13,7 +13,7 @@ const CurrentOpenings = () => (
       <Typography fontSize="30px" fontWeight="700" color={COLORS.DARK_BLUE}>
         {messages.currentOpenings}
       </Typography>
-      <div className="search-container">
+      {/* <div className="search-container">
         <input
           type="text"
           className="search-input"
@@ -21,7 +21,7 @@ const CurrentOpenings = () => (
           style={{ backgroundColor: "white", color: "black" }}
         />
         <Search className="search-icon" style={{ fill: "black" }} />
-      </div>
+      </div> */}
       <Grid
         container
         gap="20px"
