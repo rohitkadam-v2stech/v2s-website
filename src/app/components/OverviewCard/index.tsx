@@ -1,7 +1,7 @@
 import { Divider, Stack, Typography } from "@mui/material";
-import EastIcon from "@mui/icons-material/East";
+// import EastIcon from "@mui/icons-material/East";
 import COLORS from "../../styles/colors";
-import { messages } from "./config/messages";
+// import { messages } from "./config/messages";
 
 type TOverviewCardProps = {
   image: string;

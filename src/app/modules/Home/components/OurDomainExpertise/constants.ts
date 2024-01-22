@@ -41,7 +41,7 @@ export const OUR_DOMAIN_EXPERTISE: Array<{
     id: 5,
     title: "e-Governance",
     description:
-      "Build Citizen friendly smart city solutions for state goverment and municipal corporations",
+      "Build Citizen friendly smart city solutions for state government and municipal corporations",
     icon: eGovernance,
   },
 ];

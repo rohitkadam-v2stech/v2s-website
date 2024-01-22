@@ -7,6 +7,7 @@ const COLORS = {
   LIGHT_GREY: "#cccccc",
   GREY_TEXT: "#6D6D6D",
   BACKGROUND_GREY: "#f4f4f4",
+  FORM_BACKGROUND_GREY: "#F7F7F7",
   SKY_BLUE: "#609bdc",
   OCEAN_BLUE: "#2a90c7",
   NAVY_BLUE: "#34314b",

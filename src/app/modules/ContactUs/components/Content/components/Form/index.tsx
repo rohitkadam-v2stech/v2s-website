@@ -1,19 +1,22 @@
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import COLORS from "../../../../../../styles/colors";
 import { messages } from "../../../../config/messages";
+import { useShowToastNotifications } from "../../../../../../containers/ToastNotifications";
 
 const ContactUsForm: React.FC = () => {
+  const { showToastNotification } = useShowToastNotifications();
+
   const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    alert("Your submission was successful.");
+    showToastNotification("Your submission was successful.", "success");
   };
 
   return (
     <form
       onSubmit={handleFormSubmit}
-      style={{ height: "100%", backgroundColor: "#f7f7f7" }}
+      style={{ height: "100%", backgroundColor: COLORS.FORM_BACKGROUND_GREY }}
     >
-      <Stack bgcolor="#f7f7f7" p={4}>
+      <Stack bgcolor={COLORS.FORM_BACKGROUND_GREY} p={4}>
         <Typography fontSize={32} fontWeight={700}>
           {messages.getStarted}
         </Typography>

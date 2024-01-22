@@ -4,15 +4,22 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 import { EMAIL, PHONE, COPY, socialMediaUrls } from "./constants";
 import COLORS from "../../styles/colors";
-import { copyToClipboard, navigateToMail } from "../../utils/helpers";
+import { navigateToMail } from "../../utils/helpers";
 import FacebookIcon from "../../assets/facebook.png";
 import LinkedInIcon from "../../assets/linkedin.png";
 import CopyIcon from "../../assets/Copy.png";
 import useDeviceSize from "../../hooks/useDeviceSize";
 import { StyledContactNavbarText } from "./style";
+import { useShowToastNotifications } from "../../containers/ToastNotifications";
 
 const ContactNavbar = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();
+  const { showToastNotification } = useShowToastNotifications();
+
+  const handleCopyToClipboardClick = (value: string) => {
+    navigator.clipboard.writeText(value);
+    showToastNotification("Copied text to clipboard", "success");
+  };
 
   return (
     <Stack
@@ -33,10 +40,18 @@ const ContactNavbar = () => {
         pt={1}
       >
         <Link target="_blank" href={socialMediaUrls.linkedIn}>
-          <img src={LinkedInIcon} alt="linkedin-icon" height={14} />
+          <img
+            src={LinkedInIcon}
+            alt="linkedin-icon"
+            height={isOnMobile ? 14 : 18}
+          />
         </Link>
         <Link target="_blank" href={socialMediaUrls.facebook}>
-          <img src={FacebookIcon} alt="facebook-icon" height={14} />
+          <img
+            src={FacebookIcon}
+            alt="facebook-icon"
+            height={isOnMobile ? 14 : 18}
+          />
         </Link>
       </Stack>
 
@@ -55,30 +70,36 @@ const ContactNavbar = () => {
           spacing={1}
           alignItems="center"
           sx={{ cursor: "pointer" }}
-          onClick={() => copyToClipboard(PHONE)}
+          onClick={() => handleCopyToClipboardClick(PHONE)}
         >
-          <LocalPhoneIcon sx={{ fontSize: 12 }} />
-          <StyledContactNavbarText>{PHONE}</StyledContactNavbarText>
+          <LocalPhoneIcon sx={{ fontSize: isOnMobile ? 12 : 14 }} />
+          <StyledContactNavbarText fontSize={isOnMobile ? 10 : 14}>
+            {PHONE}
+          </StyledContactNavbarText>
         </Stack>
 
         <Stack
           direction="row"
           spacing={1}
           alignItems="center"
+          sx={{ cursor: "pointer" }}
           onClick={navigateToMail}
-          style={{ cursor: "pointer" }}
         >
-          <MailOutlineIcon sx={{ fontSize: 12 }} />
+          <MailOutlineIcon sx={{ fontSize: isOnMobile ? 12 : 14 }} />
 
-          <StyledContactNavbarText>{EMAIL}</StyledContactNavbarText>
+          <StyledContactNavbarText fontSize={isOnMobile ? 10 : 14}>
+            {EMAIL}
+          </StyledContactNavbarText>
         </Stack>
 
         <Tooltip title={COPY} arrow>
           <img
             src={CopyIcon}
             alt="copy-icon"
-            onClick={() => copyToClipboard(`Contact: ${PHONE} Email: ${EMAIL}`)}
-            style={{ height: 10, cursor: "pointer" }}
+            onClick={() =>
+              handleCopyToClipboardClick(`Contact: ${PHONE} Email: ${EMAIL}`)
+            }
+            style={{ height: isOnMobile ? 10 : 12, cursor: "pointer" }}
           />
         </Tooltip>
       </Stack>

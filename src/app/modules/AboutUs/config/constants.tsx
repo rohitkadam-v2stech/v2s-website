@@ -115,7 +115,7 @@ export const NEWS_LIST = [
   },
   {
     image: NewsImg2,
-    title: "Coporate training in customer service and team building",
+    title: "Corporate training in customer service and team building",
     description:
       "Here are popular strategies and frameworks for prioritizing product features that can help your product to stand apart from competition.",
   },

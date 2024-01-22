@@ -1,6 +1,6 @@
-import TestimonialImg1 from "../../../../../assets/testimonials/testimonials1.jpg";
-import TestimonialImg2 from "../../../../../assets/testimonials/testimonials2.webp";
-import TestimonialImg3 from "../../../../../assets/testimonials/testimonials3.png";
+import TestimonialImg1 from "../../../../../assets/testimonials/testimonial1.png";
+import TestimonialImg2 from "../../../../../assets/testimonials/testimonial2.png";
+import TestimonialImg3 from "../../../../../assets/testimonials/testimonial3.png";
 
 export const TESTIMONIALS = [
   {
@@ -21,7 +21,7 @@ export const TESTIMONIALS = [
   },
   {
     review:
-      "I have worked with V2Stech for a number of years. The relationship started by building a proof of concept in a limited time to test their abilities. They passed with flying colours. I have been working with them ever since. At my current organisation, they have become my trusted IT partner, performing all the functions, including development, IT support, server set-up, server maintenance.",
+      "I have worked with V2STech for a number of years. The relationship started by building a proof of concept in a limited time to test their abilities. They passed with flying colours. I have been working with them ever since. At my current organisation, they have become my trusted IT partner, performing all the functions, including development, IT support, server set-up, server maintenance.",
     author: "Nick Lawford",
     position: "CEO",
     company: "Carebeans, UK",
