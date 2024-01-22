@@ -1,19 +1,18 @@
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import COLORS from "../../../../../../styles/colors";
 import { messages } from "../../../../config/messages";
+import useContactUsForm from "./useContactUsForm";
 
 const ContactUsForm: React.FC = () => {
-  const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    alert("Your submission was successful.");
-  };
+  const { contactFormData, handleFormChange, handleFormSubmit } =
+    useContactUsForm();
 
   return (
     <form
       onSubmit={handleFormSubmit}
-      style={{ height: "100%", backgroundColor: "#f7f7f7" }}
+      style={{ height: "100%", backgroundColor: COLORS.MEDIUM_BACKGROUND_GREY }}
     >
-      <Stack bgcolor="#f7f7f7" p={4}>
+      <Stack bgcolor={COLORS.MEDIUM_BACKGROUND_GREY} p={4}>
         <Typography fontSize={32} fontWeight={700}>
           {messages.getStarted}
         </Typography>
@@ -25,24 +24,30 @@ const ContactUsForm: React.FC = () => {
           <TextField
             name="name"
             variant="outlined"
-            placeholder={messages.namePlaceholder}
             required
+            value={contactFormData.name}
+            placeholder={messages.namePlaceholder}
+            onChange={handleFormChange}
           />
 
           <TextField
             name="email"
             type="email"
             variant="outlined"
-            placeholder={messages.emailPlaceholder}
             required
+            value={contactFormData.email}
+            placeholder={messages.emailPlaceholder}
+            onChange={handleFormChange}
           />
 
           <TextField
             type="tel"
-            name="contact_number"
+            name="contactNumber"
             variant="outlined"
             placeholder={messages.contactNumberPlaceholder}
             required
+            onChange={handleFormChange}
+            value={contactFormData.contactNumber}
             inputProps={{
               pattern: "[0-9+]+",
               title: "Only numbers and the plus sign (+) are allowed.",
@@ -55,6 +60,8 @@ const ContactUsForm: React.FC = () => {
             placeholder={messages.messagePlaceholder}
             multiline
             rows={4}
+            value={contactFormData.message}
+            onChange={handleFormChange}
           />
 
           <Box>
