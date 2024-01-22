@@ -100,7 +100,7 @@ export const CASE_STUDIES_LIST = [
       {
         title: "Growth Impact",
         details: [
-          "10 X revenue growth within 12 months?",
+          "10 X revenue growth within 36 months",
           "Rapid growth - in 6 years. from 30 to 400 carehomes. from 1000 to 10000 carers. from 5000 to 100000 transaction per day",
         ],
       },
@@ -429,7 +429,7 @@ export const CASE_STUDIES_LIST = [
     projectRevenue: 1000000,
     projectDuration: 7,
     problemStatement: {
-      main: "The usCOUNTRIES_LISTer interface for new customer onboarding was missing and the developer was doing the same using the SQL script in the database. Due to which their core technical team were occupied in manually onboarding of new customers. This was impacting the rollout of new features and potential business growth",
+      main: "The user interface for new customer onboarding was missing and the developer was doing the same using the SQL script in the database. Due to which their core technical team were occupied in manually onboarding of new customers. This was impacting the rollout of new features and potential business growth",
       subProblemStatement: [],
     },
     solution: [
