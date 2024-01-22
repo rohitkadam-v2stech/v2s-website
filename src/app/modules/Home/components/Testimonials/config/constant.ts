@@ -1,6 +1,7 @@
 import TestimonialImg1 from "../../../../../assets/testimonials/testimonial1.png";
 import TestimonialImg2 from "../../../../../assets/testimonials/testimonial2.png";
 import TestimonialImg3 from "../../../../../assets/testimonials/testimonial3.png";
+import DummyTestimonialImg from "../../../../../assets/testimonials/dummy.png";
 
 export const TESTIMONIALS = [
   {
@@ -33,7 +34,7 @@ export const TESTIMONIALS = [
     author: "Praveen Pillai",
     position: "VP of Technology",
     company: "RippleHire, India",
-    author_image: null,
+    author_image: DummyTestimonialImg,
   },
   {
     review:
@@ -41,7 +42,7 @@ export const TESTIMONIALS = [
     author: "Filip Koltas",
     position: "Team leader",
     company: "SunCulture, Kenya",
-    author_image: null,
+    author_image: DummyTestimonialImg,
   },
   {
     review:
@@ -49,6 +50,6 @@ export const TESTIMONIALS = [
     author: "Mahesh rana",
     position: "Team leader",
     company: "Mindtickle, India",
-    author_image: null,
+    author_image: DummyTestimonialImg,
   },
 ];
