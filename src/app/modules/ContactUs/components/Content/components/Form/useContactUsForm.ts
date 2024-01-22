@@ -9,15 +9,15 @@ type TContactFormData = {
 };
 
 type TEmailPayload = {
-  to_name: string;
-  from_name: string;
+  name: string;
+  email: string;
   message: string;
   contact_number: string;
 };
 
 const transformEmailPayload = (data: TContactFormData): TEmailPayload => ({
-  from_name: data.name,
-  to_name: data.email,
+  name: data.name,
+  email: data.email,
   contact_number: data.contactNumber,
   message: data.message,
 });
@@ -43,14 +43,16 @@ const useContactUsForm = () => {
 
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     try {
-      // const response = await sendEmail({
-      //   from: contactFormData.email,
-      //   to: "rohitkadam.v2stech@gmail.com",
-      //   subject: "This is for testing",
-      //   text: contactFormData.message,
-      // });
-      // console.log("Email success response: ", response);
+      const res = await fetch("http://localhost:8080/contact-us", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify(transformEmailPayload(contactFormData)),
+      });
+      console.log("Email success response: ", res);
     } catch (error) {
       console.log("Error response", error);
     }
