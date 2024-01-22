@@ -1,15 +1,10 @@
 import DomainLogo1 from "../../../assets/caseStudiesDetails/Domain1.png";
 import CareImg1 from "../../../assets/caseStudiesDetails/Care1.png";
 import QfixImg1 from "../../../assets/caseStudiesDetails/Qfix1.png";
-import QfixImg2 from "../../../assets/caseStudiesDetails/Qfix2.png";
-import QfixImg3 from "../../../assets/caseStudiesDetails/Qfix3.png";
-import QfixImg4 from "../../../assets/caseStudiesDetails/Qfix4.png";
 import FissaraLogo from "../../../assets/caseStudiesDetails/FissaraLogo.png";
 import FissaraImg1 from "../../../assets/caseStudiesDetails/Fissara1.png";
 import PinelabsImg1 from "../../../assets/caseStudiesDetails/Pinelabs1.png";
-import PinelabsImg2 from "../../../assets/caseStudiesDetails/Pinelabs2.png";
 import PathlockImg1 from "../../../assets/caseStudiesDetails/Pathlock1.png";
-import PathlockImg2 from "../../../assets/caseStudiesDetails/Pathlock2.png";
 import RipplehireImg from "../../../assets/caseStudiesDetails/Ripplehire.png";
 
 import CareMap from "../../../assets/caseStudiesListing/care-map.png";
@@ -203,7 +198,7 @@ export const CASE_STUDIES_LIST = [
     ongoingValueBasedRelationship: [
       "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
     ],
-    projectScreenshots: [QfixImg1, QfixImg2, QfixImg3, QfixImg4],
+    projectScreenshots: [QfixImg1],
   },
   {
     id: 3,
@@ -321,7 +316,7 @@ export const CASE_STUDIES_LIST = [
     ongoingValueBasedRelationship: [
       "Team is working on connector implementation requirement for 50+ business app like slack, workday etc",
     ],
-    projectScreenshots: [PathlockImg1, PathlockImg2],
+    projectScreenshots: [PathlockImg1],
   },
   {
     id: 5,
@@ -384,7 +379,7 @@ export const CASE_STUDIES_LIST = [
       "Continuous improvement in middleware to handle upcoming external merchant requirement.",
       "Acquiring core payment platform knowledge which helps to identify gaps in requirements during merchant integration.",
     ],
-    projectScreenshots: [PinelabsImg1, PinelabsImg2],
+    projectScreenshots: [PinelabsImg1],
   },
   {
     caseName: "RippleHire",

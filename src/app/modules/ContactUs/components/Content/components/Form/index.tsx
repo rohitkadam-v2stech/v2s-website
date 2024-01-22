@@ -1,11 +1,14 @@
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import COLORS from "../../../../../../styles/colors";
 import { messages } from "../../../../config/messages";
+import { useShowToastNotifications } from "../../../../../../containers/ToastNotifications";
 
 const ContactUsForm: React.FC = () => {
+  const { showToastNotification } = useShowToastNotifications();
+
   const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    alert("Your submission was successful.");
+    showToastNotification("Your submission was successful.", "success");
   };
 
   return (
