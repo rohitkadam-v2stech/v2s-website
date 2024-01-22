@@ -4,40 +4,22 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 import { EMAIL, PHONE, COPY, socialMediaUrls } from "./constants";
 import COLORS from "../../styles/colors";
-import {
-  // copyToClipboard,
-  navigateToMail,
-} from "../../utils/helpers";
+import { navigateToMail } from "../../utils/helpers";
 import FacebookIcon from "../../assets/facebook.png";
 import LinkedInIcon from "../../assets/linkedin.png";
 import CopyIcon from "../../assets/Copy.png";
 import useDeviceSize from "../../hooks/useDeviceSize";
 import { StyledContactNavbarText } from "./style";
-import { useEffect, useState } from "react";
+import { useShowToastNotifications } from "../../containers/ToastNotifications";
 
 const ContactNavbar = () => {
   const { isOnMobile, isOnTablet } = useDeviceSize();
+  const { showToastNotification } = useShowToastNotifications();
 
-  const [tooltipOpen, setTooltipOpen] = useState(false);
-
-  const copyToClipboard = (value: string) => {
+  const handleCopyToClipboardClick = (value: string) => {
     navigator.clipboard.writeText(value);
-    setTooltipOpen(true);
+    showToastNotification("Copied text to clipboard", "success");
   };
-
-  useEffect(() => {
-    let timeout: NodeJS.Timeout;
-
-    if (tooltipOpen) {
-      timeout = setTimeout(() => {
-        setTooltipOpen(false);
-      }, 3000); // Set the timeout for 3 seconds (3000 milliseconds)
-    }
-
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, [tooltipOpen]);
 
   return (
     <Stack
@@ -88,7 +70,7 @@ const ContactNavbar = () => {
           spacing={1}
           alignItems="center"
           sx={{ cursor: "pointer" }}
-          onClick={() => copyToClipboard(PHONE)}
+          onClick={() => handleCopyToClipboardClick(PHONE)}
         >
           <LocalPhoneIcon sx={{ fontSize: isOnMobile ? 12 : 14 }} />
           <StyledContactNavbarText fontSize={isOnMobile ? 10 : 14}>
@@ -110,17 +92,13 @@ const ContactNavbar = () => {
           </StyledContactNavbarText>
         </Stack>
 
-        {/* <Tooltip title={COPY} arrow> */}
-        <Tooltip
-          title="Copied text to clipboard"
-          open={tooltipOpen}
-          placement="top"
-          arrow
-        >
+        <Tooltip title={COPY} arrow>
           <img
             src={CopyIcon}
             alt="copy-icon"
-            onClick={() => copyToClipboard(`Contact: ${PHONE} Email: ${EMAIL}`)}
+            onClick={() =>
+              handleCopyToClipboardClick(`Contact: ${PHONE} Email: ${EMAIL}`)
+            }
             style={{ height: isOnMobile ? 10 : 12, cursor: "pointer" }}
           />
         </Tooltip>
