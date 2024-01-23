@@ -1,15 +1,15 @@
 import MsmeLogo from "../assets/msme-logo.png";
 import ConfluentLogo from "../assets/confluent-logo.png";
 import ScgtLogo from "../assets/scgt-logo.png";
-import NaascomLogo from "../assets/naascom-logo.png";
-import MongoDbLogo from "../assets/mongodblogo.png";
+import NasscomLogo from "../assets/nasscom-logo.png";
+import MongoDbLogo from "../assets/mongodb-logo.png";
 import GoodFirmsLogo from "../assets/goodfirms.png";
 
 export const OUR_ASSOCIATION_IMAGES_LIST = [
   MsmeLogo,
   ConfluentLogo,
   ScgtLogo,
-  NaascomLogo,
+  NasscomLogo,
   MongoDbLogo,
   GoodFirmsLogo,
 ];

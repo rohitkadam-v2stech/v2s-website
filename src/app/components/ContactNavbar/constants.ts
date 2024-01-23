@@ -4,7 +4,9 @@ export const PHONE = "001(862)2180998";
 
 export const EMAIL = "sales@v2stech.com";
 
-export const COPY = "Copy to Clipboard";
+export const COPY_CONTACT = "Copy contact";
+
+export const COPY_EMAIL = "Copy email";
 
 export const socialMediaUrls = {
   facebook: "https://www.facebook.com/V2STechSolutions",

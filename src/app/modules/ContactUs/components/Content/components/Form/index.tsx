@@ -15,9 +15,9 @@ const ContactUsForm: React.FC = () => {
   return (
     <form
       onSubmit={handleFormSubmit}
-      style={{ height: "100%", backgroundColor: COLORS.MEDIUM_BACKGROUND_GREY }}
+      style={{ height: "100%", backgroundColor: COLORS.FORM_BACKGROUND_GREY }}
     >
-      <Stack bgcolor={COLORS.MEDIUM_BACKGROUND_GREY} p={4}>
+      <Stack bgcolor={COLORS.FORM_BACKGROUND_GREY} p={4}>
         <Typography fontSize={32} fontWeight={700}>
           {messages.getStarted}
         </Typography>

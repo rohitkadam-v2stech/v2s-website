@@ -1,4 +1,4 @@
-import { ArrowRightAlt } from "@mui/icons-material";
+// import { ArrowRightAlt } from "@mui/icons-material";
 import { Paper, Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";

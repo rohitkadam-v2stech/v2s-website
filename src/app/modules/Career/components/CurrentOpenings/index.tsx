@@ -1,4 +1,4 @@
-import { Search } from "@mui/icons-material";
+// import { Search } from "@mui/icons-material";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 
 import { messages } from "../../config/messages";
@@ -23,15 +23,17 @@ const CurrentOpenings = () => (
         <Search className="search-icon" style={{ fill: "black" }} />
       </div> */}
       <Grid
+        width="100%"
         container
-        gap="20px"
-        justifyContent="center"
-        alignItems="center"
+        // gap="20px"
+        spacing={4}
+        // justifyContent="center"
+        // alignItems="center"
         px={{ xs: 2, sm: 2, md: 2, lg: 8 }}
         py="10px"
       >
         {jobsData.data.map((item, id) => (
-          <Grid item xs={12} sm={12} md={5.6} lg={3.4} borderRadius="10px">
+          <Grid item xs={12} sm={12} md={6} lg={4} borderRadius="10px">
             <JobDescriptionCard key={id} {...item} />
           </Grid>
         ))}

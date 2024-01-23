@@ -44,7 +44,7 @@ const TestimonialCard: React.FC<TTestimonialCardProps> = ({
           src={author_image}
           sx={{
             borderRadius: "25px",
-            height: { xs: "300px", sm: "300px", md: "300px", lg: "300px" },
+            // height: { xs: "300px", sm: "300px", md: "300px", lg: "300px" },
             // width: { xs: "250px", sm: "250px", md: "200px", lg: "200px" },
           }}
         />
