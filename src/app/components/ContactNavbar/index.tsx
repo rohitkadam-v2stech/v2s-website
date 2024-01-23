@@ -2,7 +2,13 @@ import { Link, Stack, Tooltip } from "@mui/material";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
-import { EMAIL, PHONE, COPY, socialMediaUrls } from "./constants";
+import {
+  EMAIL,
+  PHONE,
+  COPY_CONTACT,
+  COPY_EMAIL,
+  socialMediaUrls,
+} from "./constants";
 import COLORS from "../../styles/colors";
 import { navigateToMail } from "../../utils/helpers";
 import FacebookIcon from "../../assets/facebook.png";
@@ -72,10 +78,12 @@ const ContactNavbar = () => {
           sx={{ cursor: "pointer" }}
           onClick={() => handleCopyToClipboardClick(PHONE)}
         >
-          <LocalPhoneIcon sx={{ fontSize: isOnMobile ? 12 : 14 }} />
-          <StyledContactNavbarText fontSize={isOnMobile ? 10 : 14}>
-            {PHONE}
-          </StyledContactNavbarText>
+          <LocalPhoneIcon sx={{ fontSize: isOnMobile ? 12 : 18 }} />
+          <Tooltip title={COPY_CONTACT} arrow>
+            <StyledContactNavbarText fontSize={isOnMobile ? 10 : 14}>
+              {PHONE}
+            </StyledContactNavbarText>
+          </Tooltip>
         </Stack>
 
         <Stack
@@ -85,20 +93,18 @@ const ContactNavbar = () => {
           sx={{ cursor: "pointer" }}
           onClick={navigateToMail}
         >
-          <MailOutlineIcon sx={{ fontSize: isOnMobile ? 12 : 14 }} />
+          <MailOutlineIcon sx={{ fontSize: isOnMobile ? 12 : 18 }} />
 
           <StyledContactNavbarText fontSize={isOnMobile ? 10 : 14}>
             {EMAIL}
           </StyledContactNavbarText>
         </Stack>
 
-        <Tooltip title={COPY} arrow>
+        <Tooltip title={COPY_EMAIL} arrow>
           <img
             src={CopyIcon}
             alt="copy-icon"
-            onClick={() =>
-              handleCopyToClipboardClick(`Contact: ${PHONE} Email: ${EMAIL}`)
-            }
+            onClick={() => handleCopyToClipboardClick(EMAIL)}
             style={{ height: isOnMobile ? 10 : 12, cursor: "pointer" }}
           />
         </Tooltip>
