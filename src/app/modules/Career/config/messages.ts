@@ -12,6 +12,7 @@ export const messages = {
   position: "Position :",
   noOfPosition: "No of position :",
   industry: "Industry :",
+  skills: "Skills :",
   roleCategory: "Role Category :",
   location: "Location :",
   postedOn: "Posted on :",

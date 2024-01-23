@@ -6,9 +6,10 @@
       "position": "Immediate",
       "noOfPosition": "2",
       "industry": "IT Software, Sass",
+      "skills": "Java, Spring, Hibernate",
       "roleCategory": "Trainee Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "23-01-2024"
+      "postedOn": "12-20-2023"
     },
     {
       "jobTitle": "Java Developer (1-3 yrs)",
@@ -16,9 +17,10 @@
       "position": "Immediate",
       "noOfPosition": "1",
       "industry": "IT Software, Sass",
+      "skills": "Java , Spring, Springboot, Hibernate",
       "roleCategory": "Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "23-01-2024"
+      "postedOn": "01-17-2024"
     },
     {
       "jobTitle": "Java Developer (5+ yrs)",
@@ -26,9 +28,10 @@
       "position": "Immediate",
       "noOfPosition": "1",
       "industry": "IT Software, Sass",
+      "skills": "Java, Spring, Springboot, Hibernate",
       "roleCategory": "Principal Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "23-01-2024"
+      "postedOn": "01-08-2023"
     },
     {
       "jobTitle": "Python Developer Freshers ",
@@ -36,9 +39,10 @@
       "position": "Immediate",
       "noOfPosition": "2",
       "industry": "IT Software, Sass",
+      "skills": "Python, Django",
       "roleCategory": "Trainee Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "23-01-2024"
+      "postedOn": "20-12-2023"
     },
     {
       "jobTitle": "Sales Executive",
@@ -46,9 +50,10 @@
       "position": "Immediate",
       "noOfPosition": "1",
       "industry": "IT Software, Sass",
+      "skills": "IT Sales experience",
       "roleCategory": "Sales Executive",
       "location": "Thane, Mumbai",
-      "postedOn": "23-01-2024"
+      "postedOn": "11-08-2023"
     }
   ]
 }
