@@ -1,7 +1,7 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
-import Employees from "../../../../assets/employees.png";
+import Employees from "../../../../assets/employees.jpg";
 
 const WeCareOurEmployees = () => {
   return (

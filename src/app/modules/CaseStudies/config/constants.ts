@@ -129,8 +129,6 @@ export const CASE_STUDIES_LIST = [
     country: "India",
     title:
       "Improved platform with 12 major and 50 minor releases in 3 years. Every release was on-time and within budget.",
-    subtitle:
-      "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors.",
     image: Qfix,
@@ -207,8 +205,6 @@ export const CASE_STUDIES_LIST = [
     country: "UK",
     title:
       "Transforming SaaS platform to multitenant architecture & build multiple products",
-    subtitle:
-      "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2016.",
     // image: "https://v2stech.com/wp-content/uploads/2023/11/CS_Fissara.png",
@@ -268,8 +264,6 @@ export const CASE_STUDIES_LIST = [
     country: "USA",
     title:
       "Asynchronous business process execution handles high volume through user centred design",
-    subtitle:
-      "This product recognized as top 5 service providers in care industry",
     description:
       "Our client in USA, helps 100+ fortune 500 organisation automate the enforcement of controls of access, process, or cybersecurity checks, for any business application to whom V2STech provide technology consulting on UI enhancement as per design system guideline, product enhancements and business process automation.",
     image: Pathlock,
@@ -325,8 +319,6 @@ export const CASE_STUDIES_LIST = [
     country: "India",
     title:
       "Integration of a merchant portal into payments platform to facilitate tax collection",
-    subtitle:
-      "This product recognized as top 5 service providers in care industry",
     description:
       "Our client founded in 1998 is an Indian company that provides financing and retail transaction technology. It is a unicorn startup, with a valuation of over US$5 billion to whom V2STech is providing a merchant integration solution.",
     image: Pinelabs,
@@ -387,8 +379,6 @@ export const CASE_STUDIES_LIST = [
     domain: { name: "Recruitment", logo: DomainLogo1 },
     country: "India",
     title: "Product modernization for a cutting edge recruitment SaaS",
-    subtitle:
-      "This product recognized as top 5 service providers in care industry",
     description:
       "Our client is a 12 year old Indian company with over US$ 5 million turnover, recognized by NASSCOM as a Nasscom Emerge50 winner for its futuristic HR technology for recruitment that offers a cloud-based hiring platform, trusted by top global and Indian brands. to whom V2STech is providing software development services from 2022.",
     image: Ripplehire,
