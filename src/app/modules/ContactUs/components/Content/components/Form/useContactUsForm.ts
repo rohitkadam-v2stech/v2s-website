@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import useSendGrid from "../../../../../../hooks/useSendGrid";
 
 type TContactFormData = {
   name: string;
@@ -29,10 +28,12 @@ const initialState = {
   message: "",
 };
 
-const useContactUsForm = () => {
+const useContactUsForm = (
+  captchaRef: any,
+  verifyToken: (token: string) => Promise<Promise<any>[]>
+) => {
   const [contactFormData, setContactFormData] =
     useState<TContactFormData>(initialState);
-  // const { loading, sendEmail, error } = useSendGrid();
 
   const handleFormChange = (event: any) => {
     setContactFormData((prevState) => ({
@@ -43,16 +44,22 @@ const useContactUsForm = () => {
 
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    let token = captchaRef.current.getValue();
+    captchaRef.current.reset();
 
     try {
-      const res = await fetch("http://localhost:8080/contact-us", {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify(transformEmailPayload(contactFormData)),
-      });
-      console.log("Email success response: ", res);
+      let valid_token = await verifyToken(token);
+
+      if (valid_token) {
+        const res = await fetch("http://localhost:8080/contact-us", {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+          body: JSON.stringify(transformEmailPayload(contactFormData)),
+        });
+        console.log("Email success response: ", res);
+      }
     } catch (error) {
       console.log("Error response", error);
     }

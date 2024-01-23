@@ -22,6 +22,23 @@ const port = process.env.PORT || 3000;
 mail_1.default.setApiKey(process.env.SENDGRID_API_KEY);
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
+app.post("/verify-token", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const { recaptcha_token, secret_key } = req.body;
+    try {
+        let response = yield fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${recaptcha_token}`);
+        return res.status(200).json({
+            success: true,
+            message: "Token successfully verified",
+            verification_info: response.data,
+        });
+    }
+    catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Error verifying token",
+        });
+    }
+}));
 app.post("/contact-us", (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const msg = {
         from: "sales@v2stech.com", // Change to your verified sender

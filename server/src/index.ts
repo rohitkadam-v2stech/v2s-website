@@ -13,6 +13,26 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 app.use(cors());
 app.use(express.json());
 
+app.post("/verify-token", async (req, res) => {
+  const { recaptcha_token, secret_key } = req.body;
+
+  try {
+    let response: any = await fetch(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${recaptcha_token}`
+    );
+    return res.status(200).json({
+      success: true,
+      message: "Token successfully verified",
+      verification_info: response.data,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Error verifying token",
+    });
+  }
+});
+
 app.post(
   "/contact-us",
   async (req: Request, res: Response, next: NextFunction) => {

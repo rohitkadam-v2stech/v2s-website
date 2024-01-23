@@ -1,11 +1,16 @@
+import ReCAPTCHA from "react-google-recaptcha";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+
 import COLORS from "../../../../../../styles/colors";
 import { messages } from "../../../../config/messages";
 import useContactUsForm from "./useContactUsForm";
+import useReCaptcha from "../../../../../../hooks/useReCaptcha";
 
 const ContactUsForm: React.FC = () => {
+  const { captchaRef, verifyToken, siteKey } = useReCaptcha();
+
   const { contactFormData, handleFormChange, handleFormSubmit } =
-    useContactUsForm();
+    useContactUsForm(captchaRef, verifyToken);
 
   return (
     <form
@@ -63,7 +68,11 @@ const ContactUsForm: React.FC = () => {
             value={contactFormData.message}
             onChange={handleFormChange}
           />
-
+          <ReCAPTCHA
+            type="image"
+            sitekey={siteKey as string}
+            ref={captchaRef}
+          />
           <Box>
             <Button
               type="submit"
