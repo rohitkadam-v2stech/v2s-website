@@ -33,6 +33,7 @@ const News: React.FC = () => {
               onReadMoreClick={() => {
                 navigate(APPLICATION_URLS.NEWS);
               }}
+              isReadMoreVisible
             />
           </Grid>
         ))}
