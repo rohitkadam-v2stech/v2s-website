@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { OUR_TEAM } from "../../config/constants";
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
-import OurCultureImg from "../../../../assets/aboutUsLogos/Culture.jpg";
+import OurCultureImg from "../../../../assets/aboutUsLogos/Culture.png";
 
 const OurTeam: React.FC = () => (
   <>

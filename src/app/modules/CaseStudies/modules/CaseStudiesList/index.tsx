@@ -64,7 +64,7 @@ const CaseStudiesList = () => {
       </Box>
 
       <Box px={{ xs: "5%", sm: "5%", md: "10%", lg: "15%" }}>
-        <Stack direction="row" spacing={1} alignItems="center">
+        {/* <Stack direction="row" spacing={1} alignItems="center">
           <img
             style={{ width: 20, height: 20 }}
             src={FilterIcon}
@@ -90,7 +90,7 @@ const CaseStudiesList = () => {
               </MenuItem>
             ))}
           </Select>
-        </Stack>
+        </Stack> */}
 
         <Divider
           sx={{ my: 1, width: "100%", height: 2, bgcolor: COLORS.DARK_BLUE }}

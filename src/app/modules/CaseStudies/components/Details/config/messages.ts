@@ -5,4 +5,5 @@ export const messages = {
   problemStatement: "Problem Statement",
   solution: "Solution",
   ongoingValueBasedRelationship: "Ongoing Value based-Relationship",
+  noPageFound: "No page found.",
 };

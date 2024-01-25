@@ -12,15 +12,15 @@ const WeCareOurEmployees = () => {
         </Typography>
       </Box>
       <Grid container gap={2}>
-        <Grid item xs={12} sm={12} md={7.1} lg={7.1}>
+        <Grid item xs={12} sm={12} md={12} lg={12}>
           <Typography textAlign="justify" fontSize="16px" lineHeight="26px">
             {messages.weCareForOurEmployeesContent}
           </Typography>
         </Grid>
         <Grid xs={0.1} />
-        <Grid item xs={12} sm={12} md={4.5} lg={4.5}>
+        {/* <Grid item xs={12} sm={12} md={4.5} lg={4.5}>
           <Box component="img" src={Employees} width="100%" />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Stack>
   );

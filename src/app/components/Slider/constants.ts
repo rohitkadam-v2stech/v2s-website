@@ -8,7 +8,7 @@ export const SLIDER_DEFAULT_PROPS: ReactSliderProps = {
   slidesToShow: 5,
   slidesToScroll: 1,
   initialSlide: 0,
-  autoplay: true,
+  // autoplay: true,
   // responsive: [
   //   {
   //     breakpoint: 1024,
