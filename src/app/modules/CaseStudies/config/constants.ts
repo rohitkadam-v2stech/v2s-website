@@ -387,6 +387,8 @@ export const CASE_STUDIES_LIST = [
     domain: { name: "Recruitment", logo: DomainLogo1 },
     country: "India",
     title: "Product modernization for a cutting edge recruitment SaaS",
+    subtitle:
+      "The leading SaaS recruitment platform significantly improved the customer onboarding cycle",
     description:
       "Our client is a 12 year old Indian company with over US$ 5 million turnover, recognized by NASSCOM as a Nasscom Emerge50 winner for its futuristic HR technology for recruitment that offers a cloud-based hiring platform, trusted by top global and Indian brands. to whom V2STech is providing software development services from 2021.",
     image: Ripplehire,
