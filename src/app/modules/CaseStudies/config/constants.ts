@@ -103,7 +103,7 @@ export const CASE_STUDIES_LIST = [
     aboutClient:
       "Our client in UK, provides innovative digital care management software for the social care sector, including care homes, supported living, domiciliary care, staff rota, scheduling and care planning",
     projectRevenue: 6000000,
-    projectDuration: 2,
+    projectDuration: 7,
     problemStatement: {
       main: "Client wanted to bring the SaaS application vision to life in elderly care area. He was looking for a technology partner to shoulder the entire responsibility of software development so that client can focus on their business vision",
       subProblemStatements: [],
@@ -129,13 +129,15 @@ export const CASE_STUDIES_LIST = [
     country: "India",
     title:
       "Improved platform with 12 major and 50 minor releases in 3 years. Every release was on-time and within budget.",
+    subtitle:
+      "Custom checkout solution capable of handling 10+ million payment transactions monthly",
     description:
       "Our client in India is Fintech startup founded in 2015 offers cloud-based end-to-end platform delivering online integrated payments and billing services to multiple sectors.",
     image: Qfix,
     flag: India,
     mapImage: QfixMap,
-    startYear: 2017,
-    endYear: 2020,
+    startYear: 2015,
+    endYear: 2018,
     isProjectOngoing: false,
     minTeamSize: 10,
     maxTeamSize: 20,
@@ -194,7 +196,7 @@ export const CASE_STUDIES_LIST = [
       "Re-engineered digitized template-driven process increased 20-25% efficiency for onboarding new Institutes.",
     ],
     ongoingValueBasedRelationship: [
-      "Integrating upcoming merchant with Qfix payment platform. Please read more details (link to pinelab case study)",
+      "Integrating upcoming merchant with Qfix payment platform. Read More.",
     ],
     projectScreenshots: [QfixImg1],
   },
@@ -205,17 +207,19 @@ export const CASE_STUDIES_LIST = [
     country: "UK",
     title:
       "Transforming SaaS platform to multitenant architecture & build multiple products",
+    subtitle:
+      "Product suite for waste movements, bulk haulage, people and property management",
     description:
-      "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2016.",
+      "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2014.",
     // image: "https://v2stech.com/wp-content/uploads/2023/11/CS_Fissara.png",
     image: FissaraLogo,
     flag: UK,
     mapImage: FissaraMap,
-    startYear: 2016,
+    startYear: 2014,
     endYear: null,
     isProjectOngoing: true,
-    minTeamSize: 10,
-    maxTeamSize: 20,
+    minTeamSize: 5,
+    maxTeamSize: 6,
     valueProposition: [
       {
         title: "Time Impact",
@@ -237,9 +241,9 @@ export const CASE_STUDIES_LIST = [
       },
     ],
     aboutClient:
-      "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2016.",
+      "Our client in the UK is a specialist in mobilisation started in 2013. Fissara products mobilise people, processes and solutions providing easy to use end-to-end software systems to whom V2STech has been providing software development services since 2014.",
     projectRevenue: 1000000,
-    projectDuration: 7,
+    projectDuration: 10,
     problemStatement: {
       main: "Client was looking for reliable SaaS development partner who can bring technology expertise to support and speed up feature development in existing product",
       subProblemStatements: [],
@@ -264,16 +268,18 @@ export const CASE_STUDIES_LIST = [
     country: "USA",
     title:
       "Asynchronous business process execution handles high volume through user centred design",
+    subtitle:
+      "Transforming product digitally, where user experience takes center stage for unparalleled innovation.",
     description:
       "Our client in USA, helps 100+ fortune 500 organisation automate the enforcement of controls of access, process, or cybersecurity checks, for any business application to whom V2STech provide technology consulting on UI enhancement as per design system guideline, product enhancements and business process automation.",
     image: Pathlock,
     flag: USA,
     mapImage: PathlockMap,
-    startYear: 2017,
-    endYear: null,
-    isProjectOngoing: true,
-    minTeamSize: 10,
-    maxTeamSize: 20,
+    startYear: 2019,
+    endYear: 2021,
+    isProjectOngoing: false,
+    minTeamSize: 5,
+    maxTeamSize: 6,
     valueProposition: [
       {
         title: "Time Impact",
@@ -295,7 +301,7 @@ export const CASE_STUDIES_LIST = [
     aboutClient:
       "Our client in USA, helps 100+ fortune 500 organisation automate the enforcement of controls of access, process, or cybersecurity checks, for any business application to whom V2STech provide technology consulting on UI enhancement as per design system guideline, product enhancements and business process automation.",
     projectRevenue: 1000000,
-    projectDuration: 7,
+    projectDuration: 2,
     problemStatement: {
       main: "As a part of digital transformation of their platform and solutions bouquet",
       subProblemStatement: [
@@ -319,6 +325,8 @@ export const CASE_STUDIES_LIST = [
     country: "India",
     title:
       "Integration of a merchant portal into payments platform to facilitate tax collection",
+    subtitle:
+      "Enhance business offerings across various domains through the strategic utilization of integration solutions.",
     description:
       "Our client founded in 1998 is an Indian company that provides financing and retail transaction technology. It is a unicorn startup, with a valuation of over US$5 billion to whom V2STech is providing a merchant integration solution.",
     image: Pinelabs,
@@ -354,7 +362,7 @@ export const CASE_STUDIES_LIST = [
     aboutClient:
       "Our client founded in 1998 is an Indian company that provides financing and retail transaction technology. It is a unicorn startup, with a valuation of over US$5 billion to whom V2STech is providing a merchant integration solution.",
     projectRevenue: 1000000,
-    projectDuration: 7,
+    projectDuration: 2,
     problemStatement: {
       main: "Client wanted integration of a merchant payment collection system into their proprietary payment processing platform.",
       subProblemStatement: [],
@@ -380,13 +388,13 @@ export const CASE_STUDIES_LIST = [
     country: "India",
     title: "Product modernization for a cutting edge recruitment SaaS",
     description:
-      "Our client is a 12 year old Indian company with over US$ 5 million turnover, recognized by NASSCOM as a Nasscom Emerge50 winner for its futuristic HR technology for recruitment that offers a cloud-based hiring platform, trusted by top global and Indian brands. to whom V2STech is providing software development services from 2022.",
+      "Our client is a 12 year old Indian company with over US$ 5 million turnover, recognized by NASSCOM as a Nasscom Emerge50 winner for its futuristic HR technology for recruitment that offers a cloud-based hiring platform, trusted by top global and Indian brands. to whom V2STech is providing software development services from 2021.",
     image: Ripplehire,
     flag: India,
     mapImage: RipplehireMap,
-    startYear: 2020,
+    startYear: 2021,
     endYear: 2021,
-    isProjectOngoing: false,
+    isProjectOngoing: true,
     minTeamSize: 3,
     maxTeamSize: 10,
     valueProposition: [
@@ -412,7 +420,7 @@ export const CASE_STUDIES_LIST = [
     aboutClient:
       "Our client is a 12 year old Indian company with over US$ 5 million turnover, recognized by NASSCOM as a Nasscom Emerge50 winner for its futuristic HR technology for recruitment that offers a cloud-based hiring platform, trusted by top global and Indian brands. to whom V2STech is providing software development services from 2022.",
     projectRevenue: 1000000,
-    projectDuration: 7,
+    projectDuration: 3,
     problemStatement: {
       main: "The user interface for new customer onboarding was missing and the developer was doing the same using the SQL script in the database. Due to which their core technical team were occupied in manually onboarding of new customers. This was impacting the rollout of new features and potential business growth",
       subProblemStatement: [],

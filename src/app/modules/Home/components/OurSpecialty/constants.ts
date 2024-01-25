@@ -11,11 +11,11 @@ export const OUR_SPECIALTY: Array<{
   {
     icon: powerIdeasImg,
     title: "Powering ideas through UI/UX",
-    subtitle: "Benefit: Attract investor",
+    subtitle: "Benefit: Attract Investor",
   },
   {
     icon: recoverStalledProductsImg,
-    title: "Recovering Stalled Products",
+    title: "Recovering stalled Products",
     subtitle: "Benefit: Get back on Track",
   },
   {

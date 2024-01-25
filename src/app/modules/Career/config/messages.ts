@@ -1,8 +1,7 @@
 export const messages = {
   careerAtV2stech: "Career at V2STech",
   instructions: "Instructions",
-  instructionsContent:
-    "Freshers mail your CV and contact details to HR team at shweta.malde@v2stech.com To apply mail your CV with salary details to hrsupport@v2stech.com or contact 8291982537",
+  instructionsContent: "To apply mail your CV with salary details to HR team",
   contactDetails: "Contact Details",
   email: "Email :",
   phone: "Phone :",

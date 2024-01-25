@@ -51,7 +51,7 @@ export const OUR_APPROACH = [
 
 export const HIGHLIGHTS = [
   {
-    label: "SaaS Enterprise Products in 10 Years",
+    label: "Enterprise SaaS Products in 10 Years",
     value: "10+",
   },
   {
@@ -215,6 +215,11 @@ export const OUR_GROWTH_STORY_LIST = [
   {
     year: 2022,
     content: "Pune branch begins operations as our team size moves past 50.",
+    icon: <StyledCalendarIcon />,
+  },
+  {
+    year: 2023,
+    content: "Product distribution vertical started operation in India.",
     icon: <StyledCalendarIcon />,
   },
 ];

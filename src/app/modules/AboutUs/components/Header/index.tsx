@@ -78,12 +78,28 @@ const Header: React.FC = () => {
             fontWeight={600}
             color={COLORS.DARK_BLUE}
             pb={2}
+            textAlign="justify"
           >
             {messages.aboutUsDescription}
           </Typography>
 
-          <Typography fontSize={14} fontWeight={600} color={COLORS.DARK_BLUE}>
-            {messages.aboutUsSubDescription}
+          <Typography
+            fontSize={14}
+            fontWeight={600}
+            color={COLORS.DARK_BLUE}
+            textAlign="justify"
+          >
+            {/* {messages.aboutUsSubDescription} */}
+            We have over a decade of experience in SaaS product development.{" "}
+            <br />
+            <br />
+            With a pool of talented techies, we have successfully delivered
+            projects for global clients. Our 10+ enterprise products are
+            positively impacting over a million lives across the world. <br />
+            <br />
+            Our remote dedicated development teams, with expertise in SaaS
+            product development, help you transform your idea, with a
+            Go-to-Market strategy that aligns with your business goals.
           </Typography>
         </Stack>
       </Grid>

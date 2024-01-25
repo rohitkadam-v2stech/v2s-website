@@ -26,7 +26,7 @@ const AboutClients: React.FC<TAboutClientsProps> = ({ data }) => {
   const aboutClientCards = [
     {
       label: "Project Revenue",
-      value: formatAmount(projectRevenue),
+      value: `$${formatAmount(projectRevenue)}`,
     },
     {
       label: isProjectOngoing ? "Ongoing Project" : "Project Duration",
@@ -73,7 +73,7 @@ const AboutClients: React.FC<TAboutClientsProps> = ({ data }) => {
           >
             <CardContent>
               <Typography fontSize={22} fontWeight={800} mb={1}>
-                ${data?.value}
+                {data?.value}
               </Typography>
               <Typography fontSize={22} fontWeight={800}>
                 {data?.label}
