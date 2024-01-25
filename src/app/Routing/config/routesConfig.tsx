@@ -13,6 +13,10 @@ const PrivacyPolicy = lazy(() => import("../../modules/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("../../modules/CookiePolicy"));
 const TermsConditions = lazy(() => import("../../modules/TermsConditions"));
 const RefundPolicy = lazy(() => import("../../modules/RefundPolicy"));
+const News = lazy(() => import("../../modules/News"));
+const NewsDetails = lazy(
+  () => import("../../modules/News/components/NewsDetails")
+);
 
 const ROUTES_CONFIG: RouteProps[] = [
   {
@@ -54,6 +58,14 @@ const ROUTES_CONFIG: RouteProps[] = [
   {
     path: APPLICATION_URLS.PAGE_NOT_FOUND,
     element: <PageNotFound />,
+  },
+  {
+    path: APPLICATION_URLS.NEWS,
+    element: <News />,
+  },
+  {
+    path: APPLICATION_URLS.NEWS_DETAILS,
+    element: <NewsDetails />,
   },
 ];
 

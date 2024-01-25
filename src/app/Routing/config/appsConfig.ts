@@ -9,6 +9,8 @@ const APPLICATIONS = {
   COOKIE_POLICY: "COOKIE_POLICY",
   REFUND_POLICY: "REFUND_POLICY",
   PAGE_NOT_FOUND: "PAGE_NOT_FOUND",
+  NEWS: "NEWS",
+  NEWS_DETAILS: "NEWS_DETAILS",
 } as const;
 
 type TApplications = (typeof APPLICATIONS)[keyof typeof APPLICATIONS];
@@ -24,6 +26,8 @@ const APPLICATION_URLS: Record<TApplications, string> = {
   [APPLICATIONS.REFUND_POLICY]: "/refund-policy",
   [APPLICATIONS.TERMS_AND_CONDITIONS]: "/terms-and-conditions",
   [APPLICATIONS.PAGE_NOT_FOUND]: "*",
+  [APPLICATIONS.NEWS]: "/news",
+  [APPLICATIONS.NEWS_DETAILS]: "/news/:id",
 };
 
 export { APPLICATIONS, APPLICATION_URLS };
