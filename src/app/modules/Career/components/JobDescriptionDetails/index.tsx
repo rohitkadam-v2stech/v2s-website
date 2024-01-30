@@ -3,6 +3,7 @@ import jobsData from "../../data.json";
 import { Box, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
+import useDeviceSize from "../../../../hooks/useDeviceSize";
 
 const JobDescriptionDetails: React.FC = () => {
   const { id } = useParams();
@@ -13,7 +14,8 @@ const JobDescriptionDetails: React.FC = () => {
   const data: any = filteredNewsDetails && filteredNewsDetails[0];
 
   const jobDescriptionDetails = data?.details;
-  console.log("JD Data", data);
+
+  const { isOnMobile, isOnTablet } = useDeviceSize();
 
   return (
     <Box px="8%">
@@ -22,14 +24,15 @@ const JobDescriptionDetails: React.FC = () => {
         fontWeight={700}
         color={COLORS.DARK_BLUE}
         textAlign="center"
-        mb={4}
+        my={4}
       >
         {messages.currentOpenings}
       </Typography>
+
       <Stack
-        direction="row"
+        direction={isOnMobile || isOnTablet ? "column" : "row"}
         justifyContent="space-between"
-        alignItems="center"
+        alignItems={isOnMobile || isOnTablet ? "start" : "center"}
         bgcolor={COLORS.DARK_BLUE}
         color={COLORS.WHITE}
         p={4}
@@ -54,7 +57,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.desiredExperience && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Desired Experience:
+            {messages.desiredExperience}
           </Typography>
           {jobDescriptionDetails?.desiredExperience.map((exp: any) => (
             <ul>
@@ -71,7 +74,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.keyResponsibilities && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Key Responsibilities:
+            {messages.keyResponsibilities}
           </Typography>
           {jobDescriptionDetails?.keyResponsibilities.map(
             (responsibility: any) => (
@@ -90,7 +93,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.mustHave && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Must Have:
+            {messages.mustHave}
           </Typography>
           {jobDescriptionDetails?.mustHave.map((item: any) => (
             <ul>
@@ -107,7 +110,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.goodToHave && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Good to Have:
+            {messages.goodToHave}
           </Typography>
           {jobDescriptionDetails?.goodToHave.map((item: any) => (
             <ul>
@@ -124,7 +127,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.strongTechnicalSkills && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Strong Technical Skills:
+            {messages.strongTechnicalSkills}
           </Typography>
           {jobDescriptionDetails?.strongTechnicalSkills.map((item: any) => (
             <ul>
@@ -141,7 +144,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.additionalSkills && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Additional Skills:
+            {messages.additionalSkills}
           </Typography>
           {jobDescriptionDetails?.additionalSkills.map((item: any) => (
             <ul>
@@ -158,7 +161,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.salesTargetAchievement && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Sales Target Achievement:
+            {messages.salesTargetAchievement}
           </Typography>
           {jobDescriptionDetails?.salesTargetAchievement.map((item: any) => (
             <ul>
@@ -175,7 +178,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.productKnowledge && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Product Knowledge:
+            {messages.productKnowledge}
           </Typography>
           {jobDescriptionDetails?.productKnowledge.map((item: any) => (
             <ul>
@@ -192,7 +195,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.clientRelationshipManagement && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Client Relationship Management:
+            {messages.clientRelationshipManagement}
           </Typography>
           {jobDescriptionDetails?.clientRelationshipManagement.map(
             (item: any) => (
@@ -211,7 +214,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.marketResearch && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Market Research:
+            {messages.marketResearch}
           </Typography>
           {jobDescriptionDetails?.marketResearch.map((item: any) => (
             <ul>
@@ -228,7 +231,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.salesPipelineManagement && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Sales Pipeline Management:
+            {messages.salesPipelineManagement}
           </Typography>
           {jobDescriptionDetails?.salesPipelineManagement.map((item: any) => (
             <ul>
@@ -245,7 +248,7 @@ const JobDescriptionDetails: React.FC = () => {
       {jobDescriptionDetails?.qualifications && (
         <Stack p={4}>
           <Typography fontSize={18} fontWeight={700}>
-            Qualifications:
+            {messages.qualifications}
           </Typography>
           {jobDescriptionDetails?.qualifications.map((item: any) => (
             <ul>

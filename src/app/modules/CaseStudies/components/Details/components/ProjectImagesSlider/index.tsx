@@ -1,6 +1,5 @@
 import { Box, Stack } from "@mui/material";
 import Slider from "../../../../../../components/Slider";
-import useDeviceSize from "../../../../../../hooks/useDeviceSize";
 import COLORS from "../../../../../../styles/colors";
 
 type TProjectImagesSliderProps = {
@@ -10,7 +9,6 @@ type TProjectImagesSliderProps = {
 const ProjectImagesSlider: React.FC<TProjectImagesSliderProps> = ({
   state,
 }) => {
-  const { isOnMobile, isOnTablet } = useDeviceSize();
   return (
     <>
       {state?.projectScreenshots?.length <= 1 ? (
@@ -25,8 +23,8 @@ const ProjectImagesSlider: React.FC<TProjectImagesSliderProps> = ({
           <img
             src={state?.projectScreenshots[0]}
             alt={`project-screenshot-1`}
-            height={isOnMobile || isOnTablet ? "100%" : 340}
-            width={isOnMobile ? 280 : isOnTablet ? 500 : "100%"}
+            // height={isOnMobile || isOnTablet ? "100%" : 340}
+            // width={isOnMobile ? 280 : isOnTablet ? 500 : "100%"}
           />
         </Box>
       ) : (

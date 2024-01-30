@@ -34,23 +34,15 @@ const ExploreMoreNews: React.FC<TExploreMoreNewsProps> = ({ id }) => {
           arrows
         >
           {filteredNewsDetails?.map((item: any, index: number) => (
-            <div
-              key={index}
-              style={{
-                marginRight: "10px",
-                cursor: "pointer",
-              }}
-            >
+            <Box px={2} key={index}>
               <img
                 src={item?.image}
                 alt={`news-screenshot`}
                 onClick={() => navigate(`${APPLICATION_URLS.NEWS}/${item?.id}`)}
                 style={{ marginRight: "20px", cursor: "pointer" }}
                 width="100%"
-                // height={isOnMobile ? 200 : 350}
-                // height={isOnMobile || isOnTablet ? "100%" : 350}
               />
-            </div>
+            </Box>
           ))}
         </Slider>
       </Stack>

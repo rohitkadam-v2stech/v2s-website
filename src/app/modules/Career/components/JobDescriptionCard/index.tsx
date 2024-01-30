@@ -1,5 +1,5 @@
 import { ArrowRightAlt } from "@mui/icons-material";
-import { Paper, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
@@ -29,11 +29,7 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
   const navigate = useNavigate();
 
   return (
-    <Paper sx={{ borderRadius: "10px" }} elevation={0}>
-      {/* <Box
-        bgcolor={}
-        sx={{ p: 2, borderTopLeftRadius: 2, borderTopRightRadius: 2 }}
-      > */}
+    <Stack height="100%">
       <Typography
         color="white"
         fontSize="24px"
@@ -50,7 +46,7 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
       >
         {jobTitle}
       </Typography>
-      {/* </Box> */}
+
       <Stack
         bgcolor={COLORS.WHITE}
         spacing="14px"
@@ -59,15 +55,9 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
           borderBottomRightRadius: "10px",
           padding: "20px",
         }}
+        height="100%"
+        justifyContent="space-between"
       >
-        {/* {Object.keys(props).map((item) => (
-          <Typography fontSize="18px" fontWeight="400">
-            {`${messages[item as keyof typeof props]} ${
-              props[item as keyof typeof props]
-            }`}
-          </Typography>
-        ))} */}
-
         {Object.keys(updatedCurrentOpenings)?.map((item) => (
           <Typography fontSize="18px" fontWeight="400">
             {`${messages[item as keyof typeof props]} ${
@@ -96,7 +86,7 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
           />
         </Stack>
       </Stack>
-    </Paper>
+    </Stack>
   );
 };
 
