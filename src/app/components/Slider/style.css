@@ -1,0 +1,15 @@
+.slick-prev {
+  /* height: 40px;
+  width: 40px; */
+  /* padding-right: 20px; */
+  position: absolute;
+  left: -12;
+}
+
+.slick-next {
+  /* height: 40px;
+  width: 40px; */
+  position: absolute;
+  right: 100;
+  /* padding-left: 20px; */
+}
