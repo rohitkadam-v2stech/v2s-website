@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import ProjectImagesSlider from "./components/ProjectImagesSlider";
 import { CASE_LIST } from "./config/constants";
 import { messages } from "./config/messages";
+import ExploreOtherCaseStudies from "./components/ExploreOtherCaseStudies";
 
 const CaseStudiesDetails: React.FC = () => {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ const CaseStudiesDetails: React.FC = () => {
       {data?.projectScreenshots && <ProjectImagesSlider state={data} />}
       <AboutClients data={data} />
       <ProblemStatement data={data} />
+      <ExploreOtherCaseStudies />
     </>
   );
 };
