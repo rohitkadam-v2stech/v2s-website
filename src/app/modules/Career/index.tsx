@@ -1,4 +1,12 @@
-import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Divider,
+  Grid,
+  IconButton,
+  Stack,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 
 import COLORS from "../../styles/colors";
 import { messages } from "./config/messages";
@@ -9,8 +17,17 @@ import Recognition from "./components/Recognition";
 import LifeAtV2stech from "./components/LifeAtV2stech";
 import WeCareOurEmployees from "./components/WeCareOurEmployees";
 import { StyledImageContainer } from "./style";
+import { useShowToastNotifications } from "../../containers/ToastNotifications";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 const Career = () => {
+  const { showToastNotification } = useShowToastNotifications();
+
+  const handleCopyToClipboardClick = (value: string) => {
+    navigator.clipboard.writeText(value);
+    showToastNotification("Copied text to clipboard", "success");
+  };
+
   return (
     <Box>
       <StyledImageContainer />
@@ -47,9 +64,35 @@ const Career = () => {
               {messages.contactDetails}
             </Typography>
             <Box>
-              <Typography fontSize="20px" fontWeight="400">
+              {/* <Typography fontSize="20px" fontWeight="400">
                 {messages.email} {Email}
-              </Typography>
+              </Typography> */}
+
+              <Stack spacing={1} direction="row" alignItems="center">
+                <Typography
+                  fontSize={20}
+                  fontWeight={400}
+                  color={COLORS.GREY_TEXT}
+                >
+                  Email:
+                </Typography>
+
+                <Typography
+                  fontSize={20}
+                  fontWeight={400}
+                  color={COLORS.PRIMARY_BLUE}
+                  sx={{ textDecoration: "underline", cursor: "pointer" }}
+                >
+                  {Email}
+                </Typography>
+
+                <Tooltip title="Copy Email" arrow>
+                  <IconButton onClick={() => handleCopyToClipboardClick(Email)}>
+                    <ContentCopyIcon sx={{ fontSize: 16 }} />
+                  </IconButton>
+                </Tooltip>
+              </Stack>
+
               <Typography fontSize="20px" fontWeight="400">
                 {messages.phone} {Phone}
               </Typography>

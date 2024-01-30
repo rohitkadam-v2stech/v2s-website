@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
-import lifeAtV2stech from "../../../../assets/life_at_v2stech.jpg";
+import lifeAtV2stech from "../../../../assets/life_at_v2stech.png";
 
 const LifeAtV2stech = () => {
   return (

@@ -22,4 +22,8 @@ export const NAVBAR_ROUTES = [
     label: "Contact Us",
     path: APPLICATION_URLS.CONTACT_US,
   },
+  {
+    label: "News",
+    path: APPLICATION_URLS.NEWS,
+  },
 ] as const;

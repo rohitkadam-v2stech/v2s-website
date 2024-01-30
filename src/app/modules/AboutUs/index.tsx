@@ -1,3 +1,4 @@
+import COLORS from "../../styles/colors";
 import Blogs from "./components/Blogs";
 import Header from "./components/Header";
 import Highlights from "./components/Highlights";
@@ -19,7 +20,7 @@ const AboutUs = () => {
       <OurTeam />
       <Blogs />
       <News />
-      <OurAssociation />
+      <OurAssociation bgColor={COLORS.BACKGROUND_GREY} />
     </div>
   );
 };

@@ -1,10 +1,13 @@
-// import { ArrowRightAlt } from "@mui/icons-material";
-import { Paper, Stack, Typography } from "@mui/material";
+import { ArrowRightAlt } from "@mui/icons-material";
+import { Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import { messages } from "../../config/messages";
+import { useNavigate } from "react-router-dom";
+import { APPLICATION_URLS } from "../../../../Routing/config/appsConfig";
 
 type TJobDescriptionCardProps = {
+  id: string;
   jobTitle: string;
   experience: string;
   position: string;
@@ -13,18 +16,20 @@ type TJobDescriptionCardProps = {
   roleCategory: string;
   location: string;
   postedOn: string;
+  details: Record<string, unknown>;
 };
 
 const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
+  id,
   jobTitle,
+  details,
   ...props
 }) => {
+  const updatedCurrentOpenings = { ...props };
+  const navigate = useNavigate();
+
   return (
-    <Paper sx={{ borderRadius: "10px" }} elevation={0}>
-      {/* <Box
-        bgcolor={}
-        sx={{ p: 2, borderTopLeftRadius: 2, borderTopRightRadius: 2 }}
-      > */}
+    <Stack height="100%">
       <Typography
         color="white"
         fontSize="24px"
@@ -41,7 +46,7 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
       >
         {jobTitle}
       </Typography>
-      {/* </Box> */}
+
       <Stack
         bgcolor={COLORS.WHITE}
         spacing="14px"
@@ -50,8 +55,10 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
           borderBottomRightRadius: "10px",
           padding: "20px",
         }}
+        height="100%"
+        justifyContent="space-between"
       >
-        {Object.keys(props).map((item) => (
+        {Object.keys(updatedCurrentOpenings)?.map((item) => (
           <Typography fontSize="18px" fontWeight="400">
             {`${messages[item as keyof typeof props]} ${
               props[item as keyof typeof props]
@@ -59,7 +66,12 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
           </Typography>
         ))}
 
-        {/* <Stack direction="row" justifyContent="end" alignItems="center">
+        <Stack
+          direction="row"
+          justifyContent="end"
+          alignItems="center"
+          onClick={() => navigate(`${APPLICATION_URLS.CAREER}/${id}`)}
+        >
           <Typography
             fontSize={16}
             fontWeight={700}
@@ -72,9 +84,9 @@ const JobDescriptionCard: React.FC<TJobDescriptionCardProps> = ({
           <ArrowRightAlt
             sx={{ pt: 0.6, color: COLORS.DARK_BLUE, cursor: "pointer" }}
           />
-        </Stack> */}
+        </Stack>
       </Stack>
-    </Paper>
+    </Stack>
   );
 };
 

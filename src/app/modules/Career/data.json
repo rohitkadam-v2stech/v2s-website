@@ -1,6 +1,7 @@
 {
   "data": [
     {
+      "id": "java-developer",
       "jobTitle": "Java Developer (1-3 yrs)",
       "experience": "1-3 Years",
       "position": "Immediate",
@@ -9,9 +10,39 @@
       "skills": "Java , Spring, Springboot, Hibernate",
       "roleCategory": "Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "17-01-2024"
+      "postedOn": "17-01-2024",
+      "details": {
+        "keyResponsibilities": [
+          "Proficiency in Java, demonstrating a solid understanding of its ecosystem.",
+          "Utilization of knowledge of Object-Oriented Programming (OOP) patterns and concepts.",
+          "Following the concepts of MVC (Model-View-Controller) pattern.",
+          "Use of version tools like GIT for merging, branching, etc.",
+          "Utilizing knowledge of SQL in writing simple/medium queries.",
+          "Stay current with emerging technologies and trends in Java development.",
+          "Debug, troubleshoot, and resolve software defects and issues.",
+          "Contribute to the continuous improvement of development processes and practices."
+        ],
+        "mustHave": [
+          "Must have experience of Java, Spring Framework, Hibernate and other relevant technologies.",
+          "Worked on front-end technologies such as JSP, servlet, HTML, JavaScript, CSS and jQuery",
+          "Work experience on RESTful web services, and aware about API design.",
+          "Familiarity with database systems such as MySQL, MongoDB databases.",
+          "Proficiency in version control systems (e.g., Git).",
+          "Excellent problem-solving and debugging skills."
+        ],
+        "goodToHave": [
+          "Strong communication and teamwork abilities.",
+          "Proficient in client communication",
+          "Good Analytical and Communication Skills",
+          "Good at handling enterprise applications.",
+          "Aware/Hands on experience on Jasper Reports",
+          "Experience with microservice architecture is advantageous.",
+          "Knowledge of Agile/Scrum methodologies is a plus."
+        ]
+      }
     },
     {
+      "id": "java-developer-fresher",
       "jobTitle": "Java Developer Fresher",
       "experience": "0-1 year",
       "position": "Immediate",
@@ -20,9 +51,18 @@
       "skills": "Java, Spring, Hibernate",
       "roleCategory": "Trainee Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "20-12-2023"
+      "postedOn": "20-12-2023",
+      "details": {
+        "desiredExperience": [
+          "The ideal candidates should be well trained or certified in Spring, Java, and Hibernate.",
+          "Should have knowledge of Spring boot/ Spring MVC & Hibernate.",
+          "Should be aware about front-end technology.",
+          "Should be aware about java full stack development."
+        ]
+      }
     },
     {
+      "id": "python-developer-fresher",
       "jobTitle": "Python Developer Freshers ",
       "experience": "0-1 year",
       "position": "Immediate",
@@ -31,21 +71,60 @@
       "skills": "Python, Django",
       "roleCategory": "Trainee Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "20-12-2023"
+      "postedOn": "20-12-2023",
+      "details": {
+        "desiredExperience": [
+          "The ideal candidates should be well trained or certified in Python.",
+          "Should have knowledge of machine learning (ML) and artificial intelligence (AI).",
+          "Should be able to integrate backend with frontend."
+        ]
+      }
     },
     {
-      "jobTitle": "Sales Executive",
-      "experience": "1+ years",
+      "id": "sales-executive",
+      "jobTitle": "Senior Sales Executive / Lead Generation",
+      "experience": "5+ years",
       "position": "Immediate",
       "noOfPosition": "1",
       "industry": "IT Software, Sass",
       "skills": "IT Sales experience",
-      "roleCategory": "Sales Executive",
+      "roleCategory": "Senior Sales Executive / Lead Generation",
       "location": "Thane, Mumbai",
-      "postedOn": "08-11-2023"
+      "postedOn": "08-11-2023",
+      "details": {
+        "salesTargetAchievement": [
+          "Meet and exceed sales targets for the assigned product portfolio.",
+          "Develop and implement effective sales strategies to drive revenue growth.",
+          "Lead sales team and manage daily sales activities for team."
+        ],
+        "productKnowledge": [
+          "Possess in-depth knowledge of the company's products and services.",
+          "Conduct product presentations and demonstrations to potential clients."
+        ],
+        "clientRelationshipManagement": [
+          "Build and maintain strong relationships with existing and potential clients.",
+          "Understand client needs and tailor product offerings to meet their requirements."
+        ],
+        "marketResearch": [
+          "Stay updated on industry trends and competitor products.",
+          "Conduct market research to identify new opportunities and customer preferences."
+        ],
+        "salesPipelineManagement": [
+          "Manage the entire sales process from lead generation to closing deals.",
+          "Maintain accurate and up-to-date records of sales activities and customer interactions"
+        ],
+        "qualifications": [
+          "Bachelor's degree in Business, Marketing, or a related field.",
+          "Proven track record of achieving and exceeding sales targets in the product sales domain.",
+          "Excellent communication and presentation skills.",
+          "Strong negotiation and interpersonal skills.",
+          "Self-motivated with the ability to work independently and as part of a team."
+        ]
+      }
     },
     {
-      "jobTitle": "Principal Java Developer (5+ yrs)",
+      "id": "principal-software-engineer",
+      "jobTitle": "Principal Software Engineer (5+ yrs)",
       "experience": "5-8 Years",
       "position": "Immediate",
       "noOfPosition": "1",
@@ -53,7 +132,46 @@
       "skills": "Java, Spring, Springboot, Hibernate",
       "roleCategory": "Principal Software Engineer",
       "location": "Thane, Mumbai",
-      "postedOn": "08-01-2023"
+      "postedOn": "08-01-2023",
+      "details": {
+        "description": "As a Sr Java Developer (PSE), you will play a pivotal role in our dynamic and innovative software development team. This position requires a high level of proficiency in Java, along with a deep understanding of its ecosystem. As a key contributor, you will be involved in designing, implementing, and maintaining Java-based applications that are not only robust and scalable but also adhere to industry best practices.",
+        "keyResponsibilities": [
+          "Proficiency in Java, demonstrating a solid understanding of its ecosystem.",
+          "Utilization of knowledge of Object-Oriented Programming (OOP) patterns and concepts.",
+          "Creating technical designs for small functional modules with various design and architectural patterns.",
+          "Make sure implementation is following the concepts of MVC (Model-View-Controller) pattern",
+          "Managing version tools like GIT for merging, branching, etc.",
+          "Conducting Code review for peers to maintain best code quality.",
+          "Utilizing knowledge of SQL in writing complex/medium queries.",
+          "Expertise in continuous integration.",
+          "Stay current with emerging technologies and trends in Java development.",
+          "Debug, troubleshoot, and resolve software defects and issues.",
+          "Contribute to the continuous improvement of development processes and practices."
+        ],
+        "strongTechnicalSkills": [
+          "Java Server Pages (JSP) and servlets.",
+          "Web frameworks Spring,",
+          "ORM framework Hibernate.",
+          "JDBC (Java Database Connectivity)",
+          "Experience with REST Web Services, Open SPML.",
+          "Basic knowledge of SQL is a must.",
+          "Proficiency in web technologies such as HTML, JavaScript, CSS, and jQuery.",
+          "Familiarity with markup languages such as XML and JSON.",
+          "Solid understanding of multithreading and synchronization concepts."
+        ],
+        "additionalSkills": [
+          "Familiarity with agile development methodologies.",
+          "Worked on Jasper reports.",
+          "Experienced in SaaS based product development.",
+          "Experienced in microservices.",
+          "Knowledge of containerization and orchestration tools (e.g., Docker, Kubernetes).",
+          "Exposure to microservices architecture.",
+          "Familiarity with front-end frameworks and libraries (e.g., React, Angular).",
+          "Knowledge of NoSQL databases.",
+          "Participation in open-source projects or contributions.",
+          "Ability to work independently and as part of a team in a fast-paced environment."
+        ]
+      }
     }
   ]
 }

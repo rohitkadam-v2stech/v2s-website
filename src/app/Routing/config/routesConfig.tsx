@@ -8,6 +8,9 @@ const AboutUs = lazy(() => import("../../modules/AboutUs"));
 const CaseStudies = lazy(() => import("../../modules/CaseStudies"));
 const ContactUs = lazy(() => import("../../modules/ContactUs"));
 const Career = lazy(() => import("../../modules/Career"));
+const CareerDetails = lazy(
+  () => import("../../modules/Career/components/JobDescriptionDetails")
+);
 const PageNotFound = lazy(() => import("../../modules/PageNotFound"));
 const PrivacyPolicy = lazy(() => import("../../modules/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("../../modules/CookiePolicy"));
@@ -38,6 +41,10 @@ const ROUTES_CONFIG: RouteProps[] = [
   {
     path: APPLICATION_URLS.CAREER,
     element: <Career />,
+  },
+  {
+    path: APPLICATION_URLS.CAREER_DETAILS,
+    element: <CareerDetails />,
   },
   {
     path: APPLICATION_URLS.PRIVACY_POLICY,

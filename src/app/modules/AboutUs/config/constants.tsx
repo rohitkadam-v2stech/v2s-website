@@ -108,18 +108,21 @@ export const BLOGS_LIST = [
 
 export const NEWS_LIST = [
   {
+    id: "celebrating-customer-success",
     image: NewsImg1,
     title: "Celebrating customer success",
     description:
       "We’re thrilled to celebrate client success with our team members.",
   },
   {
+    id: "a-fun-training-session-on-corporate-etiquette-customer-service-and-team-building-at-v2stech",
     image: NewsImg2,
     title: "Corporate training in customer service and team building",
     description:
       "Here are popular strategies and frameworks for prioritizing product features that can help your product to stand apart from competition.",
   },
   {
+    id: "insights-from-vishal-samant-in-nasscom-smeleadersspeak-episode",
     image: NewsImg3,
     title: "Insights from Vishal Samant in NASSCOM #SMELeadersSpeak ",
     description:
