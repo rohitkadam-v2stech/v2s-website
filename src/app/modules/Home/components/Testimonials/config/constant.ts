@@ -11,6 +11,7 @@ export const TESTIMONIALS = [
     position: "CEO",
     company: "Fissara, UK",
     author_image: TestimonialImg1,
+    youtube_url: "8MuSip2F4sw",
   },
   {
     review:
@@ -19,6 +20,7 @@ export const TESTIMONIALS = [
     position: "Managing Director",
     company: "Qfix Infocomm, India",
     author_image: TestimonialImg2,
+    youtube_url: "zXY3LRWZXfw",
   },
   {
     review:
@@ -27,6 +29,7 @@ export const TESTIMONIALS = [
     position: "CEO",
     company: "Carebeans, UK",
     author_image: TestimonialImg3,
+    youtube_url: "",
   },
   {
     review:
@@ -35,6 +38,7 @@ export const TESTIMONIALS = [
     position: "VP of Technology",
     company: "RippleHire, India",
     author_image: DummyTestimonialImg,
+    youtube_url: "",
   },
   {
     review:
@@ -43,6 +47,7 @@ export const TESTIMONIALS = [
     position: "Team leader",
     company: "SunCulture, Kenya",
     author_image: DummyTestimonialImg,
+    youtube_url: "",
   },
   {
     review:
@@ -51,5 +56,6 @@ export const TESTIMONIALS = [
     position: "Team leader",
     company: "Mindtickle, India",
     author_image: DummyTestimonialImg,
+    youtube_url: "",
   },
 ];

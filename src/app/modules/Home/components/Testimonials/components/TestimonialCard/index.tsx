@@ -2,9 +2,12 @@ import { Paper, Stack, Typography } from "@mui/material";
 
 import COLORS from "../../../../../../styles/colors";
 import useDeviceSize from "../../../../../../hooks/useDeviceSize";
+import YoutubePlayer from "../../../../../../components/YoutubePlayer";
+import { V2S_TECH_YOUTUBE_VIDEO_EMBED_ID } from "../../../../../AboutUs/config/constants";
 
 type TTestimonialCardProps = {
   author_image: string | null;
+  youtube_url: string;
   author: string;
   company: string;
   position: string;
@@ -14,6 +17,7 @@ type TTestimonialCardProps = {
 const TestimonialCard: React.FC<TTestimonialCardProps> = ({
   company,
   author_image,
+  youtube_url,
   position,
   author,
   review,
@@ -37,7 +41,7 @@ const TestimonialCard: React.FC<TTestimonialCardProps> = ({
       sx={{ color: COLORS.DARK_BLUE, mx: isOnMobile ? 2 : 10, my: "auto" }}
       // bgcolor="red"
     >
-      {author_image && (
+      {!youtube_url && author_image && (
         <Paper
           elevation={0}
           component="img"
@@ -47,6 +51,13 @@ const TestimonialCard: React.FC<TTestimonialCardProps> = ({
             // height: { xs: "300px", sm: "300px", md: "300px", lg: "300px" },
             // width: { xs: "250px", sm: "250px", md: "200px", lg: "200px" },
           }}
+        />
+      )}
+
+      {youtube_url && (
+        <YoutubePlayer
+          embedId={youtube_url}
+          containerProps={{ borderRadius: "20px", border: "none" }}
         />
       )}
 

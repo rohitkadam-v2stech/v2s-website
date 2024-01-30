@@ -25,7 +25,7 @@ const Testimonials = () => {
         </Typography>
       </Stack>
       <SliderWrapper>
-        <Slider slidesToShow={isOnMobile || isOnTablet ? 1 : 2}>
+        <Slider slidesToShow={isOnMobile || isOnTablet ? 1 : 2} arrows={false}>
           {TESTIMONIALS.map((item) => (
             <TestimonialCard {...item} />
           ))}
