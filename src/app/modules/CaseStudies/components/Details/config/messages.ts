@@ -6,4 +6,5 @@ export const messages = {
   solution: "Solution",
   ongoingValueBasedRelationship: "Ongoing Value based-Relationship",
   noPageFound: "No page found.",
+  exploreOtherCaseStudies: "Explore Other Case Studies",
 };
