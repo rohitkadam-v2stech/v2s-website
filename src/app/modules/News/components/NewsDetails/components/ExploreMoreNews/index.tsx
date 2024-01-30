@@ -4,8 +4,6 @@ import { NEWS_LIST } from "../../../../config/constants";
 import { useNavigate } from "react-router-dom";
 import { APPLICATION_URLS } from "../../../../../../Routing/config/appsConfig";
 import useDeviceSize from "../../../../../../hooks/useDeviceSize";
-import NextArrowBtn from "./components/NextArrowBtn";
-import PrevArrowBtn from "./components/PrevArrowBtn";
 import { messages } from "../../../../config/messages";
 
 type TExploreMoreNewsProps = {
@@ -28,9 +26,6 @@ const ExploreMoreNews: React.FC<TExploreMoreNewsProps> = ({ id }) => {
           slidesToShow={isOnMobile || isOnTablet ? 1 : 2}
           dots={false}
           infinite={true}
-          autoplay={false}
-          prevArrow={<PrevArrowBtn />}
-          nextArrow={<NextArrowBtn />}
           arrows
         >
           {filteredNewsDetails?.map((item: any, index: number) => (
