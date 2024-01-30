@@ -1,7 +1,7 @@
 import TestimonialImg1 from "../../../../../assets/testimonials/testimonial1.png";
 import TestimonialImg2 from "../../../../../assets/testimonials/testimonial2.png";
 import TestimonialImg3 from "../../../../../assets/testimonials/testimonial3.png";
-import DummyTestimonialImg from "../../../../../assets/testimonials/dummy.png";
+import DummyTestimonialImg from "../../../../../assets/testimonials/dummyPic.png";
 
 export const TESTIMONIALS = [
   {

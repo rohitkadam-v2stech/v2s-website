@@ -22,7 +22,7 @@ const OurApproach: React.FC = () => {
           </Typography>
         </StyledOurApproachTitleContainer>
 
-        <Grid container spacing={3} my={2}>
+        <Grid container spacing={4} my={2}>
           {OUR_APPROACH.map((values, index) => (
             <StyledContentGrid
               item
@@ -43,7 +43,7 @@ const OurApproach: React.FC = () => {
               </Typography>
 
               {values?.description && (
-                <Typography fontSize={16} fontWeight={400} width="100%">
+                <Typography fontSize={16} fontWeight={400} textAlign="justify">
                   {values.description}
                 </Typography>
               )}

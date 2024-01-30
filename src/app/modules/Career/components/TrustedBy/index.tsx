@@ -1,9 +1,14 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Link, Stack, Typography } from "@mui/material";
 import { messages } from "../../config/messages";
 import COLORS from "../../../../styles/colors";
 import glassdoorReview from "../../../../assets/glassdoor.png";
 import ambitionboxReview from "../../../../assets/ambitionbox.png";
 import googleReview from "../../../../assets/google_reviews.png";
+import {
+  AMBITION_BOX_URL,
+  GLASSDOOR_URL,
+  GOOGLE_MAPS_URL,
+} from "../../constants";
 
 const TrustedBy = () => {
   return (
@@ -26,13 +31,21 @@ const TrustedBy = () => {
         px={{ xs: 2, sm: 2, md: 2, lg: 6 }}
       >
         <Grid item xs={12} sm={12} md={3.5} lg={3.5}>
-          <Box component="img" src={glassdoorReview} width="100%" />
+          <Link target="_blank" href={GLASSDOOR_URL}>
+            <Box component="img" src={glassdoorReview} width="100%" />
+          </Link>
         </Grid>
+
         <Grid item xs={12} sm={12} md={3.5} lg={3.5}>
-          <Box component="img" src={ambitionboxReview} width="100%" />
+          <Link target="_blank" href={AMBITION_BOX_URL}>
+            <Box component="img" src={ambitionboxReview} width="100%" />
+          </Link>
         </Grid>
+
         <Grid item xs={12} sm={12} md={3.5} lg={3.5}>
-          <Box component="img" src={googleReview} width="100%" />
+          <Link target="_blank" href={GOOGLE_MAPS_URL}>
+            <Box component="img" src={googleReview} width="100%" />
+          </Link>
         </Grid>
       </Grid>
     </Stack>

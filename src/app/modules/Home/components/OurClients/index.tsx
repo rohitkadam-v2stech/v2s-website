@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Link, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../styles/colors";
 import { messages } from "./config/messages";
 import { CLIENT_LOGOS } from "./constants";
@@ -28,7 +28,7 @@ const OurClients = () => {
         py={2}
         spacing={4}
       >
-        {CLIENT_LOGOS.map((imagePath, id) => (
+        {CLIENT_LOGOS.map((item, id) => (
           <Grid
             key={id}
             item
@@ -40,7 +40,9 @@ const OurClients = () => {
             alignItems="center"
             textAlign="center"
           >
-            <img alt="brand_logos" src={imagePath} />
+            <Link target="_blank" href={item?.path}>
+              <img alt="brand_logos" src={item?.image} />
+            </Link>
           </Grid>
         ))}
       </Grid>

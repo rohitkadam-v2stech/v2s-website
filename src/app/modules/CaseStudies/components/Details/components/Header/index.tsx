@@ -1,6 +1,5 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../../../styles/colors";
-// import worldMap from "../../../../../../assets/world_map.png";
 import useDeviceSize from "../../../../../../hooks/useDeviceSize";
 import { messages } from "../../config/messages";
 import { DashedDivider } from "../../../../../../styles/style";
@@ -89,7 +88,7 @@ const Header: React.FC<THeaderProps> = ({ state }) => {
             <Typography
               fontSize={24}
               fontWeight={600}
-              color={COLORS.LIGHT_BLUE}
+              color={COLORS.LIGHT_SKY_BLUE}
             >
               {state?.domain?.name}
             </Typography>

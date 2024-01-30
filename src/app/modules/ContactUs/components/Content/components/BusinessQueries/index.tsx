@@ -30,10 +30,10 @@ const BusinessQueries: React.FC = () => {
           </Stack>
 
           <Stack pl={8}>
-            <Typography fontSize={18} fontWeight={700}>
+            <Typography fontSize={16} fontWeight={700}>
               {messages.headQuarters}
             </Typography>
-            <Typography fontSize={18} fontWeight={400} color={COLORS.GREY_TEXT}>
+            <Typography fontSize={16} fontWeight={400} color={COLORS.GREY_TEXT}>
               {messages.officeAddress}
             </Typography>
           </Stack>
@@ -52,7 +52,7 @@ const BusinessQueries: React.FC = () => {
             <div onClick={navigateToMail}>
               <Stack spacing={1} direction="row" alignItems="center">
                 <Typography
-                  fontSize={18}
+                  fontSize={16}
                   fontWeight={400}
                   color={COLORS.PRIMARY_BLUE}
                   sx={{ textDecoration: "underline", cursor: "pointer" }}
@@ -71,7 +71,7 @@ const BusinessQueries: React.FC = () => {
                 </Tooltip>
               </Stack>
             </div>
-            <Typography fontSize={18} fontWeight={400} color={COLORS.GREY_TEXT}>
+            <Typography fontSize={16} fontWeight={400} color={COLORS.GREY_TEXT}>
               Phone: 001 (862) 218 0998
             </Typography>
           </Stack>
@@ -87,12 +87,41 @@ const BusinessQueries: React.FC = () => {
           </Stack>
 
           <Stack pl={8}>
-            <Typography fontSize={18} fontWeight={400} color={COLORS.GREY_TEXT}>
+            <Typography fontSize={16} fontWeight={400} color={COLORS.GREY_TEXT}>
               Phone: +91 8291982537
             </Typography>
-            <Typography fontSize={18} fontWeight={400} color={COLORS.GREY_TEXT}>
+            {/* <Typography fontSize={16} fontWeight={400} color={COLORS.GREY_TEXT}>
               Email: hrsupport@v2stech.com
-            </Typography>
+            </Typography> */}
+
+            <Stack spacing={1} direction="row" alignItems="center">
+              <Typography
+                fontSize={16}
+                fontWeight={400}
+                color={COLORS.GREY_TEXT}
+              >
+                Email:
+              </Typography>
+
+              <Typography
+                fontSize={16}
+                fontWeight={400}
+                color={COLORS.PRIMARY_BLUE}
+                sx={{ textDecoration: "underline", cursor: "pointer" }}
+              >
+                hrsupport@v2stech.com
+              </Typography>
+
+              <Tooltip title="Copy Email" arrow>
+                <IconButton
+                  onClick={() =>
+                    handleCopyToClipboardClick("hrsupport@v2stech.com")
+                  }
+                >
+                  <ContentCopyIcon sx={{ fontSize: 16 }} />
+                </IconButton>
+              </Tooltip>
+            </Stack>
           </Stack>
         </Stack>
       </Stack>

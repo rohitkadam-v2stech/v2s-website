@@ -1,0 +1,16 @@
+export const messages = {
+  currentOpenings: "Current Openings",
+  postedOn: "Posted On",
+  desiredExperience: "Desired Experience",
+  keyResponsibilities: "Key Responsibilities",
+  mustHave: "Must Have",
+  goodToHave: "Good to Have",
+  strongTechnicalSkills: "Strong Technical Skills",
+  additionalSkills: "Additional Skills",
+  salesTargetAchievement: "Sales Target Achievement",
+  productKnowledge: "Product Knowledge",
+  clientRelationshipManagement: "Client Relationship Management",
+  marketResearch: "Market Research",
+  salesPipelineManagement: "Sales Pipeline Management",
+  qualifications: "Qualifications",
+};

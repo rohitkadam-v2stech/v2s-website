@@ -14,11 +14,11 @@ const Content: React.FC<TContentProps> = ({ data }) => {
   return (
     <>
       <Stack px={"8%"}>
-        <Typography fontSize={24} fontWeight={400} py={4}>
+        <Typography fontSize={16} fontWeight={400} py={4}>
           {data?.subtitle1}
         </Typography>
 
-        <Typography fontSize={24} fontWeight={400} py={4}>
+        <Typography fontSize={16} fontWeight={400} py={4}>
           {data?.subtitle2}
         </Typography>
 
@@ -28,7 +28,7 @@ const Content: React.FC<TContentProps> = ({ data }) => {
           </Box>
         )}
 
-        <Typography fontSize={24} fontWeight={400} py={6}>
+        <Typography fontSize={16} fontWeight={400} py={6}>
           {messages.forCareerOpportunities}{" "}
           <span
             style={{
@@ -44,7 +44,7 @@ const Content: React.FC<TContentProps> = ({ data }) => {
       </Stack>
 
       <Box
-        fontSize={24}
+        fontSize={16}
         fontWeight={400}
         mx={"8%"}
         p={3}
@@ -55,10 +55,10 @@ const Content: React.FC<TContentProps> = ({ data }) => {
       </Box>
 
       <Stack mx={"8%"} py={6}>
-        <Typography fontSize={24} fontWeight={600}>
+        <Typography fontSize={16} fontWeight={600}>
           {messages.leaveReply}
         </Typography>
-        <Typography fontSize={24} fontWeight={400}>
+        <Typography fontSize={16} fontWeight={400}>
           You must be{" "}
           <span style={{ color: COLORS.PRIMARY_BLUE }}>
             {messages.loggedIn}

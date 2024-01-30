@@ -13,6 +13,8 @@ const COLORS = {
   NAVY_BLUE: "#34314b",
   FOOTER_BACKGROUND_COLOR: "#10182f",
   HOVER_YELLOW: "#E1FF00",
+  LIGHT_SKY_BLUE: "#76CDFD",
+  DEFAULT_GREY: "#f8f9f0",
 };
 
 export default COLORS;

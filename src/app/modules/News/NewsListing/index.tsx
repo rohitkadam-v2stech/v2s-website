@@ -27,7 +27,16 @@ const NewsListing: React.FC = () => {
               <img src={news?.image} alt="news" width="100%" />
             </Grid>
 
-            <Grid item xs={12} sm={6} md={8} lg={6} xl={6}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={8}
+              lg={6}
+              xl={6}
+              sx={{ cursor: "pointer" }}
+              onClick={() => navigate(`${APPLICATION_URLS.NEWS}/${news?.id}`)}
+            >
               <Stack justifyContent="space-between" height="100%">
                 <Stack justifyContent="space-between" spacing={4}>
                   <Box
@@ -87,24 +96,12 @@ const NewsListing: React.FC = () => {
                   </Typography>
                 </Stack>
 
-                <Stack
-                  spacing={1}
-                  mt={4}
-                  onClick={() =>
-                    navigate(`${APPLICATION_URLS.NEWS}/${news?.id}`)
-                  }
-                >
-                  <Stack
-                    direction="row"
-                    spacing={0.5}
-                    alignItems="center"
-                    onClick={() => {}}
-                  >
+                <Stack spacing={1} mt={4}>
+                  <Stack direction="row" spacing={0.5} alignItems="center">
                     <Typography
                       fontSize={16}
                       fontWeight={700}
                       color={COLORS.DARK_BLUE}
-                      sx={{ cursor: "pointer" }}
                     >
                       {messages.readMore}
                     </Typography>

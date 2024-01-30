@@ -9,6 +9,7 @@ type TOverviewCardProps = {
   description: string;
   onReadMoreClick: React.MouseEventHandler<HTMLDivElement> | undefined;
   imageHeight?: string | number;
+  isReadMoreVisible?: boolean;
 };
 
 const OverviewCard: React.FC<TOverviewCardProps> = ({
@@ -17,6 +18,7 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
   description,
   onReadMoreClick,
   imageHeight = "100%",
+  isReadMoreVisible = false,
 }) => (
   <>
     <Stack height="100%" justifyContent="space-between">
@@ -43,25 +45,27 @@ const OverviewCard: React.FC<TOverviewCardProps> = ({
         </Typography>
       </Stack>
 
-      <Stack spacing={1} mt={4}>
-        <Stack
-          direction="row"
-          spacing={0.5}
-          alignItems="center"
-          onClick={onReadMoreClick}
-        >
-          <Typography
-            fontSize={16}
-            fontWeight={700}
-            color={COLORS.DARK_BLUE}
-            sx={{ cursor: "pointer" }}
+      {isReadMoreVisible && (
+        <Stack spacing={1} mt={4}>
+          <Stack
+            direction="row"
+            spacing={0.5}
+            alignItems="center"
+            onClick={onReadMoreClick}
           >
-            {messages.readMore}
-          </Typography>
+            <Typography
+              fontSize={16}
+              fontWeight={700}
+              color={COLORS.DARK_BLUE}
+              sx={{ cursor: "pointer" }}
+            >
+              {messages.readMore}
+            </Typography>
 
-          <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
+            <EastIcon fontSize="small" sx={{ color: COLORS.DARK_BLUE }} />
+          </Stack>
         </Stack>
-      </Stack>
+      )}
     </Stack>
 
     <Divider
