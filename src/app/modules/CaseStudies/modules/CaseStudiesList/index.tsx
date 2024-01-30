@@ -20,7 +20,7 @@ import { CASE_STUDIES_LIST } from "../../config/constants";
 // TODO: any type temp added
 
 const CaseStudiesList = () => {
-  const [country, setCountry] = useState<string>();
+  // const [country, setCountry] = useState<string>();
   const [allCountries, setAllCountries] = useState<
     Array<{ id: number; label: string }>
   >([]);
@@ -43,19 +43,19 @@ const CaseStudiesList = () => {
     setAllCountries(countriesList);
   }, []);
 
-  const handleCountryChange = (event: any) => {
-    setCountry(event.target.value);
-    if (event.target.value === "all") {
-      setAllCaseStudies(CASE_STUDIES_LIST);
-    } else {
-      setAllCaseStudies(() => {
-        const updatedAllCaseStudies = CASE_STUDIES_LIST.filter(
-          ({ country: countryName }: any) => countryName === event.target.value
-        );
-        return updatedAllCaseStudies;
-      });
-    }
-  };
+  // const handleCountryChange = (event: any) => {
+  //   setCountry(event.target.value);
+  //   if (event.target.value === "all") {
+  //     setAllCaseStudies(CASE_STUDIES_LIST);
+  //   } else {
+  //     setAllCaseStudies(() => {
+  //       const updatedAllCaseStudies = CASE_STUDIES_LIST.filter(
+  //         ({ country: countryName }: any) => countryName === event.target.value
+  //       );
+  //       return updatedAllCaseStudies;
+  //     });
+  //   }
+  // };
 
   return (
     <Box bgcolor={COLORS.WHITE}>

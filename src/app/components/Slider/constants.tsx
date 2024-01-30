@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
 import { type Settings as ReactSliderProps } from "react-slick";
+
 import nextIcon from "../../assets/sliderBtnIcons/next.png";
 import previousIcon from "../../assets/sliderBtnIcons/previous.png";
 
@@ -11,8 +11,8 @@ export const SLIDER_DEFAULT_PROPS: ReactSliderProps = {
   initialSlide: 0,
   arrows: true,
   infinite: true,
-  prevArrow: <Box component="img" src={previousIcon} />,
-  nextArrow: <Box component="img" src={nextIcon} />,
+  prevArrow: <img alt="previous-btn" src={previousIcon} />,
+  nextArrow: <img alt="next-btn" src={nextIcon} />,
   // autoplay: true,
   // responsive: [
   //   {
