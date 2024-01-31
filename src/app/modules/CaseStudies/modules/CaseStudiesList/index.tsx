@@ -1,19 +1,10 @@
 import { useEffect, useState } from "react";
 
-import {
-  Box,
-  Divider,
-  MenuItem,
-  Select,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Divider } from "@mui/material";
 
 import COLORS from "../../../../styles/colors";
 import CaseStudiesHeader from "../../components/Header";
-import FilterIcon from "../../../../assets/filter.png";
 import CaseStudiesListing from "../../components/Listing";
-import { messages } from "../../config/messages";
 // import caseStudiesData from "../../data.json";
 import { CASE_STUDIES_LIST } from "../../config/constants";
 

@@ -3,7 +3,6 @@ import { Paper, Stack, Typography } from "@mui/material";
 import COLORS from "../../../../../../styles/colors";
 import useDeviceSize from "../../../../../../hooks/useDeviceSize";
 import YoutubePlayer from "../../../../../../components/YoutubePlayer";
-import { V2S_TECH_YOUTUBE_VIDEO_EMBED_ID } from "../../../../../AboutUs/config/constants";
 
 type TTestimonialCardProps = {
   author_image: string | null;
