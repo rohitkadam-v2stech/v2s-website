@@ -13,8 +13,10 @@ const YoutubePlayer: React.FC<TYoutubePlayer> = ({
   <Box {...containerProps}>
     <Box
       component="iframe"
-      width={{ xs: 300, sm: 500, md: 700, lg: 800 }}
-      height={{ xs: 350, lg: 450 }}
+      // width={{ xs: 300, sm: 500, md: 700, lg: 800 }}
+      // height={{ xs: 350, lg: 450 }}
+      width={"100%"}
+      height={314}
       src={`${YOUTUBE_URL}${embedId}`}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
