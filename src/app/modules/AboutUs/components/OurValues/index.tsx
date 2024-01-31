@@ -2,13 +2,9 @@ import { Box, Grid, List, ListItem, Stack, Typography } from "@mui/material";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 import COLORS from "../../../../styles/colors";
-import {
-  OUR_VALUES,
-  V2S_TECH_YOUTUBE_VIDEO_EMBED_ID,
-} from "../../config/constants";
+import { OUR_VALUES } from "../../config/constants";
 import { DashedDivider } from "../../../../styles/style";
 import { messages } from "../../config/messages";
-import YoutubePlayer from "../../../../components/YoutubePlayer";
 import GlobalCollaboratorsImg from "../../../../assets/aboutUsLogos/GlobalCollaboratorsMap.png";
 import useDeviceSize from "../../../../hooks/useDeviceSize";
 
